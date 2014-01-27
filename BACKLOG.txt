@@ -1,0 +1,9 @@
+Project Backlog
+
+Getting used to Android Development (creating test apps and getting feet wet with development)
+Creation of simple GUI
+Create template problems for testing purposes
+Find sample problems from EP1 textbooks
+Create/Find icon set
+Make a name for the app
+Set a pricepoint
