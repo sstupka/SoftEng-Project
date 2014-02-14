@@ -1,7 +1,6 @@
 package SLUSpring2014CSCI390.GroupC.util;
 
 import android.app.Activity;
-import android.os.Build;
 import android.view.View;
 
 /**
@@ -92,7 +91,8 @@ public abstract class SystemUiHider {
      *            {@link #FLAG_LAYOUT_IN_SCREEN_OLDER_DEVICES}.
      */
     public static SystemUiHider getInstance(Activity activity, View anchorView, int flags) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+    	// Check if greater than Honeycomb (API 11)
+        if (android.os.Build.VERSION.SDK_INT >= 11) {
             return new SystemUiHiderHoneycomb(activity, anchorView, flags);
         } else {
             return new SystemUiHiderBase(activity, anchorView, flags);
