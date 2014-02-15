@@ -4,5 +4,11 @@
     <string name="app_name">Physics Solver</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-
+    <string name="sort_by_type">Sort By Type</string>
+    <string name="sort_by_topic">Sort By Topic</string>
+    <string name="pendulum">Pendulum</string>
+    <string name="elastic_collisions">Elastic Collisions</string>
+    <string name="heading_3">Heading 3</string>
+    <string name="arrow">Arrow</string>
+    
 </resources>

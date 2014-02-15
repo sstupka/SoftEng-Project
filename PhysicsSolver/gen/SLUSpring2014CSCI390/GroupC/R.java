@@ -36,8 +36,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class string {
         public static final int app_name=0x7f050000;
+        public static final int arrow=0x7f050008;
         public static final int dummy_button=0x7f050001;
         public static final int dummy_content=0x7f050002;
+        public static final int elastic_collisions=0x7f050006;
+        public static final int heading_3=0x7f050007;
+        public static final int pendulum=0x7f050005;
+        public static final int sort_by_topic=0x7f050004;
+        public static final int sort_by_type=0x7f050003;
     }
     public static final class style {
         /** 
