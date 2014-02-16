@@ -23,7 +23,7 @@
                     android:layout_height="match_parent"
                     android:background="#00ccff"
                     android:gravity="center_horizontal|center_vertical"
-                    android:text="Sort by Type"
+                    android:text="@string/sort_by_type"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp" >
 
@@ -34,7 +34,7 @@
                     android:layout_height="match_parent"
                     android:background="#bbbbbb"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="Sort by Topic"
+                    android:text="@string/sort_by_topic"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp" >
 
@@ -74,7 +74,7 @@
 	                            android:layout_width="280dp"
 	                            android:layout_height="match_parent"
 	                            android:gravity="center_vertical"
-	                            android:text="Pendulum"
+	                            android:text="@string/pendulum"
 	                            android:textColor="#000000"
 	                            android:textSize="20sp" >
 	                            
@@ -83,7 +83,7 @@
 	                        <ImageView
 	                            android:layout_width="match_parent"
 	                            android:layout_height="match_parent"
-	                            android:contentDescription="Arrow"
+	                            android:contentDescription="@string/arrow"
 	                            android:scaleType="centerInside"
 	                            android:src="@drawable/arrowicon" >
 	                            
@@ -100,7 +100,7 @@
 	                            android:layout_width="280dp"
 	                            android:layout_height="match_parent"
 	                            android:gravity="center_vertical"
-	                            android:text="Elasctic Collisions"
+	                            android:text="@string/elastic_collisions"
 	                            android:textColor="#000000"
 	                            android:textSize="20sp" >
 
@@ -109,7 +109,7 @@
 	                        <ImageView
 	                            android:layout_width="match_parent"
 	                            android:layout_height="match_parent"
-	                            android:contentDescription="Arrow"
+	                            android:contentDescription="@string/arrow"
 	                            android:scaleType="centerInside"
 	                            android:src="@drawable/arrowicon" >
 	                            
@@ -126,7 +126,7 @@
 	                            android:layout_width="280dp"
 	                            android:layout_height="match_parent"
 	                            android:gravity="center_vertical"
-	                            android:text="Heading 3"
+	                            android:text="@string/heading_3"
 	                            android:textColor="#000000"
 	                            android:textSize="20sp" >
 
@@ -135,7 +135,7 @@
 	                        <ImageView
 	                            android:layout_width="match_parent"
 	                            android:layout_height="match_parent"
-	                            android:contentDescription="Arrow"
+	                            android:contentDescription="@string/arrow"
 	                            android:scaleType="centerInside"
 	                            android:src="@drawable/arrowicon" >
 	                            
@@ -161,3 +161,4 @@
         </LinearLayout>
     </TabHost>
 </RelativeLayout>
+
