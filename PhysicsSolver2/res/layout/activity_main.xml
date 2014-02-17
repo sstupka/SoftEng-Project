@@ -15,37 +15,42 @@
 
             <TabWidget
                 android:id="@android:id/tabs"
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content" >
-                
+
                 <TextView
-                    android:layout_width="140dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="#00ccff"
                     android:gravity="center_horizontal|center_vertical"
                     android:text="@string/sort_by_type"
                     android:textColor="#FFFFFF"
-                    android:textSize="20sp" >
+                    android:textSize="15sp" >
 
                 </TextView>
-                
+
                 <TextView
-                    android:layout_width="140dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="#bbbbbb"
-                    android:gravity="center_vertical|center_horizontal"
+                    android:gravity="center_horizontal|center_vertical"
                     android:text="@string/sort_by_topic"
                     android:textColor="#FFFFFF"
-                    android:textSize="20sp" >
+                    android:textSize="15sp" >
 
                 </TextView>
-                
+
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#bbbbbb"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/sort_by_chapter"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" >
+
                 </TextView>
-                
+
             </TabWidget>
 
             <FrameLayout
@@ -57,13 +62,13 @@
                     android:id="@+id/listView1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
-                    
-                    
+
+
                     <LinearLayout
 			            android:layout_width="match_parent"
-			            android:layout_height="match_parent"
+			            android:layout_height="wrap_content"
 			            android:orientation="vertical" >
-			            
+
 	                    <LinearLayout
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
@@ -77,7 +82,7 @@
 	                            android:text="@string/pendulum"
 	                            android:textColor="#000000"
 	                            android:textSize="20sp" >
-	                            
+
 	                        </TextView>
 
 	                        <ImageView
@@ -86,10 +91,10 @@
 	                            android:contentDescription="@string/arrow"
 	                            android:scaleType="centerInside"
 	                            android:src="@drawable/arrowicon" >
-	                            
+
 	                        </ImageView>
 	                    </LinearLayout>
-	                    
+
 	                    <LinearLayout
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
@@ -112,10 +117,10 @@
 	                            android:contentDescription="@string/arrow"
 	                            android:scaleType="centerInside"
 	                            android:src="@drawable/arrowicon" >
-	                            
+
 	                        </ImageView>
 	                    </LinearLayout>
-	                    
+
 	                    <LinearLayout
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
@@ -126,7 +131,7 @@
 	                            android:layout_width="280dp"
 	                            android:layout_height="match_parent"
 	                            android:gravity="center_vertical"
-	                            android:text="@string/heading_3"
+	                            android:text="@string/projectile_motion"
 	                            android:textColor="#000000"
 	                            android:textSize="20sp" >
 
@@ -138,11 +143,141 @@
 	                            android:contentDescription="@string/arrow"
 	                            android:scaleType="centerInside"
 	                            android:src="@drawable/arrowicon" >
-	                            
+
+	                        </ImageView>
+	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:orientation="horizontal"
+	                        android:background="@drawable/customborder" >
+
+	                        <TextView
+	                            android:layout_width="280dp"
+	                            android:layout_height="match_parent"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/ropes_and_pulleys"
+	                            android:textColor="#000000"
+	                            android:textSize="20sp" >
+
+	                        </TextView>
+
+	                        <ImageView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:contentDescription="@string/arrow"
+	                            android:scaleType="centerInside"
+	                            android:src="@drawable/arrowicon" >
+
+	                        </ImageView>
+	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:orientation="horizontal"
+	                        android:background="@drawable/customborder" >
+
+	                        <TextView
+	                            android:layout_width="280dp"
+	                            android:layout_height="match_parent"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/circular_motion"
+	                            android:textColor="#000000"
+	                            android:textSize="20sp" >
+
+	                        </TextView>
+
+	                        <ImageView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:contentDescription="@string/arrow"
+	                            android:scaleType="centerInside"
+	                            android:src="@drawable/arrowicon" >
+
+	                        </ImageView>
+	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:orientation="horizontal"
+	                        android:background="@drawable/customborder" >
+
+	                        <TextView
+	                            android:layout_width="280dp"
+	                            android:layout_height="match_parent"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/energy_conservation"
+	                            android:textColor="#000000"
+	                            android:textSize="20sp" >
+
+	                        </TextView>
+
+	                        <ImageView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:contentDescription="@string/arrow"
+	                            android:scaleType="centerInside"
+	                            android:src="@drawable/arrowicon" >
+
+	                        </ImageView>
+	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:orientation="horizontal"
+	                        android:background="@drawable/customborder" >
+
+	                        <TextView
+	                            android:layout_width="280dp"
+	                            android:layout_height="match_parent"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/work"
+	                            android:textColor="#000000"
+	                            android:textSize="20sp" >
+
+	                        </TextView>
+
+	                        <ImageView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:contentDescription="@string/arrow"
+	                            android:scaleType="centerInside"
+	                            android:src="@drawable/arrowicon" >
+
+	                        </ImageView>
+	                    </LinearLayout>
+
+	                   <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:orientation="horizontal"
+	                        android:background="@drawable/customborder" >
+
+	                        <TextView
+	                            android:layout_width="280dp"
+	                            android:layout_height="match_parent"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/friction"
+	                            android:textColor="#000000"
+	                            android:textSize="20sp" >
+
+	                        </TextView>
+
+	                        <ImageView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:contentDescription="@string/arrow"
+	                            android:scaleType="centerInside"
+	                            android:src="@drawable/arrowicon" >
+
 	                        </ImageView>
 	                    </LinearLayout>
                     </LinearLayout>
-	                
+
                 </ScrollView>
 
                 <TextView
@@ -156,7 +291,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
                 </TextView>
-                
+
             </FrameLayout>
         </LinearLayout>
     </TabHost>

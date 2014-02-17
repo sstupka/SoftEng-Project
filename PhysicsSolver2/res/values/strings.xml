@@ -6,9 +6,16 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="sort_by_type">Sort By Type</string>
     <string name="sort_by_topic">Sort By Topic</string>
+    <string name="sort_by_chapter">Sort By Chapter</string>
+    <string name="heading_3">Heading 3</string>
     <string name="pendulum">Pendulum</string>
     <string name="elastic_collisions">Elastic Collisions</string>
-    <string name="heading_3">Heading 3</string>
     <string name="arrow">Arrow</string>
+    <string name="ropes_and_pulleys">Ropes and Pulleys</string>
+    <string name="projectile_motion">Projectile Motion</string>
+    <string name="work">Work</string>
+    <string name="circular_motion">Circular Motion</string>
+    <string name="energy_conservation">Energy Conservation</string>
+    <string name="friction">Friction</string>
     
 </resources>
