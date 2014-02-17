@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 <TabHost
@@ -13,59 +13,62 @@
             android:layout_height="match_parent"
             android:orientation="vertical" >
 
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:tabStripEnabled="true"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+            <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true">
 
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="match_parent"
-                    android:background="#00ccff"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="@string/sort_by_type"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15sp" >
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:tabStripEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
 
-                </TextView>
-
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="match_parent"
-                    android:background="#bbbbbb"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="@string/sort_by_topic"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15sp" >
-
-                </TextView>
-
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="match_parent"
-                    android:background="#bbbbbb"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="@string/sort_by_chapter"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15sp" >
-
-                </TextView>
-
-                <TextView
+                    <TextView
                         android:layout_width="130dp"
-                        android:layout_height="match_parent"
-                        android:background="#bbbbbb"
+                        android:layout_height="50dp"
+                        android:background="#00ccff"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/test"
+                        android:text="@string/sort_by_type"
                         android:textColor="#FFFFFF"
                         android:textSize="15sp" >
 
-                </TextView>
+                    </TextView>
 
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:background="#bbbbbb"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/sort_by_topic"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" >
 
-            </TabWidget>
+                    </TextView>
 
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:background="#bbbbbb"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/sort_by_chapter"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" >
+
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="50dp"
+                            android:background="#bbbbbb"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/test"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" >
+                    </TextView>
+                </TabWidget>
+            </HorizontalScrollView>
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
@@ -309,4 +312,3 @@
         </LinearLayout>
     </TabHost>
 </RelativeLayout>
-
