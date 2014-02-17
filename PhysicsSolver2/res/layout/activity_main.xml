@@ -27,7 +27,7 @@
 
                     <TextView
                         android:layout_width="130dp"
-                        android:layout_height="50dp"
+                        android:layout_height="match_parent"
                         android:background="#00ccff"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/sort_by_type"
@@ -38,7 +38,7 @@
 
                     <TextView
                         android:layout_width="130dp"
-                        android:layout_height="50dp"
+                        android:layout_height="match_parent"
                         android:background="#bbbbbb"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/sort_by_topic"
@@ -49,7 +49,7 @@
 
                     <TextView
                         android:layout_width="130dp"
-                        android:layout_height="50dp"
+                        android:layout_height="match_parent"
                         android:background="#bbbbbb"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/sort_by_chapter"
@@ -60,7 +60,7 @@
 
                     <TextView
                             android:layout_width="130dp"
-                            android:layout_height="50dp"
+                            android:layout_height="match_parent"
                             android:background="#bbbbbb"
                             android:gravity="center_horizontal|center_vertical"
                             android:text="@string/test"
@@ -69,6 +69,7 @@
                     </TextView>
                 </TabWidget>
             </HorizontalScrollView>
+
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
@@ -106,7 +107,7 @@
 	                            android:layout_height="match_parent"
 	                            android:contentDescription="@string/arrow"
 	                            android:scaleType="centerInside"
-	                            android:src="@drawable/arrowicon" >
+	                            android:src="@drawable/arrowicon">
 
 	                        </ImageView>
 	                    </LinearLayout>
