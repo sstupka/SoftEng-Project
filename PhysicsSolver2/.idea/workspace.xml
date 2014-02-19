@@ -2,7 +2,9 @@
 <project version="4">
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
-      <GlobalState />
+      <GlobalState>
+        <option name="visible" value="false" />
+      </GlobalState>
     </option>
   </component>
   <component name="AndroidLayouts">
@@ -90,29 +92,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="activity_main.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="36" selection-start="4036" selection-end="4036" vertical-scroll-proportion="-6.68" vertical-offset="1288" max-vertical-offset="4935">
-              <folding>
-                <element signature="e#1414#1436#0" expanded="true" />
-                <element signature="e#1875#1898#0" expanded="true" />
-                <element signature="e#2337#2362#0" expanded="true" />
-              </folding>
+            <state line="295" column="58" selection-start="13075" selection-end="13075" vertical-scroll-proportion="-0.031518623" vertical-offset="4447" max-vertical-offset="5145">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="33" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/physicssolver2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="83" selection-start="821" selection-end="821" vertical-scroll-proportion="0.84243697" vertical-offset="19" max-vertical-offset="585">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="44" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,8 +143,8 @@
       <list>
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/com/example/physicssolver2/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/activity_main.xml" />
       </list>
     </option>
   </component>
@@ -366,9 +371,9 @@
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="AVD_for_Nexus_One" />
+      <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="false" />
@@ -419,20 +424,20 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3145917" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32797858" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32797858" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18228498" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1818766" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3145917" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -457,21 +462,46 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="36" selection-start="4036" selection-end="4036" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="33" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/physicssolver2/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="44" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="50" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="0" selection-start="3614" selection-end="3614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4935">
-          <folding>
-            <element signature="e#1414#1436#0" expanded="true" />
-            <element signature="e#1875#1898#0" expanded="true" />
-            <element signature="e#2337#2362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/physicssolver2/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="19" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="570">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -488,11 +518,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="0" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="4845">
-          <folding>
-            <element signature="e#1414#1436#0" expanded="true" />
-            <element signature="e#1875#1898#0" expanded="true" />
-            <element signature="e#2337#2362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -530,11 +556,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="0" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="4800">
-          <folding>
-            <element signature="e#1414#1436#0" expanded="true" />
-            <element signature="e#1875#1898#0" expanded="true" />
-            <element signature="e#2337#2362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -572,11 +594,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.0" vertical-offset="443" max-vertical-offset="4800">
-          <folding>
-            <element signature="e#1414#1436#0" expanded="true" />
-            <element signature="e#1875#1898#0" expanded="true" />
-            <element signature="e#2337#2362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -614,11 +632,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="35" selection-start="3012" selection-end="3012" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4800">
-          <folding>
-            <element signature="e#1414#1436#0" expanded="true" />
-            <element signature="e#1875#1898#0" expanded="true" />
-            <element signature="e#2337#2362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,11 +670,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="0" selection-start="2076" selection-end="2076" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4770">
-          <folding>
-            <element signature="e#1414#1436#0" expanded="true" />
-            <element signature="e#1875#1898#0" expanded="true" />
-            <element signature="e#2337#2362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -698,11 +708,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="46" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="4575">
-          <folding>
-            <element signature="e#1414#1436#0" expanded="true" />
-            <element signature="e#1875#1898#0" expanded="true" />
-            <element signature="e#2337#2362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -726,11 +732,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="47" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="4575">
-          <folding>
-            <element signature="e#1414#1436#0" expanded="true" />
-            <element signature="e#1875#1898#0" expanded="true" />
-            <element signature="e#2337#2362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -744,13 +746,6 @@
     <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="32" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
@@ -776,26 +771,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="36" selection-start="4036" selection-end="4036" vertical-scroll-proportion="-6.68" vertical-offset="1288" max-vertical-offset="4935">
-          <folding>
-            <element signature="e#1414#1436#0" expanded="true" />
-            <element signature="e#1875#1898#0" expanded="true" />
-            <element signature="e#2337#2362#0" expanded="true" />
-          </folding>
+        <state line="11" column="33" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/physicssolver2/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="83" selection-start="821" selection-end="821" vertical-scroll-proportion="0.84243697" vertical-offset="19" max-vertical-offset="585">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="9" column="44" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="295" column="58" selection-start="13075" selection-end="13075" vertical-scroll-proportion="-0.031518623" vertical-offset="4447" max-vertical-offset="5145">
+          <folding />
         </state>
       </provider>
     </entry>

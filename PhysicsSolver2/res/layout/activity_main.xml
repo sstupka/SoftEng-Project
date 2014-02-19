@@ -122,7 +122,9 @@
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
-	                        android:background="@drawable/customborder" >
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="elasticCollisionsClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -149,7 +151,9 @@
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
-	                        android:background="@drawable/customborder" >
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="projectileMotionClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -175,7 +179,9 @@
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
-	                        android:background="@drawable/customborder" >
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="ropePulleyClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -201,7 +207,9 @@
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
-	                        android:background="@drawable/customborder" >
+	                        android:background="@drawable/customborder"
+                            android:onClick="circularMotionClick"
+                            android:clickable="true">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -227,7 +235,9 @@
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
-	                        android:background="@drawable/customborder" >
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="energyConservationClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -253,7 +263,9 @@
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
-	                        android:background="@drawable/customborder" >
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="workClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -279,7 +291,9 @@
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
-	                        android:background="@drawable/customborder" >
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="frictionClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
