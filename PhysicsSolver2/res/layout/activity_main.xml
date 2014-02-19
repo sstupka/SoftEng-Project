@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 <TabHost
@@ -11,42 +11,66 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+                >
 
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-                
-                <TextView
-                    android:layout_width="140dp"
-                    android:layout_height="match_parent"
-                    android:background="#00ccff"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="@string/sort_by_type"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp" >
+            <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
 
-                </TextView>
-                
-                <TextView
-                    android:layout_width="140dp"
-                    android:layout_height="match_parent"
-                    android:background="#bbbbbb"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="@string/sort_by_topic"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp" >
-
-                </TextView>
-                
-                <TextView
-                    android:layout_width="match_parent"
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:tabStripEnabled="true"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent" >
-                    
-                </TextView>
-                
-            </TabWidget>
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="48dp"
+                        android:background="#00ccff"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/sort_by_type"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" >
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="48dp"
+                        android:background="#bbbbbb"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/sort_by_topic"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" >
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="48dp"
+                        android:background="#bbbbbb"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/sort_by_chapter"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" >
+
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:background="#bbbbbb"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/test"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" >
+                    </TextView>
+                </TabWidget>
+            </HorizontalScrollView>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
@@ -57,18 +81,21 @@
                     android:id="@+id/listView1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
-                    
-                    
+
+
                     <LinearLayout
 			            android:layout_width="match_parent"
-			            android:layout_height="match_parent"
-			            android:orientation="vertical" >
-			            
+			            android:layout_height="wrap_content"
+			            android:orientation="vertical">
+
 	                    <LinearLayout
+                            android:id="@+id/pendulum"
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
-	                        android:background="@drawable/customborder" >
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="pendulumClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -76,25 +103,28 @@
 	                            android:gravity="center_vertical"
 	                            android:text="@string/pendulum"
 	                            android:textColor="#000000"
-	                            android:textSize="20sp" >
-	                            
+	                            android:textSize="20sp">
+
 	                        </TextView>
 
 	                        <ImageView
 	                            android:layout_width="match_parent"
 	                            android:layout_height="match_parent"
+                                android:layout_gravity="right"
 	                            android:contentDescription="@string/arrow"
 	                            android:scaleType="centerInside"
-	                            android:src="@drawable/arrowicon" >
-	                            
+	                            android:src="@drawable/arrowicon">
+
 	                        </ImageView>
 	                    </LinearLayout>
-	                    
+
 	                    <LinearLayout
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
-	                        android:background="@drawable/customborder" >
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="elasticCollisionsClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -112,21 +142,24 @@
 	                            android:contentDescription="@string/arrow"
 	                            android:scaleType="centerInside"
 	                            android:src="@drawable/arrowicon" >
-	                            
+
 	                        </ImageView>
+
 	                    </LinearLayout>
-	                    
+
 	                    <LinearLayout
 	                        android:layout_width="match_parent"
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
-	                        android:background="@drawable/customborder" >
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="projectileMotionClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
 	                            android:layout_height="match_parent"
 	                            android:gravity="center_vertical"
-	                            android:text="@string/heading_3"
+	                            android:text="@string/projectile_motion"
 	                            android:textColor="#000000"
 	                            android:textSize="20sp" >
 
@@ -138,11 +171,152 @@
 	                            android:contentDescription="@string/arrow"
 	                            android:scaleType="centerInside"
 	                            android:src="@drawable/arrowicon" >
-	                            
+
 	                        </ImageView>
 	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:orientation="horizontal"
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="ropePulleyClick">
+
+	                        <TextView
+	                            android:layout_width="280dp"
+	                            android:layout_height="match_parent"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/ropes_and_pulleys"
+	                            android:textColor="#000000"
+	                            android:textSize="20sp" >
+
+	                        </TextView>
+
+	                        <ImageView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:contentDescription="@string/arrow"
+	                            android:scaleType="centerInside"
+	                            android:src="@drawable/arrowicon" >
+
+	                        </ImageView>
+	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:orientation="horizontal"
+	                        android:background="@drawable/customborder"
+                            android:onClick="circularMotionClick"
+                            android:clickable="true">
+
+	                        <TextView
+	                            android:layout_width="280dp"
+	                            android:layout_height="match_parent"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/circular_motion"
+	                            android:textColor="#000000"
+	                            android:textSize="20sp" >
+
+	                        </TextView>
+
+	                        <ImageView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:contentDescription="@string/arrow"
+	                            android:scaleType="centerInside"
+	                            android:src="@drawable/arrowicon" >
+
+	                        </ImageView>
+	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:orientation="horizontal"
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="energyConservationClick">
+
+	                        <TextView
+	                            android:layout_width="280dp"
+	                            android:layout_height="match_parent"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/energy_conservation"
+	                            android:textColor="#000000"
+	                            android:textSize="20sp" >
+
+	                        </TextView>
+
+	                        <ImageView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:contentDescription="@string/arrow"
+	                            android:scaleType="centerInside"
+	                            android:src="@drawable/arrowicon" >
+
+	                        </ImageView>
+	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:orientation="horizontal"
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="workClick">
+
+	                        <TextView
+	                            android:layout_width="280dp"
+	                            android:layout_height="match_parent"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/work"
+	                            android:textColor="#000000"
+	                            android:textSize="20sp" >
+
+	                        </TextView>
+
+	                        <ImageView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:contentDescription="@string/arrow"
+	                            android:scaleType="centerInside"
+	                            android:src="@drawable/arrowicon" >
+
+	                        </ImageView>
+	                    </LinearLayout>
+
+	                   <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:orientation="horizontal"
+	                        android:background="@drawable/customborder"
+                            android:clickable="true"
+                            android:onClick="frictionClick">
+
+	                        <TextView
+	                            android:layout_width="280dp"
+	                            android:layout_height="match_parent"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/friction"
+	                            android:textColor="#000000"
+	                            android:textSize="20sp" >
+
+	                        </TextView>
+
+	                        <ImageView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:contentDescription="@string/arrow"
+	                            android:scaleType="centerInside"
+	                            android:src="@drawable/arrowicon" >
+
+	                        </ImageView>
+	                    </LinearLayout>
+
                     </LinearLayout>
-	                
+
                 </ScrollView>
 
                 <TextView
@@ -156,9 +330,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
                 </TextView>
-                
+
             </FrameLayout>
         </LinearLayout>
     </TabHost>
 </RelativeLayout>
-
