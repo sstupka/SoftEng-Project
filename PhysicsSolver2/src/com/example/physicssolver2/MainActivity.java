@@ -24,10 +24,9 @@ public class MainActivity extends Activity {
     }
 
 
-    public void pendulumClick(View view) {
-        if (view.getId() == R.id.pendulum) {
+    public void onClick(View view) {
             Toast.makeText(getApplication(), "test this shit", Toast.LENGTH_LONG).show();
-        }
+
     }
 
 }

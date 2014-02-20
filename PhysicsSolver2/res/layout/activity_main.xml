@@ -95,7 +95,7 @@
 	                        android:orientation="horizontal"
 	                        android:background="@drawable/customborder"
                             android:clickable="true"
-                            android:onClick="pendulumClick">
+                            android:onClick="onClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -124,7 +124,7 @@
 	                        android:orientation="horizontal"
 	                        android:background="@drawable/customborder"
                             android:clickable="true"
-                            android:onClick="elasticCollisionsClick">
+                            android:onClick="onClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -153,7 +153,7 @@
 	                        android:orientation="horizontal"
 	                        android:background="@drawable/customborder"
                             android:clickable="true"
-                            android:onClick="projectileMotionClick">
+                            android:onClick="onClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -181,7 +181,7 @@
 	                        android:orientation="horizontal"
 	                        android:background="@drawable/customborder"
                             android:clickable="true"
-                            android:onClick="ropePulleyClick">
+                            android:onClick="onClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -208,7 +208,7 @@
 	                        android:layout_height="35dp"
 	                        android:orientation="horizontal"
 	                        android:background="@drawable/customborder"
-                            android:onClick="circularMotionClick"
+                            android:onClick="onClick"
                             android:clickable="true">
 
 	                        <TextView
@@ -237,7 +237,7 @@
 	                        android:orientation="horizontal"
 	                        android:background="@drawable/customborder"
                             android:clickable="true"
-                            android:onClick="energyConservationClick">
+                            android:onClick="onClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -265,7 +265,7 @@
 	                        android:orientation="horizontal"
 	                        android:background="@drawable/customborder"
                             android:clickable="true"
-                            android:onClick="workClick">
+                            android:onClick="onClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
@@ -293,7 +293,7 @@
 	                        android:orientation="horizontal"
 	                        android:background="@drawable/customborder"
                             android:clickable="true"
-                            android:onClick="frictionClick">
+                            android:onClick="onClick">
 
 	                        <TextView
 	                            android:layout_width="280dp"
