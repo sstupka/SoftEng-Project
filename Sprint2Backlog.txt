@@ -1,0 +1,10 @@
+Database integration with GUI - Kathy
+Selectable units (kg, mg, etc.) - Wesley
+Hone in and complete list of 'problem types' - Scott
+Graphics for each problem - Max 
+Searchable database button - Kathy 
+Drop down menu clicks. Clicking master header will close previous master header. Info
+    is retained when re-opened.
+*Include one problem of each type for testing purposes*
+Need for favorites? Not a whole lot of user data...
+Removal of radio-button group for solving variables - Wesley
