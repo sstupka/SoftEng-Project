@@ -19,4 +19,15 @@
     <string name="energy_conservation">Energy Conservation</string>
     <string name="friction">Friction</string>
     <string name="test">Test</string>
+    <string name="t">T</string>
+    <string name="l">L</string>
+    <string name="g">g</string>
+    <string name="solve_for_">Solve for:</string>
+    <string name="_">=></string>
+    <string name="g_">g=</string>
+    <string name="t_">T=</string>
+    <string name="l_">L=</string>
+    <string name="title_activity_pendulum">PendulumActivity</string>
+    <string name="pendulum_pic">Pendulum Pic</string>
+
 </resources>
