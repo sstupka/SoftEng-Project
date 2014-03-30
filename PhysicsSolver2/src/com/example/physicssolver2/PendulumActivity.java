@@ -1,5 +1,4 @@
 package com.example.physicssolver2;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.text.Editable;

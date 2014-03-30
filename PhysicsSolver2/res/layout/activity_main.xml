@@ -8,7 +8,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
-        <LinearLayout
+        <FrameLayout
+                android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -74,7 +75,7 @@
             <ExpandableListView
                 android:id="@+id/lvExp"
                 android:layout_height="match_parent"
-                android:layout_width="match_parent" />  
-        </LinearLayout>
+                android:layout_width="match_parent" />
+        </FrameLayout>
     </TabHost>
 </RelativeLayout>
