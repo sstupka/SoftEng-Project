@@ -29,5 +29,30 @@
     <string name="l_">L=</string>
     <string name="title_activity_pendulum">PendulumActivity</string>
     <string name="pendulum_pic">Pendulum Pic</string>
-
+    <string name="hello">Hello</string>
+	<string-array name="meterUnits">
+        <item>nm</item>
+        <item>μm</item>
+        <item>mm</item>
+        <item>cm</item>
+        <item>dm</item>
+        <item>m</item>
+        <item>km</item>
+        <item>Mm</item>
+        <item>Gm</item>
+    </string-array>
+	<string-array name="timeUnits">
+        <item>ns</item>
+        <item>ms</item>
+        <item>s</item>
+        <item>min</item>
+        <item>hr</item>
+        <item>day</item>
+        <item>yr</item>
+    </string-array>
+	<string-array name="PendulumSolveFor">
+        <item>T (Period)</item>
+        <item>L (Length)</item>
+        <item>g (Acceleration due to gravity)</item>
+    </string-array>
 </resources>

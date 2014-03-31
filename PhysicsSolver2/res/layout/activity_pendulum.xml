@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,142 +6,191 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".PendulumActivity" >
+    tools:context=".PendulumActivity" 
+    android:orientation="vertical" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="500dp"
-        android:layout_height="200dp"
-        android:contentDescription="@string/pendulum_pic"
-        android:src="@drawable/simplependulum" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/imageView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:contentDescription="@string/pendulum_pic"
-        android:src="@drawable/pendulumeq" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView2"
-        android:layout_below="@+id/imageView2"
-        android:layout_marginTop="22dp"
-        android:clickable="false"
-        android:orientation="horizontal" >
-
-        <RadioButton
-            android:id="@+id/radio0"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/pendulum_pic"
+            android:src="@drawable/simplependulum" />
+	
+	    <ImageView
+	        android:id="@+id/imageView2"
+	        android:layout_width="100dp"
+	        android:layout_height="50dp"
+	        android:layout_gravity="center_horizontal"
+	        android:contentDescription="@string/pendulum_pic"
+	        android:src="@drawable/pendulumeq" />
+    
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:onClick="solveForT"
-            android:text="@string/t" />
+            android:orientation="horizontal" >
 
-        <RadioButton
-            android:id="@+id/radio1"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/solve_for_"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:entries="@array/PendulumSolveFor" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="solveForL"
-            android:text="@string/l" />
+            android:orientation="horizontal" >
 
-        <RadioButton
-            android:id="@+id/radio2"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/g_"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:filterTouchesWhenObscured="true"
+                android:inputType="number|numberDecimal" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" 
+                android:entries="@array/meterUnits" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="/"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/timeUnits" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="solveForG"
-            android:text="@string/g" />
+            android:orientation="horizontal" >
+            <TextView
+		        android:id="@+id/TextView01"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/l_"
+		        android:textSize="20sp" />
+		
+		    <EditText
+		        android:id="@+id/EditText2"
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:inputType="number|numberDecimal" />
 
-    </RadioGroup>
+		    <Spinner
+		        android:id="@+id/spinner4"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:entries="@array/meterUnits" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/radioGroup1"
-        android:layout_marginRight="15dp"
-        android:layout_toLeftOf="@+id/radioGroup1"
-        android:text="@string/solve_for_" />
+		    <TextView
+		        android:id="@+id/textView6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:text="/"
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="80sp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/radioGroup1"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="14dp"
-        android:ems="10"
-        android:filterTouchesWhenObscured="true"
-        android:inputType="number|numberDecimal" />
+		    <Spinner
+		        android:id="@+id/spinner5"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:entries="@array/timeUnits" />
 
-    <EditText
-        android:id="@+id/EditText2"
-        android:layout_width="80sp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:ems="10"
-        android:inputType="number|numberDecimal" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="14dp"
+		        android:text="@string/_"
+		        android:textSize="30sp" />
+		
+		    <TextView
+		        android:id="@+id/textView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/t_"
+		        android:textSize="20sp" />
+		
+		    <EditText
+		        android:id="@+id/EditText3"
+		        android:layout_width="100sp"
+		        android:layout_height="wrap_content"
+		        android:clickable="false"
+		        android:ems="10"
+		        android:enabled="false"
+		        android:focusable="false"
+		        android:focusableInTouchMode="false"
+		        android:inputType="none"
+		        android:longClickable="false" >
+		
+		        <requestFocus />
+		    </EditText>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/EditText2"
-        android:layout_alignBottom="@+id/EditText2"
-        android:layout_alignRight="@+id/imageView2"
-        android:layout_marginRight="14dp"
-        android:text="@string/_"
-        android:textSize="30sp" />
+		    <Spinner
+		        android:id="@+id/spinner6"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:entries="@array/timeUnits" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText1"
-        android:layout_toLeftOf="@+id/EditText2"
-        android:text="@string/g_"
-        android:textSize="20sp" />
+		    <TextView
+		        android:id="@+id/textView7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:text="/"
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/radioGroup1"
-        android:layout_alignTop="@+id/EditText2"
-        android:text="@string/t_"
-        android:textSize="20sp" />
+		    <Spinner
+		        android:id="@+id/spinner7"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:entries="@array/timeUnits" />
 
-    <TextView
-        android:id="@+id/TextView01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_toLeftOf="@+id/EditText2"
-        android:text="@string/l_"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/EditText3"
-        android:layout_width="80sp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_toRightOf="@+id/textView3"
-        android:clickable="false"
-        android:ems="10"
-        android:enabled="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:inputType="none"
-        android:longClickable="false" >
-
-        <requestFocus />
-    </EditText>
-
-</RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
