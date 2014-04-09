@@ -1,0 +1,18 @@
+TRY AND AUTO-GENERATE LAYOUTS AND ACTIVITY FILES BY APRIL 16
+    How to pull images from database?
+    Speed may be limiting factor
+    Generalizing problem type
+    Generating files may be difficult
+ 
+Getting code to run on all dev machines
+Integrate databse with main code - Kathy
+Max working on graphics - Max
+Create templet for problem types - Wesley
+Magnifying glass search bar to search database
+Implement SI standard units for all problems so that when you
+    open the problem type things like (m,s,kg)
+
+
+
+UI final choices
+Potential for favorites?
