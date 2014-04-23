@@ -1,0 +1,8 @@
+simplependulum;200;200
+pendulumeq;100;50
+
+g;g (Acceleration due to gravity);m/s;0
+L;L (Length);m;0
+T;T (Period);s;0
+
+HowdyThereName
