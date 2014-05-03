@@ -82,7 +82,7 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
     fields=activity.split("\n\n")
     
     javaSave=['''''']*3+[[[],[],[]]]+['''''']*0 #Save code to be written in various places throughout the java file here.
-    #element 3 is lists of EditText t#, and associated spinner units#. In database order.
+    #element 3 is lists of EditText t#, associated spinner units#, and associated units. In database order.
 
     #Begin writing XML Code
     outputXmlFile=open("res/layout/"+fields[2].lower()+".xml",'w')
@@ -355,14 +355,11 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -391,31 +388,30 @@ public class '''+fields[2]+''' extends Activity {
         getMenuInflater().inflate(R.menu.pendulum, menu);
         return true;
     }
-    
+
     TextWatcher updateAnswer=new TextWatcher(){
-        private EditText e;
         private String old="";
 
-        public void updateAnswer(EditText et) { 
-            e=et;
-        }
-
         public void afterTextChanged(Editable s) {
-            if(!e.getText().equals(old)) { //Prevents recursion here.
+            if(!s.toString().equals(old)) { //Prevents recursion here.
                 updateAll();
             }
-            old=e.getText().toString();
-
-            /*e.removeTextChangedListener(this);
-            updateAll();
-            e.addTextChangedListener(this);*/
         }
 
-        public void beforeTextChanged(CharSequence s, int start, int count, int after){}
+        public void beforeTextChanged(CharSequence s, int start, int count, int after){
+            old=s.toString();
+        }
         public void onTextChanged(CharSequence s, int start, int before, int count){}
     };
 
     AdapterView.OnItemSelectedListener updateUnits = new AdapterView.OnItemSelectedListener() {
+        public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) { 
+            updateAll();
+        }
+        public void onNothingSelected(AdapterView<?> adapterView) {} 
+    };
+    
+    AdapterView.OnItemSelectedListener updateSolveFor = new AdapterView.OnItemSelectedListener() {
         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) { 
             updateAll();
         }
@@ -453,7 +449,13 @@ public class '''+fields[2]+''' extends Activity {
             if k!=i:
                 outputJavaFile.write('''
 
-            float n'''+str(k)+'''=Float.parseFloat(t'''+str(editText)+'''.getText().toString());''')
+            float n'''+str(k)+''';
+            try {
+                n'''+str(k)+'''=Float.parseFloat(t'''+str(editText)+'''.getText().toString());
+            }
+            catch (NumberFormatException e) {
+                return;
+            }''')
                 L=-1
                 outputJavaFile.close()
                 outputJavaFile=open("src/com/example/physicssolver2/"+fields[2]+".java",'ab') #Now writing a byte stream since this portion of the code writes unicode characters
@@ -482,13 +484,6 @@ public class '''+fields[2]+''' extends Activity {
         }''')
     outputJavaFile.write('''
     }
-    
-    AdapterView.OnItemSelectedListener updateSolveFor = new AdapterView.OnItemSelectedListener() {
-        public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) { 
-            updateAll();
-        }
-        public void onNothingSelected(AdapterView<?> adapterView) {} 
-    };
     Resources res;
 }''')
 

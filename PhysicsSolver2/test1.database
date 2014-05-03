@@ -6,3 +6,5 @@ L;L (Length);m;n0*Math.pow(n2/2/Math.PI, 2)
 T;T (Period);s;2*Math.PI*Math.sqrt(n0/n1)
 
 PendulumActivity
+
+Pendulums
