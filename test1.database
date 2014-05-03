@@ -1,8 +1,8 @@
 simplependulum;200;200
 pendulumeq;100;50
 
-g;g (Acceleration due to gravity);m/s;0
-L;L (Length);m;0
-T;T (Period);s;0
+g;g (Acceleration due to gravity);m/s;Math.pow(2*Math.PI/n2, 2)*n1
+L;L (Length);m;n0*Math.pow(n2/2/Math.PI, 2)
+T;T (Period);s;2*Math.PI*Math.sqrt(n0/n1)
 
-HowdyThereName
+PendulumActivity
