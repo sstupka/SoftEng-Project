@@ -120,35 +120,67 @@ public class MainActivity extends Activity {
         listDataChild = new HashMap<String, List<String>>();
 
         //HEADERS
-        listDataHeader.add("Straight Line Motion");
-        listDataHeader.add("Motion in Two and Three Dimensions");
-        listDataHeader.add("Force");
-        listDataHeader.add("Kinetic Energy");
-        listDataHeader.add("Work and Power");
-        listDataHeader.add("Potential Energy and Energy Conservation");
-        listDataHeader.add("Momemtum");
+        listDataHeader.add("Motion in One Dimension");
+        listDataHeader.add("Motion in Two Dimensions");
+        listDataHeader.add("Forces and Newton's Laws");
+        listDataHeader.add("Momentum and Impulse");
         listDataHeader.add("Collisions");
-        listDataHeader.add("Circular Motion");
-        listDataHeader.add("Gravitation");
-
+        listDataHeader.add("Work and Energy");
+        listDataHeader.add("Circular Motion and Rotation");
 
         //CHILDREN
-        List<String> slm = new ArrayList<String>();
-        slm.add("Vectors");
-        slm.add("Constant Acceleration");
+        List<String> motionInOneDimension = new ArrayList<String>();
+        motionInOneDimension.add("Constant Velocity Motion");
+        motionInOneDimension.add("Accelerated Straight-Line Motion");
+        motionInOneDimension.add("Two Objects Moving Apart on Same Line");
 
-        List<String> mittd = new ArrayList<String>();
-        mittd.add("Ideal Projectile Motion");
-        mittd.add("Maximum Height and Range");
-        mittd.add("Realistic Projectile Motion");
+        List<String> motionInTwoDimenions = new ArrayList<String>();
+        motionInTwoDimenions.add("Free Fall");
+        motionInTwoDimenions.add("Ideal Projectile Motion");
+        motionInTwoDimenions.add("Maximum Height and Range");
 
-        List<String> force = new ArrayList<String>();
-        force.add("Weight and Mass");
-        force.add("Newton's Laws");
-        force.add("Ropes and Pulleys");
+        List<String> newtonsLaws = new ArrayList<String>();
+        newtonsLaws.add("Newton's First and Second Laws");
+        newtonsLaws.add("Newton's Third Law");
+        newtonsLaws.add("Weight and Normal Force");
+        newtonsLaws.add("Ropes and Pulleys");
+        newtonsLaws.add("Pendulums");
+        newtonsLaws.add("Friction on a Flat Plane");
+        newtonsLaws.add("Friction on an Inclined Plane");
 
-        listDataChild.put(listDataHeader.get(0), slm);
-        listDataChild.put(listDataHeader.get(1), mittd);
-        listDataChild.put(listDataHeader.get(2), force);
+        List<String> momentumAndImpulse= new ArrayList<String>();
+        momentumAndImpulse.add("Momentum");
+        momentumAndImpulse.add("Impulse");
+        momentumAndImpulse.add("Impulse-Momentum Theorem");
+        momentumAndImpulse.add("Conservation of Momentum");
+
+        List<String> Collisions = new ArrayList<String>();
+        Collisions.add("Elastic Collisions of Two Objects");
+        Collisions.add("Inelastic Collisions of Two Objects");
+        Collisions.add("Completely Inelastic Collisions");
+
+        List<String> workAndEnergy = new ArrayList<String>();
+        workAndEnergy.add("Conservation of Energy");
+        workAndEnergy.add("Kinetic EnergY");
+        workAndEnergy.add("Gravitational Potential Energy");
+        workAndEnergy.add("Work");
+        workAndEnergy.add("Power");
+        workAndEnergy.add("Ballistic Pendulum");
+
+        List<String> circularMotion = new ArrayList<String>();
+        circularMotion.add("Arc Length and Radians");
+        circularMotion.add("Uniform Circular Motion");
+        circularMotion.add("Centripetal and Centrifugal Forces");
+        circularMotion.add("Moment of Inertia");
+        circularMotion.add("Torque");
+
+        listDataChild.put(listDataHeader.get(0), motioninOneDimension);
+        listDataChild.put(listDataHeader.get(1), motioninTwoDimensions);
+        listDataChild.put(listDataHeader.get(2), newtonsLaws);
+		listDataChild.put(listDataHeader.get(3), momentumAndImpulse);
+		listDataChild.put(listDataHeader.get(4), Collisions);
+		listDataChild.put(listDataHeader.get(5), workAndEnergy);
+		listDataChild.put(listDataHeader.get(6), circularMotion);
+
     }
 }
