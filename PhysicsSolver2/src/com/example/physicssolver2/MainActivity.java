@@ -137,13 +137,10 @@ public class MainActivity extends Activity {
         List<String> motionInTwoDimenions = new ArrayList<String>();
         motionInTwoDimenions.add("Free Fall");
         motionInTwoDimenions.add("Ideal Projectile Motion");
-        motionInTwoDimenions.add("Maximum Height and Range");
 
         List<String> newtonsLaws = new ArrayList<String>();
-        newtonsLaws.add("Newton's First and Second Laws");
-        newtonsLaws.add("Newton's Third Law");
+        newtonsLaws.add("Newton's Laws");
         newtonsLaws.add("Weight and Normal Force");
-        newtonsLaws.add("Ropes and Pulleys");
         newtonsLaws.add("Pendulums");
         newtonsLaws.add("Friction on a Flat Plane");
         newtonsLaws.add("Friction on an Inclined Plane");
@@ -161,21 +158,20 @@ public class MainActivity extends Activity {
 
         List<String> workAndEnergy = new ArrayList<String>();
         workAndEnergy.add("Conservation of Energy");
-        workAndEnergy.add("Kinetic EnergY");
+        workAndEnergy.add("Kinetic Energy");
         workAndEnergy.add("Gravitational Potential Energy");
         workAndEnergy.add("Work");
         workAndEnergy.add("Power");
-        workAndEnergy.add("Ballistic Pendulum");
 
         List<String> circularMotion = new ArrayList<String>();
         circularMotion.add("Arc Length and Radians");
         circularMotion.add("Uniform Circular Motion");
-        circularMotion.add("Centripetal and Centrifugal Forces");
+        circularMotion.add("Centripetal Force");
         circularMotion.add("Moment of Inertia");
         circularMotion.add("Torque");
 
-        listDataChild.put(listDataHeader.get(0), motioninOneDimension);
-        listDataChild.put(listDataHeader.get(1), motioninTwoDimensions);
+        listDataChild.put(listDataHeader.get(0), motionInOneDimension);
+        listDataChild.put(listDataHeader.get(1), motionInTwoDimenions);
         listDataChild.put(listDataHeader.get(2), newtonsLaws);
 		listDataChild.put(listDataHeader.get(3), momentumAndImpulse);
 		listDataChild.put(listDataHeader.get(4), Collisions);
