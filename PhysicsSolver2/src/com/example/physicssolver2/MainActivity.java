@@ -103,9 +103,124 @@ public class MainActivity extends Activity {
                 +  " : "
                 + listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition), Toast.LENGTH_SHORT).show();
 
-                if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition) == "Vectors")
+                if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Constant Velocity Motion"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),ConstantVelocityMotionActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Accelerated Straight-Line Motion"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),AcceleratedStraightLineActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Two Objects Moving Apart on Same Line"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),TwoObjectsMovingApartActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Free Fall"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),FreeFallActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Ideal Projectile Motion"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),ProjectileMotionActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Newton's Laws"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),NewtonsLawsActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Weight and Normal Force"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),WeightNormalForceActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Pendulums"))
                 {
                     Intent anIntent=new Intent(v.getContext(),PendulumActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Friction on a Flat Plane"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),FlatPlaneFrictionActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Friction on an Inclined Plane"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),FrictionInclineActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Momentum"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),MomentumActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Impulse"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),ImpulseActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Impulse-Momentum Theorem"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),ImpulseMomentumTheoremActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Conservation of Momentum"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),ConservationOfMomentumActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Elastic Collisions of Two Objects"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),ElasticCollisionActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Conservation of Energy"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),ConservationOfEnergyActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Kinetic Energy"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),KineticEnergyActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Gravitational Potential Energy"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),GravitationalPotentialEnergyActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Work"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),WorkActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Power"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),PowerActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Arc Length and Radians"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),ArcLengthActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Uniform Circular Motion"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),UniformCircularMotionActivity.class);
+                    startActivity(anIntent);
+                }
+                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Centripetal Force"))
+                {
+                    Intent anIntent=new Intent(v.getContext(),CentripetalForceActivity.class);
+                    startActivity(anIntent);
+                }
+                else
+                {
+                    Intent anIntent=new Intent(v.getContext(),TorqueActivity.class);
                     startActivity(anIntent);
                 }
 
