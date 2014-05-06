@@ -22,6 +22,8 @@
     <string name="t">T</string>
     <string name="l">L</string>
     <string name="g">g</string>
+    <string name="slash">/</string>
+    <string name="image">image</string>
     <string name="solve_for_">Solve for:</string>
     <string name="_">=></string>
     <string name="g_">g=</string>
@@ -55,4 +57,11 @@
         <item>L (Length)</item>
         <item>g (Acceleration due to gravity)</item>
     </string-array>
+   <string-array name="PendulumActivitySolveFor">
+        <item>g (Acceleration due to gravity)</item>
+        <item>L (Length)</item>
+        <item>T (Period)</item>
+    </string-array>
+<string name="L_">L=</string>
+<string name="T_">T=</string>
 </resources>

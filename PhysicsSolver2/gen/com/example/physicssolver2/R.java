@@ -9,6 +9,7 @@ package com.example.physicssolver2;
 
 public final class R {
     public static final class array {
+        public static final int PendulumActivitySolveFor=0x7f060003;
         public static final int PendulumSolveFor=0x7f060002;
         public static final int meterUnits=0x7f060000;
         public static final int timeUnits=0x7f060001;
@@ -26,50 +27,106 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int arrowicon=0x7f020000;
-        public static final int customborder=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int pendulumeq=0x7f020003;
-        public static final int simplependulum=0x7f020004;
+        public static final int acceleratedstraightlneeq=0x7f020000;
+        public static final int apartonsameline=0x7f020001;
+        public static final int apartsamelineeq=0x7f020002;
+        public static final int arclength=0x7f020003;
+        public static final int arclengtheq=0x7f020004;
+        public static final int arrowicon=0x7f020005;
+        public static final int artlengtheq=0x7f020006;
+        public static final int ballisticpendulum=0x7f020007;
+        public static final int centripetalforce=0x7f020008;
+        public static final int centripetalforceeq=0x7f020009;
+        public static final int circularmotion=0x7f02000a;
+        public static final int completelyinelastic=0x7f02000b;
+        public static final int completelyinelasticcollisioneq=0x7f02000c;
+        public static final int conservationofenergy=0x7f02000d;
+        public static final int conservationofenergyeq=0x7f02000e;
+        public static final int conservationofmomentum=0x7f02000f;
+        public static final int conservationofmomentumeq=0x7f020010;
+        public static final int consofenergy=0x7f020011;
+        public static final int consofmomentum=0x7f020012;
+        public static final int constaccel=0x7f020013;
+        public static final int constantvelocityeq=0x7f020014;
+        public static final int constvel=0x7f020015;
+        public static final int constvelocity=0x7f020016;
+        public static final int customborder=0x7f020017;
+        public static final int elasticcollision=0x7f020018;
+        public static final int elasticcollisioneq=0x7f020019;
+        public static final int flatfriction=0x7f02001a;
+        public static final int flatplanefrictioneq=0x7f02001b;
+        public static final int freefall=0x7f02001c;
+        public static final int frictionincline=0x7f02001d;
+        public static final int gravitationalpe=0x7f02001e;
+        public static final int gravitypotentialenergyeq=0x7f02001f;
+        public static final int ic_launcher=0x7f020020;
+        public static final int idealprojectile=0x7f020021;
+        public static final int impulse=0x7f020022;
+        public static final int impulseeq=0x7f020023;
+        public static final int impulsemomentumeq=0x7f020024;
+        public static final int impusemomentum=0x7f020025;
+        public static final int inelasticcollision=0x7f020026;
+        public static final int inelasticcollisioneq=0x7f020027;
+        public static final int kineticenergy=0x7f020028;
+        public static final int kineticenergyeq=0x7f020029;
+        public static final int momentofinertiaeq=0x7f02002a;
+        public static final int momentum=0x7f02002b;
+        public static final int momentumeq=0x7f02002c;
+        public static final int movingapartsamelineeq=0x7f02002d;
+        public static final int n2leq=0x7f02002e;
+        public static final int n3leq=0x7f02002f;
+        public static final int normalforce=0x7f020030;
+        public static final int normalforceeq=0x7f020031;
+        public static final int pendulumeq=0x7f020032;
+        public static final int powereq=0x7f020033;
+        public static final int projectileheight=0x7f020034;
+        public static final int projectilemotioneq=0x7f020035;
+        public static final int projectilerange=0x7f020036;
+        public static final int realprojectile=0x7f020037;
+        public static final int ropeandpulley=0x7f020038;
+        public static final int simplependulum=0x7f020039;
+        public static final int torque=0x7f02003a;
+        public static final int torqueeq=0x7f02003b;
+        public static final int uniformcircularmotioneq=0x7f02003c;
+        public static final int work=0x7f02003d;
+        public static final int workeq=0x7f02003e;
+        public static final int workkineticenergyeq=0x7f02003f;
     }
     public static final class id {
-        public static final int EditText2=0x7f09000b;
-        public static final int EditText3=0x7f090011;
-        public static final int TextView01=0x7f09000a;
-        public static final int action_settings=0x7f090017;
-        public static final int editText1=0x7f090006;
-        public static final int imageView1=0x7f090001;
-        public static final int imageView2=0x7f090002;
-        public static final int lblListHeader=0x7f090016;
-        public static final int lblListItem=0x7f090015;
+        public static final int action_settings=0x7f090012;
+        public static final int editText2=0x7f090008;
+        public static final int editText6=0x7f09000d;
+        public static final int editText8=0x7f090010;
+        public static final int imageView1=0x7f090003;
+        public static final int imageView2=0x7f090004;
+        public static final int lblListHeader=0x7f090002;
+        public static final int lblListItem=0x7f090001;
         public static final int lvExp=0x7f090000;
-        public static final int spinner1=0x7f090007;
-        public static final int spinner2=0x7f090004;
+        public static final int spinner1=0x7f090006;
         public static final int spinner3=0x7f090009;
-        public static final int spinner4=0x7f09000c;
-        public static final int spinner5=0x7f09000e;
-        public static final int spinner6=0x7f090012;
-        public static final int spinner7=0x7f090014;
-        public static final int textView1=0x7f090003;
-        public static final int textView2=0x7f09000f;
-        public static final int textView3=0x7f090010;
-        public static final int textView4=0x7f090005;
-        public static final int textView5=0x7f090008;
-        public static final int textView6=0x7f09000d;
-        public static final int textView7=0x7f090013;
+        public static final int spinner5=0x7f09000b;
+        public static final int spinner7=0x7f09000e;
+        public static final int spinner9=0x7f090011;
+        public static final int textView1=0x7f090005;
+        public static final int textView2=0x7f090007;
+        public static final int textView4=0x7f09000a;
+        public static final int textView6=0x7f09000c;
+        public static final int textView8=0x7f09000f;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_pendulum=0x7f030001;
-        public static final int child=0x7f030002;
-        public static final int group=0x7f030003;
+        public static final int child=0x7f030001;
+        public static final int group=0x7f030002;
+        public static final int pendulumactivity=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f080000;
         public static final int pendulum=0x7f080001;
     }
     public static final class string {
-        public static final int _=0x7f050016;
+        public static final int L_=0x7f05001f;
+        public static final int T_=0x7f050020;
+        public static final int _=0x7f050018;
         public static final int action_settings=0x7f050000;
         public static final int app_name=0x7f050001;
         public static final int arrow=0x7f05000a;
@@ -80,23 +137,25 @@ public final class R {
         public static final int energy_conservation=0x7f05000f;
         public static final int friction=0x7f050010;
         public static final int g=0x7f050014;
-        public static final int g_=0x7f050017;
+        public static final int g_=0x7f050019;
         public static final int heading_3=0x7f050007;
-        public static final int hello=0x7f05001c;
+        public static final int hello=0x7f05001e;
+        public static final int image=0x7f050016;
         public static final int l=0x7f050013;
-        public static final int l_=0x7f050019;
+        public static final int l_=0x7f05001b;
         public static final int pendulum=0x7f050008;
-        public static final int pendulum_pic=0x7f05001b;
+        public static final int pendulum_pic=0x7f05001d;
         public static final int projectile_motion=0x7f05000c;
         public static final int ropes_and_pulleys=0x7f05000b;
-        public static final int solve_for_=0x7f050015;
+        public static final int slash=0x7f050015;
+        public static final int solve_for_=0x7f050017;
         public static final int sort_by_chapter=0x7f050006;
         public static final int sort_by_topic=0x7f050005;
         public static final int sort_by_type=0x7f050004;
         public static final int t=0x7f050012;
-        public static final int t_=0x7f050018;
+        public static final int t_=0x7f05001a;
         public static final int test=0x7f050011;
-        public static final int title_activity_pendulum=0x7f05001a;
+        public static final int title_activity_pendulum=0x7f05001c;
         public static final int work=0x7f05000d;
     }
     public static final class style {
