@@ -1,13 +1,22 @@
 inputFile=open("test1.database",'r')
 
-unitDict={ #RBF needs mroe units
+unitDict={ 
     "m":"meterUnits",
     "m^2":"meterUnitsSquared",
     "m^3":"meterUnitsCubed",
     "s":"timeUnits",
     "s^2":"timeUnitsSquared",
-    "s^3":"timeUnitsCubed"
+    "s^3":"timeUnitsCubed",
+    "rad":"angleUnits",
+    "N":"forceUnits",
+    "g":"massUnits",
+    "J":"energyUnits",
+    "none":"NoUnits"
     }
+
+freeRadicalReplacement={
+    b'\xc3\x8e\xc2\xb8':"theta",
+}
 
 def unitsMath(varNum,starOrDiv,units,unitsNum): #RBF Needs more units
     if(units=="m"):
@@ -25,27 +34,27 @@ def unitsMath(varNum,starOrDiv,units,unitsNum): #RBF Needs more units
     if(units=="m^2"):
         return '''
 
-            if(units'''+str(unitsNum)+'''.equals("nm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9)*Math.pow(10,-9);
-            if(units'''+str(unitsNum)+'''.equals("μm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-6)*Math.pow(10,-6);
-            if(units'''+str(unitsNum)+'''.equals("mm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3)*Math.pow(10,-3);
-            if(units'''+str(unitsNum)+'''.equals("cm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-2)*Math.pow(10,-2);
-            if(units'''+str(unitsNum)+'''.equals("dm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-1)*Math.pow(10,-1);
-            if(units'''+str(unitsNum)+'''.equals("m"))  ;
-            if(units'''+str(unitsNum)+'''.equals("km")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3)*Math.pow(10,3);
-            if(units'''+str(unitsNum)+'''.equals("Mm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,6)*Math.pow(10,6);
-            if(units'''+str(unitsNum)+'''.equals("Gm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9)*Math.pow(10,9);'''
+            if(units'''+str(unitsNum)+'''.equals("nm^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units'''+str(unitsNum)+'''.equals("μm^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-6)*Math.pow(10,-6);
+            if(units'''+str(unitsNum)+'''.equals("mm^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3)*Math.pow(10,-3);
+            if(units'''+str(unitsNum)+'''.equals("cm^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-2)*Math.pow(10,-2);
+            if(units'''+str(unitsNum)+'''.equals("dm^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-1)*Math.pow(10,-1);
+            if(units'''+str(unitsNum)+'''.equals("m^2"))  ;
+            if(units'''+str(unitsNum)+'''.equals("km^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3)*Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("Mm^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,6)*Math.pow(10,6);
+            if(units'''+str(unitsNum)+'''.equals("Gm^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9)*Math.pow(10,9);'''
     if(units=="m^3"):
         return '''
 
-            if(units'''+str(unitsNum)+'''.equals("nm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9)*Math.pow(10,-9)*Math.pow(10,-9);
-            if(units'''+str(unitsNum)+'''.equals("μm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-6)*Math.pow(10,-6)*Math.pow(10,-6);
-            if(units'''+str(unitsNum)+'''.equals("mm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3)*Math.pow(10,-3)*Math.pow(10,-3);
-            if(units'''+str(unitsNum)+'''.equals("cm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-2)*Math.pow(10,-2)*Math.pow(10,-2);
-            if(units'''+str(unitsNum)+'''.equals("dm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-1)*Math.pow(10,-1)*Math.pow(10,-1);
-            if(units'''+str(unitsNum)+'''.equals("m"))  ;
-            if(units'''+str(unitsNum)+'''.equals("km")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3)*Math.pow(10,3)*Math.pow(10,3);
-            if(units'''+str(unitsNum)+'''.equals("Mm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,6)*Math.pow(10,6)*Math.pow(10,6);
-            if(units'''+str(unitsNum)+'''.equals("Gm")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9)*Math.pow(10,9)*Math.pow(10,9);'''
+            if(units'''+str(unitsNum)+'''.equals("nm^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9)*Math.pow(10,-9)*Math.pow(10,-9);
+            if(units'''+str(unitsNum)+'''.equals("μm^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-6)*Math.pow(10,-6)*Math.pow(10,-6);
+            if(units'''+str(unitsNum)+'''.equals("mm^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3)*Math.pow(10,-3)*Math.pow(10,-3);
+            if(units'''+str(unitsNum)+'''.equals("cm^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-2)*Math.pow(10,-2)*Math.pow(10,-2);
+            if(units'''+str(unitsNum)+'''.equals("dm^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-1)*Math.pow(10,-1)*Math.pow(10,-1);
+            if(units'''+str(unitsNum)+'''.equals("m^3"))  ;
+            if(units'''+str(unitsNum)+'''.equals("km^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3)*Math.pow(10,3)*Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("Mm^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,6)*Math.pow(10,6)*Math.pow(10,6);
+            if(units'''+str(unitsNum)+'''.equals("Gm^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9)*Math.pow(10,9)*Math.pow(10,9);'''
     if(units=="s"):
         return '''
                 
@@ -59,23 +68,64 @@ def unitsMath(varNum,starOrDiv,units,unitsNum): #RBF Needs more units
     if(units=="s^2"):
         return '''
                 
-            if(units'''+str(unitsNum)+'''.equals("ns")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9)*Math.pow(10,9);
-            if(units'''+str(unitsNum)+'''.equals("ms")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3)*Math.pow(10,3);
-            if(units'''+str(unitsNum)+'''.equals("s"))  ;
-            if(units'''+str(unitsNum)+'''.equals("min")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60);
-            if(units'''+str(unitsNum)+'''.equals("hr")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*60*60);
-            if(units'''+str(unitsNum)+'''.equals("day")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*60*60*24);
-            if(units'''+str(unitsNum)+'''.equals("yr")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*365*60*60*24*365);'''
+            if(units'''+str(unitsNum)+'''.equals("ns^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9)*Math.pow(10,9);
+            if(units'''+str(unitsNum)+'''.equals("ms^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3)*Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("s^2"))  ;
+            if(units'''+str(unitsNum)+'''.equals("min^2")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60);
+            if(units'''+str(unitsNum)+'''.equals("hr^2")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*60*60);
+            if(units'''+str(unitsNum)+'''.equals("day^2")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*60*60*24);
+            if(units'''+str(unitsNum)+'''.equals("yr^2")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*365*60*60*24*365);'''
     if(units=="s^3"):
         return '''
                 
-            if(units'''+str(unitsNum)+'''.equals("ns")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9)*Math.pow(10,9)*Math.pow(10,9);
-            if(units'''+str(unitsNum)+'''.equals("ms")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3)*Math.pow(10,3)*Math.pow(10,3);
-            if(units'''+str(unitsNum)+'''.equals("s"))  ;
-            if(units'''+str(unitsNum)+'''.equals("min")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*60);
-            if(units'''+str(unitsNum)+'''.equals("hr")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*60*60*60*60);
-            if(units'''+str(unitsNum)+'''.equals("day")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*60*60*24*60*60*24);
-            if(units'''+str(unitsNum)+'''.equals("yr")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*365*60*60*24*365*60*60*24*365);'''
+            if(units'''+str(unitsNum)+'''.equals("ns^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9)*Math.pow(10,9)*Math.pow(10,9);
+            if(units'''+str(unitsNum)+'''.equals("ms^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3)*Math.pow(10,3)*Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("s^3"))  ;
+            if(units'''+str(unitsNum)+'''.equals("min^3")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*60);
+            if(units'''+str(unitsNum)+'''.equals("hr^3")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*60*60*60*60);
+            if(units'''+str(unitsNum)+'''.equals("day^3")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*60*60*24*60*60*24);
+            if(units'''+str(unitsNum)+'''.equals("yr^3")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*365*60*60*24*365*60*60*24*365);'''
+    if(units=="rad"):
+        return '''
+
+            if(units'''+str(unitsNum)+'''.equals("rad")) ;
+            if(units'''+str(unitsNum)+'''.equals("deg")) n'''+str(varNum)+starOrDiv+'''=Math.PI/180.0;'''
+    if(units=="N"):
+        return '''
+
+            if(units'''+str(unitsNum)+'''.equals("nN")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9);
+            if(units'''+str(unitsNum)+'''.equals("μN")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-6);
+            if(units'''+str(unitsNum)+'''.equals("mN")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3);
+            if(units'''+str(unitsNum)+'''.equals("cN")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-2);
+            if(units'''+str(unitsNum)+'''.equals("dN")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-1);
+            if(units'''+str(unitsNum)+'''.equals("N"))  ;
+            if(units'''+str(unitsNum)+'''.equals("kN")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("MN")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,6);
+            if(units'''+str(unitsNum)+'''.equals("GN")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9);'''
+    if(units=="g"):
+        return '''
+
+            if(units'''+str(unitsNum)+'''.equals("ng")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9);
+            if(units'''+str(unitsNum)+'''.equals("μg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-6);
+            if(units'''+str(unitsNum)+'''.equals("mg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3);
+            if(units'''+str(unitsNum)+'''.equals("cg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-2);
+            if(units'''+str(unitsNum)+'''.equals("dg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-1);
+            if(units'''+str(unitsNum)+'''.equals("g"))  ;
+            if(units'''+str(unitsNum)+'''.equals("kg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("Mg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,6);
+            if(units'''+str(unitsNum)+'''.equals("Gg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9);'''
+    if(units=="J"):
+        return '''
+
+            if(units'''+str(unitsNum)+'''.equals("nJ")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9);
+            if(units'''+str(unitsNum)+'''.equals("μJ")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-6);
+            if(units'''+str(unitsNum)+'''.equals("mJ")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3);
+            if(units'''+str(unitsNum)+'''.equals("cJ")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-2);
+            if(units'''+str(unitsNum)+'''.equals("dJ")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-1);
+            if(units'''+str(unitsNum)+'''.equals("J"))  ;
+            if(units'''+str(unitsNum)+'''.equals("kJ")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("MJ")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,6);
+            if(units'''+str(unitsNum)+'''.equals("GJ")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9);'''
     return '' #Unrecognized units
 
 for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
@@ -160,9 +210,9 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
         
         strings=open("res/values/strings.xml",'r') #Need to define a new string for each var's text field
         allStrings=strings.read()
-        if (varFields[0]+"_") not in allStrings:
+        if ('name="'+freeRadicalReplacement.get(varFields[0].encode('utf8'),varFields[0])+'_">') not in allStrings:
             allStrings=allStrings.split("\n")
-            allStrings.insert(-2,'''<string name="'''+varFields[0]+'''_">'''+varFields[0]+'''=</string>''')
+            allStrings.insert(-2,'''<string name="'''+freeRadicalReplacement.get(varFields[0].encode('utf8'),varFields[0])+'''_">'''+varFields[0]+'''=</string>''')
             strings.close()
             strings=open("res/values/strings.xml",'w')
             strings.write("\n".join(allStrings))
@@ -179,7 +229,7 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
                 android:id="@+id/textView'''+str(i)+'''"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/'''+varFields[0]+'''_"
+                android:text="@string/'''+freeRadicalReplacement.get(varFields[0].encode('utf8'),varFields[0])+'''_"
                 android:textSize="20sp" />
 
         <EditText

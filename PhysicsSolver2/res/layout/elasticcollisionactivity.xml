@@ -1,0 +1,288 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context=".ElasticCollisionActivity"
+              android:orientation="vertical" >
+
+    <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/image"
+            android:src="@drawable/inelasticcollision" />
+
+    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/image"
+            android:src="@drawable/inelasticcollisioneq" />
+
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/solve_for_"
+                android:textSize="15sp" />
+
+        <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:entries="@array/ElasticCollisionActivitySolveFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m1_"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:filterTouchesWhenObscured="true"
+                android:inputType="number|numberDecimal" />
+
+        <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/massUnits" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m2_"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:filterTouchesWhenObscured="true"
+                android:inputType="number|numberDecimal" />
+
+        <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/massUnits" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/v1_"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:filterTouchesWhenObscured="true"
+                android:inputType="number|numberDecimal" />
+
+        <Spinner
+                android:id="@+id/spinner7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/meterUnits" />
+
+        <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/slash"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="20sp" />
+
+        <Spinner
+                android:id="@+id/spinner9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/timeUnits" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/v2_"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText10"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:filterTouchesWhenObscured="true"
+                android:inputType="number|numberDecimal" />
+
+        <Spinner
+                android:id="@+id/spinner11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/meterUnits" />
+
+        <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/slash"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="20sp" />
+
+        <Spinner
+                android:id="@+id/spinner13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/timeUnits" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/v1f_"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText14"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:filterTouchesWhenObscured="true"
+                android:inputType="number|numberDecimal" />
+
+        <Spinner
+                android:id="@+id/spinner15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/meterUnits" />
+
+        <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/slash"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="20sp" />
+
+        <Spinner
+                android:id="@+id/spinner17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/timeUnits" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/v2f_"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText18"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:filterTouchesWhenObscured="true"
+                android:inputType="number|numberDecimal" />
+
+        <Spinner
+                android:id="@+id/spinner19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/meterUnits" />
+
+        <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/slash"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="20sp" />
+
+        <Spinner
+                android:id="@+id/spinner21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/timeUnits" />
+
+    </LinearLayout>
+
+</LinearLayout>

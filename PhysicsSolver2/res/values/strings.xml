@@ -34,7 +34,7 @@
     <string name="hello">Hello</string>
 	<string-array name="meterUnits">
         <item>nm</item>
-        <item>μm</item>
+        <item>Î¼m</item>
         <item>mm</item>
         <item>cm</item>
         <item>dm</item>
@@ -52,10 +52,90 @@
         <item>day</item>
         <item>yr</item>
     </string-array>
+	<string-array name="meterUnitsSquared">
+        <item>nm^2</item>
+        <item>Î¼m^2</item>
+        <item>mm^2</item>
+        <item>cm^2</item>
+        <item>dm^2</item>
+        <item>m^2</item>
+        <item>km^2</item>
+        <item>Mm^2</item>
+        <item>Gm^2</item>
+    </string-array>
+	<string-array name="timeUnitsSquared">
+        <item>ns^2</item>
+        <item>ms^2</item>
+        <item>s^2</item>
+        <item>min^2</item>
+        <item>hr^2</item>
+        <item>day^2</item>
+        <item>yr^2</item>
+    </string-array>
+	<string-array name="meterUnitsCubed">
+        <item>nm^3</item>
+        <item>Î¼m^3</item>
+        <item>mm^3</item>
+        <item>cm^3</item>
+        <item>dm^3</item>
+        <item>m^3</item>
+        <item>km^3</item>
+        <item>Mm^3</item>
+        <item>Gm^3</item>
+    </string-array>
+	<string-array name="timeUnitsCubed">
+        <item>ns^3</item>
+        <item>ms^3</item>
+        <item>s^3</item>
+        <item>min^3</item>
+        <item>hr^3</item>
+        <item>day^3</item>
+        <item>yr^3</item>
+    </string-array>
+	<string-array name="angleUnits">
+        <item>rad</item>
+        <item>deg</item>
+    </string-array>
+	<string-array name="forceUnits">
+        <item>nN</item>
+        <item>Î¼N</item>
+        <item>mN</item>
+        <item>cN</item>
+        <item>dN</item>
+        <item>N</item>
+        <item>kN</item>
+        <item>MN</item>
+        <item>GN</item>
+    </string-array>
+	<string-array name="massUnits">
+        <item>ng</item>
+        <item>Î¼g</item>
+        <item>mg</item>
+        <item>cg</item>
+        <item>dg</item>
+        <item>g</item>
+        <item>kg</item>
+        <item>Mg</item>
+        <item>Gg</item>
+    </string-array>
+	<string-array name="energyUnits">
+        <item>nJ</item>
+        <item>Î¼J</item>
+        <item>mJ</item>
+        <item>cJ</item>
+        <item>dJ</item>
+        <item>J</item>
+        <item>kJ</item>
+        <item>MJ</item>
+        <item>GJ</item>
+    </string-array>
 	<string-array name="PendulumSolveFor">
         <item>T (Period)</item>
         <item>L (Length)</item>
         <item>g (Acceleration due to gravity)</item>
+    </string-array>
+	<string-array name="NoUnits">
+        <item>No Units</item>
     </string-array>
    <string-array name="PendulumActivitySolveFor">
         <item>g (Acceleration due to gravity)</item>
@@ -64,4 +144,184 @@
     </string-array>
 <string name="L_">L=</string>
 <string name="T_">T=</string>
+   <string-array name="TwoObjectsMovingApartActivitySolveFor">
+        <item>d (Total distance)</item>
+        <item>v1 (First object velocity)</item>
+        <item>t (Total elapsed time)</item>
+        <item>v2 (Second object velocity)</item>
+    </string-array>
+<string name="v1_">v1=</string>
+<string name="v2_">v2=</string>
+   <string-array name="ConstantVelocityMotionActivitySolveFor">
+        <item>d (Total distance)</item>
+        <item>v (Velocity)</item>
+        <item>t (Elapsed time)</item>
+    </string-array>
+<string name="v_">v=</string>
+   <string-array name="FreeFallActivitySolveFor">
+        <item>h (Height)</item>
+        <item>v0 (Initial velocity)</item>
+        <item>vf (Final velocity)</item>
+        <item>t (Elapsed time)</item>
+        <item>g (Acceleration due to gravity)</item>
+    </string-array>
+<string name="h_">h=</string>
+<string name="v0_">v0=</string>
+<string name="vf_">vf=</string>
+   <string-array name="ProjectileMotionActivitySolveFor">
+        <item>R (Range)</item>
+        <item>g (Acceleration due to gravity)</item>
+        <item>h (Max height)</item>
+        <item>v0 (Initial velocity)</item>
+        <item>v (Current velocity)</item>
+        <item>rad (Angle in radians)</item>
+    </string-array>
+<string name="R_">R=</string>
+<string name="rad_">rad=</string>
+   <string-array name="NewtonsLawsActivitySolveFor">
+        <item>F1 (Applied force)</item>
+        <item>m (Mass)</item>
+        <item>a (Acceleration)</item>
+        <item>F2 (F1 reverse)</item>
+    </string-array>
+<string name="F1_">F1=</string>
+<string name="a_">a=</string>
+<string name="F2_">F2=</string>
+   <string-array name="WeightNormalForceActivitySolveFor">
+        <item>N (Normal force)</item>
+        <item>m (Mass)</item>
+        <item>g (Acceleration due to gravity)</item>
+        <item>Î¸ (Angle)</item>
+    </string-array>
+<string name="N_">N=</string>
+<string name="theta_">Î¸=</string>
+   <string-array name="FlatPlaneFrictionActivitySolveFor">
+        <item>F (Friction force)</item>
+        <item>mu (Friction coefficient)</item>
+        <item>m (Mass)</item>
+        <item>g (Acceleration due to gravity)</item>
+    </string-array>
+<string name="F_">F=</string>
+<string name="mu_">mu=</string>
+   <string-array name="AcceleratedStraightLineActivitySolveFor">
+        <item>x (Position)</item>
+        <item>v0 (Initial velocity)</item>
+        <item>v (Current velocity)</item>
+        <item>t (Elapsed time)</item>
+        <item>a (Acceleration)</item>
+    </string-array>
+<string name="x_">x=</string>
+   <string-array name="FrictionInclineActivitySolveFor">
+        <item>Î¸ (Incline angle)</item>
+        <item>m (Mass)</item>
+        <item>mu (Friction coefficient)</item>
+        <item>g (Acceleration due to gravity</item>
+        <item>N (Normal force)</item>
+        <item>Ff (Friction force)</item>
+    </string-array>
+<string name="Ff_">Ff=</string>
+   <string-array name="MomentumActivitySolveFor">
+        <item>p (Momentum)</item>
+        <item>m (Mass)</item>
+        <item>v (Velocity)</item>
+    </string-array>
+   <string-array name="ImpulseActivitySolveFor">
+        <item>J (Impulse)</item>
+        <item>F (Applied force)</item>
+        <item>t (Time elapsed)</item>
+    </string-array>
+<string name="J_">J=</string>
+   <string-array name="ImpulseMomentumTheoremActivitySolveFor">
+        <item>J (Impulse)</item>
+        <item>m (Mass)</item>
+        <item>v0 (Initial velocity)</item>
+        <item>vf (Final velocity)</item>
+    </string-array>
+   <string-array name="ConservationOfMomentumActivitySolveFor">
+        <item>p1 (Initial momentum)</item>
+        <item> (Initial momentum)</item>
+        <item> (Initial momentum)</item>
+        <item> (Initial momentum)</item>
+    </string-array>
+<string name="p1_">p1=</string>
+<string name="p2_">p2=</string>
+   <string-array name="ElasticCollisionActivitySolveFor">
+        <item>m1 (Mass of object)</item>
+        <item>m2 (Mass of object)</item>
+        <item>v1 (Pre-collision velocity of m1)</item>
+        <item>v2 (Pre-collision velocity of m2)</item>
+    </string-array>
+<string name="m1_">m1=</string>
+<string name="m2_">m2=</string>
+   <string-array name="ConservationOfEnergyActivitySolveFor">
+        <item>g</item>
+        <item>h0 (Initial height)</item>
+        <item>hf (Final height)</item>
+        <item>v0 (Initial velocity)</item>
+        <item>vf (Final velocity)</item>
+    </string-array>
+<string name="h0_">h0=</string>
+<string name="hf_">hf=</string>
+   <string-array name="KineticEnergyActivitySolveFor">
+        <item>KE (Kinetic Energy)</item>
+        <item>m (Mass)</item>
+        <item>v (Velocity)</item>
+    </string-array>
+<string name="KE_">KE=</string>
+   <string-array name="GravitationalPotentialEnergyActivitySolveFor">
+        <item>PE (Gravitational Potential Energy)</item>
+        <item>m (Mass)</item>
+        <item>g (Acceleration due to gravity)</item>
+        <item>h (Height)</item>
+    </string-array>
+<string name="PE_">PE=</string>
+   <string-array name="WorkActivitySolveFor">
+        <item>W (Work)</item>
+        <item>F (Force)</item>
+        <item>d (Displacement)</item>
+        <item>Î¸ (Angle)</item>
+    </string-array>
+<string name="W_">W=</string>
+   <string-array name="PowerActivitySolveFor">
+        <item>P (Power)</item>
+        <item>W (Work)</item>
+        <item>t (Time)</item>
+    </string-array>
+<string name="P_">P=</string>
+   <string-array name="ArcLengthActivitySolveFor">
+        <item>Î¸ (Angle)</item>
+        <item>s (Arc length)</item>
+        <item>r (Radius)</item>
+    </string-array>
+   <string-array name="UniformCircularMotionActivitySolveFor">
+        <item>a (Centripetal acceleration)</item>
+        <item>v0 (Initial velocity)</item>
+        <item>vf (Current/final velocity)</item>
+        <item>r (Radius)</item>
+        <item>t (Time)</item>
+        <item>T (Period)</item>
+    </string-array>
+   <string-array name="CentripetalForceActivitySolveFor">
+        <item>F (Centripetal force)</item>
+        <item>m (Mass)</item>
+        <item>v (Velocity)</item>
+        <item>r (Radius)</item>
+        <item>a(Centripetal acceleration)</item>
+    </string-array>
+   <string-array name="TorqueActivitySolveFor">
+        <item>T (Torque)</item>
+        <item>F (Force)</item>
+        <item>r (Lever arm length)</item>
+        <item>Î¸ (Angle)</item>
+    </string-array>
+<string name="star">*</string>
+<string name="m_">m=</string>
+<string name="p_">p=</string>
+<string name="s_">s=</string>
+<string name="d_">d=</string>
+<string name="r_">r=</string>
+<string name="p1f_">p1f=</string>
+<string name="p2f_">p2f=</string>
+<string name="v1f_">v1f=</string>
+<string name="v2f_">v2f=</string>
 </resources>
