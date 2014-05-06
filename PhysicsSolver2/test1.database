@@ -7,4 +7,326 @@ T;T (Period);s;2*Math.PI*Math.sqrt(n0/n1)
 
 PendulumActivity
 
-Periodic Motion;Pendulums
+Forces and Newton's Laws;Pendulums
+
+
+
+apartonsameline;300;100
+apartonsamelineeq;140;35
+
+d;d (Total distance);m;n1*n2+n3*n2
+v1;v1 (First object velocity);m/s;(n0-n2*n3)/n2
+t;t (Total elapsed time);s;n0/(n1+n3)
+v2;v2 (Second object velocity);m/s;(n0-n1*n2)/n2
+
+TwoObjectsMovingApartActivity
+
+Motion in One Dimension;Two Objects Moving Apart on the Same Line
+
+
+
+constvelocity;200;200
+constantvelocityeq;120;50
+
+d;d (Total distance);m;n1*n2
+v;v (Velocity);m/s;n0/n2
+t;t (Elapsed time);s;n0/n1
+
+ConstantVelocityMotionActivity
+
+Motion in One Dimension;Constant Velocity Motion
+
+
+constaccel;300;300
+acceleratedstraightlineeq;150;150
+
+x;x (Position);m;0.5*(n1+n2)*n3
+v0;v0 (Initial velocity);m/s;n2-n4*n3
+v;v (Current velocity);m/s;n1+n4*n3
+t;t (Elapsed time);s;(n2-n1)/n4
+a;a (Acceleration);m/s^2;(n2-n1)/n3
+
+AcceleratedStraightLineActivity
+
+Motion in One Dimension;Accelerated Straight-Line Motion
+
+
+
+freefall;230;275
+
+h;h (Height);m;-n1*n3-0.5*n4*n3*n3
+v0;v0 (Initial velocity);m/s;-1*(n2+n4*n3)
+vf;vf (Final velocity);m/s;-n1-n4*n3
+t;t (Elapsed time);s;-1*(n2+n1)/n4
+g;g (Acceleration due to gravity);m/s^2;-1*(n2+n1)/n3
+
+FreeFallActivity
+
+Motion in Two Dimensions;Free Fall
+
+
+
+idealprojectile;300;250
+projectilemotioneq;300;50
+
+R;R (Range);m;n4*n4*Math.sin(2*n5)/n1
+g;g (Acceleration due to gravity);m/s^2;n4*n4*Math.sin(2*n5)/n0
+h;h (Max height);m;n3*n3*Math.sin(n5)*Math.sin(n5)/(2*n1)
+v0;v0 (Initial velocity);m/s;Math.sqrt(n2*2*n1/(Math.sin(n5)*Math.sin(n5)))
+v;v (Current velocity);m/s;Math.sqrt(n0*n1/Math.sin(2*n5))
+rad;rad (Angle in radians);rad;Math.asin(n0*n1*n4*n4)/2
+
+ProjectileMotionActivity
+
+Motion in Two Dimensions;Ideal Projectile Motion
+
+
+
+n2leq;100;50
+n3leq;100;50
+
+F1;F1 (Applied force);N;n1*n2
+m;m (Mass);kg;n0/n2
+a;a (Acceleration);m/s^2;n0/n1
+F2;F2 (F1 reverse);N;-1*n0;-1*n0
+
+NewtonsLawsActivity
+
+Forces and Newton's Laws;Newton's Laws
+
+
+
+normalforce;275;200
+normalforceeq;100;50
+
+N;N (Normal force);N;n1*n2*Math.cos(n3)
+m;m (Mass);N;n0/(n2*Math.cos(n3))
+g;g (Acceleration due to gravity);m/s^2;n0/(n1*Math.cos(n3))
+θ;θ (Angle);n0/(n1*n2)
+
+WeightNormalForceActivity
+
+Forces and Newton's Laws;Weight and Normal Force
+
+
+
+flatfriction;300;250
+flatfrictioneq;100;50
+
+F;F (Friction force);N;n1*n2*n3
+mu;mu (Friction coefficient);N;n0/(n2*n3)
+m;m (Mass);kg;n0/(n1*n3)
+g;g (Acceleration due to gravity);m/s^2;n0/(n1*n2)
+
+FlatPlaneFrictionActivity
+
+Forces and Newton's Laws;Weight and Normal Force
+
+
+
+frictionincline;200;200
+
+θ;θ (Incline angle);rad;Math.acos(n4)
+m;m (Mass);kg;
+mu;mu (Friction coefficient);N;
+g;g (Acceleration due to gravity;m/s^2;
+N;N (Normal force);N;n1*n3*Math.sin(n0)
+Ff;Ff (Friction force);N;n2*n4
+
+FrictionInclineActivity
+Forces and Newton's Laws;Friction on an Inclined Plane
+
+
+
+momentum;300;225
+momentumeq;70;25
+
+p;p (Momentum);N;n1*n2
+m;m (Mass);kg;n0/n2
+v;v (Velocity);m/s;n0/n1
+
+MomentumActivity
+
+Momentum and Impulse;Momentum
+
+
+
+impulse;250;150
+impulseeq;140;30
+
+J;J (Impulse);N;N*s;n1*n2
+F;F (Applied force);N;n0/n2
+t;t (Time elapsed);s;n0/n1
+
+ImpulseActivity
+
+Momentum and Impulse;Impulse
+
+
+
+impulsemomentumeq;150;40
+
+J;J (Impulse);N*s;n1*(n3-n2)
+m;m (Mass);kg;n0/(n3-n2)
+v0;v0 (Initial velocity);m/s;n3+n0/n1
+vf;vf (Final velocity);m/s;n2+n0/n1
+
+ImpulseMomentumTheoremActivity
+
+Momentum and Impulse;Impulse-Momentum Theorem
+
+
+
+conservationofmomentum;400;300
+conservationofmomentumeq;250;100
+
+p1;p1 (Initial momentum);N;n2+n3-n1
+p2; (Initial momentum);N;n2+n3-n0
+p1'; (Initial momentum);N;n0+n1-n3
+p2'; (Initial momentum);N;n0+n1-n2
+
+ConservationOfMomentumActivity
+
+Momentum and Impulse;Conservation of Momentum
+
+
+
+inelasticequation;300;150
+inelasticcollisioneq;300;75
+
+m1;m1 (Mass of object);kg;n1*(n5-n3)/(n2-n4)
+m2;m2 (Mass of object);kg;n0*(n4-n2)/(n3-n5)
+v1;v1 (Pre-collision velocity of m1);m/s;(n0*n4+n1*n5-n1*n3)/n0
+v2;v2 (Pre-collision velocity of m2);m/s;(n0*n4+n1*n5-n0*n2)/n1
+v1';v1' (Post-collision velocity of m1);m/s;(n0*n2+n1*n3-n1*n5)/n0
+v2';v2' (Most collision velocity of m2);m/s;(n0*n2+n1*n3-n0*n4)/n1
+
+ElasticCollisionActivity
+
+Collisions;Elastic Collisions of Two Objects
+
+
+
+conservationofenergy;400;300
+conservationofenergeq;300;100
+
+g;g; (Acceleration due to gravity);m/s^2;0.5*(n4*n4-n3*n3)/(n1-n2)
+h0;h0 (Initial height);m;(n0*n2+0.5*n4*n4-n0*n2)/n0
+hf;hf (Final height);m;(n0*n1+0.5*n3*n3-0.5*n4*n4)/n0
+v0;v0 (Initial velocity);Math.sqrt((n0*n2+0.5*n4*n4-n0*n1)*2)
+vf;vf (Final velocity);Math.sqrt(2*(n0*n1+0.5*n3*n3-n0*n2))
+
+ConservationOfEnergyActivity
+
+Work And Energy;Conservation of Energy
+
+
+
+kineticenergy;300;120
+kineticenergyeq;250;50
+
+KE;KE (Kinetic Energy);J;0.5*n1*n2*n2
+m;m (Mass);m;n0*2/(n2*n2)
+v;v (Velocity);Math.sqrt(n0*2/n1)
+
+KineticEnergyActivity
+
+Work and Energy;Kinetic Energy
+
+
+
+gravitationalpe;300;150
+gravitatypotentialenergyeq;85;25
+
+PE;PE (Gravitational Potential Energy);J;n1*n2*n3
+m;m (Mass);kg;n0/(n2*n3)
+g;g (Acceleration due to gravity);m/s^2;n0/(n1*n3)
+h;h (Height);m;n0/(n1*n2)
+
+GravitationalPotentialEnergyActivity
+
+Work and Energy;Gravitational Potential Energy
+
+
+
+work;300;200
+workeq;150;50
+
+W;W (Work);J;n1*n2*Math.cos(n3))
+F;F (Force);N;n0/(n2*Math.cos(n3))
+d;d (Displacement);m;n0/(n1*Math.cos(n3))
+θ;θ (Angle);rad;Math.acos(n0/(n1*n2))
+
+WorkActivity
+
+Work and Energy;Work
+
+
+
+powereq;100;50
+
+P;P (Power);J/s;n1/n2
+W;W (Work);J;n0*n2
+t;t (Time);s;n1/n0
+
+PowerActivity
+
+Work and Energy;Power
+
+
+
+arclength;200;200
+arclengtheq;60;50
+
+θ;θ (Angle);rad;n1/n2
+s;s (Arc length);m;n0*n1
+r;r (Radius);m;n1/n0
+
+ArcLengthActivity
+
+Circular Motion and Rotation;Arc Length and Radians
+
+
+
+circularmotion;300;250
+uniformcircularmotioneq;100;250
+
+a;a (Centripetal acceleration);m/s^2;n2*n2/n3
+v0;v0 (Initial velocity);m/s;n2-n0*n4
+vf;vf (Current/final velocity);m/s;n0*n4+n1
+r;r (Radius);m;n2*n2/n0
+t;t (Time);s;(n2-n1)/n0
+T;T (Period);2*Math.PI*3/n2
+
+UniformCircularMotionActivity
+
+Circular Motion and Rotation;Uniform Circular Motion
+
+
+
+centripetalforce;400;200
+centripetalforceeq;150;50
+
+F;F (Centripetal force);N;n1*n4
+m;m (Mass);kg;n0*n3/(n2*n2)
+v;v (Velocity);m/s;Math.sqrt(n0*n3/n1)
+r;r (Radius);m;n1*n2*n2/n0
+a;a(Centripetal acceleration);m/s^2;n0/n1
+
+CentripetalForceActivity
+
+Circular Motion and Rotation;Centripetal Force
+
+
+
+torque;325;155
+torqueeq;225;50
+
+τ;τ (Torque);N*m;n1*n2*Math.sin(n3)
+F;F (Force);N;n0/(n2*Math.sin(n3))
+r;r (Lever arm length);m;n0/(n1*Math.sin(n3))
+θ;θ (Angle);rad;Math.asin(n0/(n1*n2))
+
+TorqueActivity
+
+Circular Motion and Rotation;Torque
