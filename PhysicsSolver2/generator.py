@@ -105,15 +105,13 @@ def unitsMath(varNum,starOrDiv,units,unitsNum): #RBF Needs more units
     if(units=="g"):
         return '''
 
-            if(units'''+str(unitsNum)+'''.equals("ng")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9);
-            if(units'''+str(unitsNum)+'''.equals("μg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-6);
-            if(units'''+str(unitsNum)+'''.equals("mg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3);
-            if(units'''+str(unitsNum)+'''.equals("cg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-2);
-            if(units'''+str(unitsNum)+'''.equals("dg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-1);
-            if(units'''+str(unitsNum)+'''.equals("g"))  ;
-            if(units'''+str(unitsNum)+'''.equals("kg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3);
-            if(units'''+str(unitsNum)+'''.equals("Mg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,6);
-            if(units'''+str(unitsNum)+'''.equals("Gg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9);'''
+            if(units'''+str(unitsNum)+'''.equals("ng")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-12);
+            if(units'''+str(unitsNum)+'''.equals("μg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9);
+            if(units'''+str(unitsNum)+'''.equals("mg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-6);
+            if(units'''+str(unitsNum)+'''.equals("g"))  n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3);
+            if(units'''+str(unitsNum)+'''.equals("kg")) ;
+            if(units'''+str(unitsNum)+'''.equals("Mg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("Gg")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,6);'''
     if(units=="J"):
         return '''
 

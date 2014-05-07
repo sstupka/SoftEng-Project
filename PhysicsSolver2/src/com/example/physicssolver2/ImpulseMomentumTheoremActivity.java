@@ -105,15 +105,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
                 return;
             }
 
-            if(units6.equals("ng")) n1*=Math.pow(10,-9);
-            if(units6.equals("μg")) n1*=Math.pow(10,-6);
-            if(units6.equals("mg")) n1*=Math.pow(10,-3);
-            if(units6.equals("cg")) n1*=Math.pow(10,-2);
-            if(units6.equals("dg")) n1*=Math.pow(10,-1);
-            if(units6.equals("g"))  ;
-            if(units6.equals("kg")) n1*=Math.pow(10,3);
-            if(units6.equals("Mg")) n1*=Math.pow(10,6);
-            if(units6.equals("Gg")) n1*=Math.pow(10,9);
+            if(units6.equals("ng")) n1*=Math.pow(10,-12);
+            if(units6.equals("μg")) n1*=Math.pow(10,-9);
+            if(units6.equals("mg")) n1*=Math.pow(10,-6);
+            if(units6.equals("g"))  n1*=Math.pow(10,-3);
+            if(units6.equals("kg")) ;
+            if(units6.equals("Mg")) n1*=Math.pow(10,3);
+            if(units6.equals("Gg")) n1*=Math.pow(10,6);
 
             float n2;
             try {
@@ -271,15 +269,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
 
             double n_=n0/(n3-n2);
 
-            if(units6.equals("ng")) n_/=Math.pow(10,-9);
-            if(units6.equals("μg")) n_/=Math.pow(10,-6);
-            if(units6.equals("mg")) n_/=Math.pow(10,-3);
-            if(units6.equals("cg")) n_/=Math.pow(10,-2);
-            if(units6.equals("dg")) n_/=Math.pow(10,-1);
-            if(units6.equals("g"))  ;
-            if(units6.equals("kg")) n_/=Math.pow(10,3);
-            if(units6.equals("Mg")) n_/=Math.pow(10,6);
-            if(units6.equals("Gg")) n_/=Math.pow(10,9);
+            if(units6.equals("ng")) n_/=Math.pow(10,-12);
+            if(units6.equals("μg")) n_/=Math.pow(10,-9);
+            if(units6.equals("mg")) n_/=Math.pow(10,-6);
+            if(units6.equals("g"))  n_/=Math.pow(10,-3);
+            if(units6.equals("kg")) ;
+            if(units6.equals("Mg")) n_/=Math.pow(10,3);
+            if(units6.equals("Gg")) n_/=Math.pow(10,6);
 
             t5.setText(String.format("%.2e",n_));
         }
@@ -319,15 +315,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
                 return;
             }
 
-            if(units6.equals("ng")) n1*=Math.pow(10,-9);
-            if(units6.equals("μg")) n1*=Math.pow(10,-6);
-            if(units6.equals("mg")) n1*=Math.pow(10,-3);
-            if(units6.equals("cg")) n1*=Math.pow(10,-2);
-            if(units6.equals("dg")) n1*=Math.pow(10,-1);
-            if(units6.equals("g"))  ;
-            if(units6.equals("kg")) n1*=Math.pow(10,3);
-            if(units6.equals("Mg")) n1*=Math.pow(10,6);
-            if(units6.equals("Gg")) n1*=Math.pow(10,9);
+            if(units6.equals("ng")) n1*=Math.pow(10,-12);
+            if(units6.equals("μg")) n1*=Math.pow(10,-9);
+            if(units6.equals("mg")) n1*=Math.pow(10,-6);
+            if(units6.equals("g"))  n1*=Math.pow(10,-3);
+            if(units6.equals("kg")) ;
+            if(units6.equals("Mg")) n1*=Math.pow(10,3);
+            if(units6.equals("Gg")) n1*=Math.pow(10,6);
 
             float n3;
             try {
@@ -413,15 +407,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
                 return;
             }
 
-            if(units6.equals("ng")) n1*=Math.pow(10,-9);
-            if(units6.equals("μg")) n1*=Math.pow(10,-6);
-            if(units6.equals("mg")) n1*=Math.pow(10,-3);
-            if(units6.equals("cg")) n1*=Math.pow(10,-2);
-            if(units6.equals("dg")) n1*=Math.pow(10,-1);
-            if(units6.equals("g"))  ;
-            if(units6.equals("kg")) n1*=Math.pow(10,3);
-            if(units6.equals("Mg")) n1*=Math.pow(10,6);
-            if(units6.equals("Gg")) n1*=Math.pow(10,9);
+            if(units6.equals("ng")) n1*=Math.pow(10,-12);
+            if(units6.equals("μg")) n1*=Math.pow(10,-9);
+            if(units6.equals("mg")) n1*=Math.pow(10,-6);
+            if(units6.equals("g"))  n1*=Math.pow(10,-3);
+            if(units6.equals("kg")) ;
+            if(units6.equals("Mg")) n1*=Math.pow(10,3);
+            if(units6.equals("Gg")) n1*=Math.pow(10,6);
 
             float n2;
             try {

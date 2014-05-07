@@ -107,15 +107,13 @@ public class FlatPlaneFrictionActivity extends Activity {
                 return;
             }
 
-            if(units7.equals("ng")) n2*=Math.pow(10,-9);
-            if(units7.equals("μg")) n2*=Math.pow(10,-6);
-            if(units7.equals("mg")) n2*=Math.pow(10,-3);
-            if(units7.equals("cg")) n2*=Math.pow(10,-2);
-            if(units7.equals("dg")) n2*=Math.pow(10,-1);
-            if(units7.equals("g"))  ;
-            if(units7.equals("kg")) n2*=Math.pow(10,3);
-            if(units7.equals("Mg")) n2*=Math.pow(10,6);
-            if(units7.equals("Gg")) n2*=Math.pow(10,9);
+            if(units7.equals("ng")) n2*=Math.pow(10,-12);
+            if(units7.equals("μg")) n2*=Math.pow(10,-9);
+            if(units7.equals("mg")) n2*=Math.pow(10,-6);
+            if(units7.equals("g"))  n2*=Math.pow(10,-3);
+            if(units7.equals("kg")) ;
+            if(units7.equals("Mg")) n2*=Math.pow(10,3);
+            if(units7.equals("Gg")) n2*=Math.pow(10,6);
 
             float n3;
             try {
@@ -185,15 +183,13 @@ public class FlatPlaneFrictionActivity extends Activity {
                 return;
             }
 
-            if(units7.equals("ng")) n2*=Math.pow(10,-9);
-            if(units7.equals("μg")) n2*=Math.pow(10,-6);
-            if(units7.equals("mg")) n2*=Math.pow(10,-3);
-            if(units7.equals("cg")) n2*=Math.pow(10,-2);
-            if(units7.equals("dg")) n2*=Math.pow(10,-1);
-            if(units7.equals("g"))  ;
-            if(units7.equals("kg")) n2*=Math.pow(10,3);
-            if(units7.equals("Mg")) n2*=Math.pow(10,6);
-            if(units7.equals("Gg")) n2*=Math.pow(10,9);
+            if(units7.equals("ng")) n2*=Math.pow(10,-12);
+            if(units7.equals("μg")) n2*=Math.pow(10,-9);
+            if(units7.equals("mg")) n2*=Math.pow(10,-6);
+            if(units7.equals("g"))  n2*=Math.pow(10,-3);
+            if(units7.equals("kg")) ;
+            if(units7.equals("Mg")) n2*=Math.pow(10,3);
+            if(units7.equals("Gg")) n2*=Math.pow(10,6);
 
             float n3;
             try {
@@ -281,15 +277,13 @@ public class FlatPlaneFrictionActivity extends Activity {
 
             double n_=n0/(n1*n3);
 
-            if(units7.equals("ng")) n_/=Math.pow(10,-9);
-            if(units7.equals("μg")) n_/=Math.pow(10,-6);
-            if(units7.equals("mg")) n_/=Math.pow(10,-3);
-            if(units7.equals("cg")) n_/=Math.pow(10,-2);
-            if(units7.equals("dg")) n_/=Math.pow(10,-1);
-            if(units7.equals("g"))  ;
-            if(units7.equals("kg")) n_/=Math.pow(10,3);
-            if(units7.equals("Mg")) n_/=Math.pow(10,6);
-            if(units7.equals("Gg")) n_/=Math.pow(10,9);
+            if(units7.equals("ng")) n_/=Math.pow(10,-12);
+            if(units7.equals("μg")) n_/=Math.pow(10,-9);
+            if(units7.equals("mg")) n_/=Math.pow(10,-6);
+            if(units7.equals("g"))  n_/=Math.pow(10,-3);
+            if(units7.equals("kg")) ;
+            if(units7.equals("Mg")) n_/=Math.pow(10,3);
+            if(units7.equals("Gg")) n_/=Math.pow(10,6);
 
             t6.setText(String.format("%.2e",n_));
         }
@@ -329,15 +323,13 @@ public class FlatPlaneFrictionActivity extends Activity {
                 return;
             }
 
-            if(units7.equals("ng")) n2*=Math.pow(10,-9);
-            if(units7.equals("μg")) n2*=Math.pow(10,-6);
-            if(units7.equals("mg")) n2*=Math.pow(10,-3);
-            if(units7.equals("cg")) n2*=Math.pow(10,-2);
-            if(units7.equals("dg")) n2*=Math.pow(10,-1);
-            if(units7.equals("g"))  ;
-            if(units7.equals("kg")) n2*=Math.pow(10,3);
-            if(units7.equals("Mg")) n2*=Math.pow(10,6);
-            if(units7.equals("Gg")) n2*=Math.pow(10,9);
+            if(units7.equals("ng")) n2*=Math.pow(10,-12);
+            if(units7.equals("μg")) n2*=Math.pow(10,-9);
+            if(units7.equals("mg")) n2*=Math.pow(10,-6);
+            if(units7.equals("g"))  n2*=Math.pow(10,-3);
+            if(units7.equals("kg")) ;
+            if(units7.equals("Mg")) n2*=Math.pow(10,3);
+            if(units7.equals("Gg")) n2*=Math.pow(10,6);
 
             double n_=n0/(n1*n2);
 

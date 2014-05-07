@@ -99,15 +99,13 @@ public class MomentumActivity extends Activity {
                 return;
             }
 
-            if(units8.equals("ng")) n1*=Math.pow(10,-9);
-            if(units8.equals("μg")) n1*=Math.pow(10,-6);
-            if(units8.equals("mg")) n1*=Math.pow(10,-3);
-            if(units8.equals("cg")) n1*=Math.pow(10,-2);
-            if(units8.equals("dg")) n1*=Math.pow(10,-1);
-            if(units8.equals("g"))  ;
-            if(units8.equals("kg")) n1*=Math.pow(10,3);
-            if(units8.equals("Mg")) n1*=Math.pow(10,6);
-            if(units8.equals("Gg")) n1*=Math.pow(10,9);
+            if(units8.equals("ng")) n1*=Math.pow(10,-12);
+            if(units8.equals("μg")) n1*=Math.pow(10,-9);
+            if(units8.equals("mg")) n1*=Math.pow(10,-6);
+            if(units8.equals("g"))  n1*=Math.pow(10,-3);
+            if(units8.equals("kg")) ;
+            if(units8.equals("Mg")) n1*=Math.pow(10,3);
+            if(units8.equals("Gg")) n1*=Math.pow(10,6);
 
             float n2;
             try {
@@ -137,15 +135,13 @@ public class MomentumActivity extends Activity {
 
             double n_=n1*n2;
 
-            if(units3.equals("ng")) n_/=Math.pow(10,-9);
-            if(units3.equals("μg")) n_/=Math.pow(10,-6);
-            if(units3.equals("mg")) n_/=Math.pow(10,-3);
-            if(units3.equals("cg")) n_/=Math.pow(10,-2);
-            if(units3.equals("dg")) n_/=Math.pow(10,-1);
-            if(units3.equals("g"))  ;
-            if(units3.equals("kg")) n_/=Math.pow(10,3);
-            if(units3.equals("Mg")) n_/=Math.pow(10,6);
-            if(units3.equals("Gg")) n_/=Math.pow(10,9);
+            if(units3.equals("ng")) n_/=Math.pow(10,-12);
+            if(units3.equals("μg")) n_/=Math.pow(10,-9);
+            if(units3.equals("mg")) n_/=Math.pow(10,-6);
+            if(units3.equals("g"))  n_/=Math.pow(10,-3);
+            if(units3.equals("kg")) ;
+            if(units3.equals("Mg")) n_/=Math.pow(10,3);
+            if(units3.equals("Gg")) n_/=Math.pow(10,6);
 
             if(units4.equals("nm")) n_/=Math.pow(10,-9);
             if(units4.equals("μm")) n_/=Math.pow(10,-6);
@@ -177,15 +173,13 @@ public class MomentumActivity extends Activity {
                 return;
             }
 
-            if(units3.equals("ng")) n0*=Math.pow(10,-9);
-            if(units3.equals("μg")) n0*=Math.pow(10,-6);
-            if(units3.equals("mg")) n0*=Math.pow(10,-3);
-            if(units3.equals("cg")) n0*=Math.pow(10,-2);
-            if(units3.equals("dg")) n0*=Math.pow(10,-1);
-            if(units3.equals("g"))  ;
-            if(units3.equals("kg")) n0*=Math.pow(10,3);
-            if(units3.equals("Mg")) n0*=Math.pow(10,6);
-            if(units3.equals("Gg")) n0*=Math.pow(10,9);
+            if(units3.equals("ng")) n0*=Math.pow(10,-12);
+            if(units3.equals("μg")) n0*=Math.pow(10,-9);
+            if(units3.equals("mg")) n0*=Math.pow(10,-6);
+            if(units3.equals("g"))  n0*=Math.pow(10,-3);
+            if(units3.equals("kg")) ;
+            if(units3.equals("Mg")) n0*=Math.pow(10,3);
+            if(units3.equals("Gg")) n0*=Math.pow(10,6);
 
             if(units4.equals("nm")) n0*=Math.pow(10,-9);
             if(units4.equals("μm")) n0*=Math.pow(10,-6);
@@ -233,15 +227,13 @@ public class MomentumActivity extends Activity {
 
             double n_=n0/n2;
 
-            if(units8.equals("ng")) n_/=Math.pow(10,-9);
-            if(units8.equals("μg")) n_/=Math.pow(10,-6);
-            if(units8.equals("mg")) n_/=Math.pow(10,-3);
-            if(units8.equals("cg")) n_/=Math.pow(10,-2);
-            if(units8.equals("dg")) n_/=Math.pow(10,-1);
-            if(units8.equals("g"))  ;
-            if(units8.equals("kg")) n_/=Math.pow(10,3);
-            if(units8.equals("Mg")) n_/=Math.pow(10,6);
-            if(units8.equals("Gg")) n_/=Math.pow(10,9);
+            if(units8.equals("ng")) n_/=Math.pow(10,-12);
+            if(units8.equals("μg")) n_/=Math.pow(10,-9);
+            if(units8.equals("mg")) n_/=Math.pow(10,-6);
+            if(units8.equals("g"))  n_/=Math.pow(10,-3);
+            if(units8.equals("kg")) ;
+            if(units8.equals("Mg")) n_/=Math.pow(10,3);
+            if(units8.equals("Gg")) n_/=Math.pow(10,6);
 
             t7.setText(String.format("%.2e",n_));
         }
@@ -255,15 +247,13 @@ public class MomentumActivity extends Activity {
                 return;
             }
 
-            if(units3.equals("ng")) n0*=Math.pow(10,-9);
-            if(units3.equals("μg")) n0*=Math.pow(10,-6);
-            if(units3.equals("mg")) n0*=Math.pow(10,-3);
-            if(units3.equals("cg")) n0*=Math.pow(10,-2);
-            if(units3.equals("dg")) n0*=Math.pow(10,-1);
-            if(units3.equals("g"))  ;
-            if(units3.equals("kg")) n0*=Math.pow(10,3);
-            if(units3.equals("Mg")) n0*=Math.pow(10,6);
-            if(units3.equals("Gg")) n0*=Math.pow(10,9);
+            if(units3.equals("ng")) n0*=Math.pow(10,-12);
+            if(units3.equals("μg")) n0*=Math.pow(10,-9);
+            if(units3.equals("mg")) n0*=Math.pow(10,-6);
+            if(units3.equals("g"))  n0*=Math.pow(10,-3);
+            if(units3.equals("kg")) ;
+            if(units3.equals("Mg")) n0*=Math.pow(10,3);
+            if(units3.equals("Gg")) n0*=Math.pow(10,6);
 
             if(units4.equals("nm")) n0*=Math.pow(10,-9);
             if(units4.equals("μm")) n0*=Math.pow(10,-6);
@@ -291,15 +281,13 @@ public class MomentumActivity extends Activity {
                 return;
             }
 
-            if(units8.equals("ng")) n1*=Math.pow(10,-9);
-            if(units8.equals("μg")) n1*=Math.pow(10,-6);
-            if(units8.equals("mg")) n1*=Math.pow(10,-3);
-            if(units8.equals("cg")) n1*=Math.pow(10,-2);
-            if(units8.equals("dg")) n1*=Math.pow(10,-1);
-            if(units8.equals("g"))  ;
-            if(units8.equals("kg")) n1*=Math.pow(10,3);
-            if(units8.equals("Mg")) n1*=Math.pow(10,6);
-            if(units8.equals("Gg")) n1*=Math.pow(10,9);
+            if(units8.equals("ng")) n1*=Math.pow(10,-12);
+            if(units8.equals("μg")) n1*=Math.pow(10,-9);
+            if(units8.equals("mg")) n1*=Math.pow(10,-6);
+            if(units8.equals("g"))  n1*=Math.pow(10,-3);
+            if(units8.equals("kg")) ;
+            if(units8.equals("Mg")) n1*=Math.pow(10,3);
+            if(units8.equals("Gg")) n1*=Math.pow(10,6);
 
             double n_=n0/n1;
 
