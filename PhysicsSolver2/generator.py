@@ -138,7 +138,7 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
     outputXmlFile=open("res/layout/"+fields[2].lower()+".xml",'w')
 
     #Header
-    outputXmlFile.write('''<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    outputXmlFile.write('''<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
@@ -147,7 +147,9 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
               android:paddingRight="@dimen/activity_horizontal_margin"
               android:paddingTop="@dimen/activity_vertical_margin"
               tools:context=".'''+fields[2]+'''"
-              android:orientation="vertical" >''')
+              android:orientation="vertical" >
+
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">''')
 
     i=0
     for image in fields[0].split("\n"): #Populate image entries
@@ -394,8 +396,8 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
     </LinearLayout>''')
     
     outputXmlFile.write('''
-
-</LinearLayout>''')
+</LinearLayout>
+</ScrollView>''')
     outputXmlFile.close()
 
     #Begin Writing Java Code
