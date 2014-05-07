@@ -19,14 +19,6 @@
             android:contentDescription="@string/image"
             android:src="@drawable/n2leq" />
 
-    <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:contentDescription="@string/image"
-            android:src="@drawable/n3leq" />
-
 <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -149,35 +141,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:entries="@array/timeUnitsSquared" />
-
-    </LinearLayout>
-
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-
-        <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/F2_"
-                android:textSize="20sp" />
-
-        <EditText
-                android:id="@+id/editText10"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:filterTouchesWhenObscured="true"
-                android:inputType="number|numberDecimal" />
-
-        <Spinner
-                android:id="@+id/spinner11"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:entries="@array/forceUnits" />
 
     </LinearLayout>
 </LinearLayout>

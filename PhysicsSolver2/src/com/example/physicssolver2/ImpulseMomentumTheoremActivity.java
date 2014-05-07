@@ -355,7 +355,7 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units14.equals("day")) n3/=(60*60*24);
             if(units14.equals("yr")) n3/=(60*60*24*365);
 
-            double n_=n3+n0/n1;
+            double n_=n3-n0/n1;
 
             if(units8.equals("nm")) n_/=Math.pow(10,-9);
             if(units8.equals("μm")) n_/=Math.pow(10,-6);

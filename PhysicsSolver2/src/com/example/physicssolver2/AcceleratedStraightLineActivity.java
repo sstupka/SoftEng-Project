@@ -30,8 +30,8 @@ public class AcceleratedStraightLineActivity extends Activity {
         t8.addTextChangedListener(updateAnswer);
         EditText t12=(EditText)findViewById(R.id.editText12);
         t12.addTextChangedListener(updateAnswer);
-        EditText t14=(EditText)findViewById(R.id.editText14);
-        t14.addTextChangedListener(updateAnswer);
+        EditText t16=(EditText)findViewById(R.id.editText16);
+        t16.addTextChangedListener(updateAnswer);
         Spinner units3=(Spinner)findViewById(R.id.spinner3);
         units3.setOnItemSelectedListener(updateUnits);
         Spinner units5=(Spinner)findViewById(R.id.spinner5);
@@ -91,7 +91,7 @@ public class AcceleratedStraightLineActivity extends Activity {
         EditText t4=(EditText)findViewById(R.id.editText4);
         EditText t8=(EditText)findViewById(R.id.editText8);
         EditText t12=(EditText)findViewById(R.id.editText12);
-        EditText t14=(EditText)findViewById(R.id.editText14);
+        EditText t16=(EditText)findViewById(R.id.editText16);
         String solveFor=((Spinner)findViewById(R.id.spinner1)).getSelectedItem().toString();
         String units3=((Spinner)findViewById(R.id.spinner3)).getSelectedItem().toString();
         String units5=((Spinner)findViewById(R.id.spinner5)).getSelectedItem().toString();
@@ -101,7 +101,7 @@ public class AcceleratedStraightLineActivity extends Activity {
         String units13=((Spinner)findViewById(R.id.spinner13)).getSelectedItem().toString();
         String units15=((Spinner)findViewById(R.id.spinner15)).getSelectedItem().toString();
         String units17=((Spinner)findViewById(R.id.spinner17)).getSelectedItem().toString();
-        if(solveFor.equals("x (Position)") && t4.length()>0 && t8.length()>0 && t12.length()>0 && t14.length()>0) {
+        if(solveFor.equals("x (Position)") && t4.length()>0 && t8.length()>0 && t12.length()>0 && t16.length()>0) {
 
             float n1;
             try {
@@ -162,42 +162,42 @@ public class AcceleratedStraightLineActivity extends Activity {
             catch (NumberFormatException e) {
                 return;
             }
+
+            if(units13.equals("nm")) n3*=Math.pow(10,-9);
+            if(units13.equals("μm")) n3*=Math.pow(10,-6);
+            if(units13.equals("mm")) n3*=Math.pow(10,-3);
+            if(units13.equals("cm")) n3*=Math.pow(10,-2);
+            if(units13.equals("dm")) n3*=Math.pow(10,-1);
+            if(units13.equals("m"))  ;
+            if(units13.equals("km")) n3*=Math.pow(10,3);
+            if(units13.equals("Mm")) n3*=Math.pow(10,6);
+            if(units13.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3*=Math.pow(10,-9);
-            if(units13.equals("ms")) n3*=Math.pow(10,-3);
-            if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3*=(60);
-            if(units13.equals("hr")) n3*=(60*60);
-            if(units13.equals("day")) n3*=(60*60*24);
-            if(units13.equals("yr")) n3*=(60*60*24*365);
+            if(units15.equals("ns^2")) n3/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units15.equals("ms^2")) n3/=Math.pow(10,-3)*Math.pow(10,-3);
+            if(units15.equals("s^2"))  ;
+            if(units15.equals("min^2")) n3/=(60*60);
+            if(units15.equals("hr^2")) n3/=(60*60*60*60);
+            if(units15.equals("day^2")) n3/=(60*60*24*60*60*24);
+            if(units15.equals("yr^2")) n3/=(60*60*24*365*60*60*24*365);
 
             float n4;
             try {
-                n4=Float.parseFloat(t14.getText().toString());
+                n4=Float.parseFloat(t16.getText().toString());
             }
             catch (NumberFormatException e) {
                 return;
             }
-
-            if(units15.equals("nm")) n4*=Math.pow(10,-9);
-            if(units15.equals("μm")) n4*=Math.pow(10,-6);
-            if(units15.equals("mm")) n4*=Math.pow(10,-3);
-            if(units15.equals("cm")) n4*=Math.pow(10,-2);
-            if(units15.equals("dm")) n4*=Math.pow(10,-1);
-            if(units15.equals("m"))  ;
-            if(units15.equals("km")) n4*=Math.pow(10,3);
-            if(units15.equals("Mm")) n4*=Math.pow(10,6);
-            if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns^2")) n4/=Math.pow(10,-9)*Math.pow(10,-9);
-            if(units17.equals("ms^2")) n4/=Math.pow(10,-3)*Math.pow(10,-3);
-            if(units17.equals("s^2"))  ;
-            if(units17.equals("min^2")) n4/=(60*60);
-            if(units17.equals("hr^2")) n4/=(60*60*60*60);
-            if(units17.equals("day^2")) n4/=(60*60*24*60*60*24);
-            if(units17.equals("yr^2")) n4/=(60*60*24*365*60*60*24*365);
+            if(units17.equals("ns")) n4*=Math.pow(10,-9);
+            if(units17.equals("ms")) n4*=Math.pow(10,-3);
+            if(units17.equals("s"))  ;
+            if(units17.equals("min")) n4*=(60);
+            if(units17.equals("hr")) n4*=(60*60);
+            if(units17.equals("day")) n4*=(60*60*24);
+            if(units17.equals("yr")) n4*=(60*60*24*365);
 
-            double n_=0.5*(n1+n2)*n3;
+            double n_=n1+n2*n4+0.5*n3*n4*n4;
 
             if(units3.equals("nm")) n_/=Math.pow(10,-9);
             if(units3.equals("μm")) n_/=Math.pow(10,-6);
@@ -211,7 +211,7 @@ public class AcceleratedStraightLineActivity extends Activity {
 
             t2.setText(String.format("%.2e",n_));
         }
-        if(solveFor.equals("v0 (Initial velocity)") && t2.length()>0 && t8.length()>0 && t12.length()>0 && t14.length()>0) {
+        if(solveFor.equals("x0 (Initial position)") && t2.length()>0 && t8.length()>0 && t12.length()>0 && t16.length()>0) {
 
             float n0;
             try {
@@ -264,42 +264,42 @@ public class AcceleratedStraightLineActivity extends Activity {
             catch (NumberFormatException e) {
                 return;
             }
+
+            if(units13.equals("nm")) n3*=Math.pow(10,-9);
+            if(units13.equals("μm")) n3*=Math.pow(10,-6);
+            if(units13.equals("mm")) n3*=Math.pow(10,-3);
+            if(units13.equals("cm")) n3*=Math.pow(10,-2);
+            if(units13.equals("dm")) n3*=Math.pow(10,-1);
+            if(units13.equals("m"))  ;
+            if(units13.equals("km")) n3*=Math.pow(10,3);
+            if(units13.equals("Mm")) n3*=Math.pow(10,6);
+            if(units13.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3*=Math.pow(10,-9);
-            if(units13.equals("ms")) n3*=Math.pow(10,-3);
-            if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3*=(60);
-            if(units13.equals("hr")) n3*=(60*60);
-            if(units13.equals("day")) n3*=(60*60*24);
-            if(units13.equals("yr")) n3*=(60*60*24*365);
+            if(units15.equals("ns^2")) n3/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units15.equals("ms^2")) n3/=Math.pow(10,-3)*Math.pow(10,-3);
+            if(units15.equals("s^2"))  ;
+            if(units15.equals("min^2")) n3/=(60*60);
+            if(units15.equals("hr^2")) n3/=(60*60*60*60);
+            if(units15.equals("day^2")) n3/=(60*60*24*60*60*24);
+            if(units15.equals("yr^2")) n3/=(60*60*24*365*60*60*24*365);
 
             float n4;
             try {
-                n4=Float.parseFloat(t14.getText().toString());
+                n4=Float.parseFloat(t16.getText().toString());
             }
             catch (NumberFormatException e) {
                 return;
             }
-
-            if(units15.equals("nm")) n4*=Math.pow(10,-9);
-            if(units15.equals("μm")) n4*=Math.pow(10,-6);
-            if(units15.equals("mm")) n4*=Math.pow(10,-3);
-            if(units15.equals("cm")) n4*=Math.pow(10,-2);
-            if(units15.equals("dm")) n4*=Math.pow(10,-1);
-            if(units15.equals("m"))  ;
-            if(units15.equals("km")) n4*=Math.pow(10,3);
-            if(units15.equals("Mm")) n4*=Math.pow(10,6);
-            if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns^2")) n4/=Math.pow(10,-9)*Math.pow(10,-9);
-            if(units17.equals("ms^2")) n4/=Math.pow(10,-3)*Math.pow(10,-3);
-            if(units17.equals("s^2"))  ;
-            if(units17.equals("min^2")) n4/=(60*60);
-            if(units17.equals("hr^2")) n4/=(60*60*60*60);
-            if(units17.equals("day^2")) n4/=(60*60*24*60*60*24);
-            if(units17.equals("yr^2")) n4/=(60*60*24*365*60*60*24*365);
+            if(units17.equals("ns")) n4*=Math.pow(10,-9);
+            if(units17.equals("ms")) n4*=Math.pow(10,-3);
+            if(units17.equals("s"))  ;
+            if(units17.equals("min")) n4*=(60);
+            if(units17.equals("hr")) n4*=(60*60);
+            if(units17.equals("day")) n4*=(60*60*24);
+            if(units17.equals("yr")) n4*=(60*60*24*365);
 
-            double n_=n2-n4*n3;
+            double n_=n0-(n2*n4+0.5*n3*n4*n4);
 
             if(units5.equals("nm")) n_/=Math.pow(10,-9);
             if(units5.equals("μm")) n_/=Math.pow(10,-6);
@@ -321,7 +321,7 @@ public class AcceleratedStraightLineActivity extends Activity {
 
             t4.setText(String.format("%.2e",n_));
         }
-        if(solveFor.equals("v (Current velocity)") && t2.length()>0 && t4.length()>0 && t12.length()>0 && t14.length()>0) {
+        if(solveFor.equals("v0 (Initial velocity)") && t2.length()>0 && t4.length()>0 && t12.length()>0 && t16.length()>0) {
 
             float n0;
             try {
@@ -374,42 +374,42 @@ public class AcceleratedStraightLineActivity extends Activity {
             catch (NumberFormatException e) {
                 return;
             }
+
+            if(units13.equals("nm")) n3*=Math.pow(10,-9);
+            if(units13.equals("μm")) n3*=Math.pow(10,-6);
+            if(units13.equals("mm")) n3*=Math.pow(10,-3);
+            if(units13.equals("cm")) n3*=Math.pow(10,-2);
+            if(units13.equals("dm")) n3*=Math.pow(10,-1);
+            if(units13.equals("m"))  ;
+            if(units13.equals("km")) n3*=Math.pow(10,3);
+            if(units13.equals("Mm")) n3*=Math.pow(10,6);
+            if(units13.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3*=Math.pow(10,-9);
-            if(units13.equals("ms")) n3*=Math.pow(10,-3);
-            if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3*=(60);
-            if(units13.equals("hr")) n3*=(60*60);
-            if(units13.equals("day")) n3*=(60*60*24);
-            if(units13.equals("yr")) n3*=(60*60*24*365);
+            if(units15.equals("ns^2")) n3/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units15.equals("ms^2")) n3/=Math.pow(10,-3)*Math.pow(10,-3);
+            if(units15.equals("s^2"))  ;
+            if(units15.equals("min^2")) n3/=(60*60);
+            if(units15.equals("hr^2")) n3/=(60*60*60*60);
+            if(units15.equals("day^2")) n3/=(60*60*24*60*60*24);
+            if(units15.equals("yr^2")) n3/=(60*60*24*365*60*60*24*365);
 
             float n4;
             try {
-                n4=Float.parseFloat(t14.getText().toString());
+                n4=Float.parseFloat(t16.getText().toString());
             }
             catch (NumberFormatException e) {
                 return;
             }
-
-            if(units15.equals("nm")) n4*=Math.pow(10,-9);
-            if(units15.equals("μm")) n4*=Math.pow(10,-6);
-            if(units15.equals("mm")) n4*=Math.pow(10,-3);
-            if(units15.equals("cm")) n4*=Math.pow(10,-2);
-            if(units15.equals("dm")) n4*=Math.pow(10,-1);
-            if(units15.equals("m"))  ;
-            if(units15.equals("km")) n4*=Math.pow(10,3);
-            if(units15.equals("Mm")) n4*=Math.pow(10,6);
-            if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns^2")) n4/=Math.pow(10,-9)*Math.pow(10,-9);
-            if(units17.equals("ms^2")) n4/=Math.pow(10,-3)*Math.pow(10,-3);
-            if(units17.equals("s^2"))  ;
-            if(units17.equals("min^2")) n4/=(60*60);
-            if(units17.equals("hr^2")) n4/=(60*60*60*60);
-            if(units17.equals("day^2")) n4/=(60*60*24*60*60*24);
-            if(units17.equals("yr^2")) n4/=(60*60*24*365*60*60*24*365);
+            if(units17.equals("ns")) n4*=Math.pow(10,-9);
+            if(units17.equals("ms")) n4*=Math.pow(10,-3);
+            if(units17.equals("s"))  ;
+            if(units17.equals("min")) n4*=(60);
+            if(units17.equals("hr")) n4*=(60*60);
+            if(units17.equals("day")) n4*=(60*60*24);
+            if(units17.equals("yr")) n4*=(60*60*24*365);
 
-            double n_=n1+n4*n3;
+            double n_=(n0-0.5*n3*n4*n4)/n4;
 
             if(units9.equals("nm")) n_/=Math.pow(10,-9);
             if(units9.equals("μm")) n_/=Math.pow(10,-6);
@@ -431,7 +431,7 @@ public class AcceleratedStraightLineActivity extends Activity {
 
             t8.setText(String.format("%.2e",n_));
         }
-        if(solveFor.equals("t (Elapsed time)") && t2.length()>0 && t4.length()>0 && t8.length()>0 && t14.length()>0) {
+        if(solveFor.equals("a (Acceleration)") && t2.length()>0 && t4.length()>0 && t8.length()>0 && t16.length()>0) {
 
             float n0;
             try {
@@ -505,43 +505,43 @@ public class AcceleratedStraightLineActivity extends Activity {
 
             float n4;
             try {
-                n4=Float.parseFloat(t14.getText().toString());
+                n4=Float.parseFloat(t16.getText().toString());
             }
             catch (NumberFormatException e) {
                 return;
             }
-
-            if(units15.equals("nm")) n4*=Math.pow(10,-9);
-            if(units15.equals("μm")) n4*=Math.pow(10,-6);
-            if(units15.equals("mm")) n4*=Math.pow(10,-3);
-            if(units15.equals("cm")) n4*=Math.pow(10,-2);
-            if(units15.equals("dm")) n4*=Math.pow(10,-1);
-            if(units15.equals("m"))  ;
-            if(units15.equals("km")) n4*=Math.pow(10,3);
-            if(units15.equals("Mm")) n4*=Math.pow(10,6);
-            if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns^2")) n4/=Math.pow(10,-9)*Math.pow(10,-9);
-            if(units17.equals("ms^2")) n4/=Math.pow(10,-3)*Math.pow(10,-3);
-            if(units17.equals("s^2"))  ;
-            if(units17.equals("min^2")) n4/=(60*60);
-            if(units17.equals("hr^2")) n4/=(60*60*60*60);
-            if(units17.equals("day^2")) n4/=(60*60*24*60*60*24);
-            if(units17.equals("yr^2")) n4/=(60*60*24*365*60*60*24*365);
+            if(units17.equals("ns")) n4*=Math.pow(10,-9);
+            if(units17.equals("ms")) n4*=Math.pow(10,-3);
+            if(units17.equals("s"))  ;
+            if(units17.equals("min")) n4*=(60);
+            if(units17.equals("hr")) n4*=(60*60);
+            if(units17.equals("day")) n4*=(60*60*24);
+            if(units17.equals("yr")) n4*=(60*60*24*365);
 
-            double n_=(n2-n1)/n4;
+            double n_=(n0-n2*n4)*2/(n4*n4);
+
+            if(units13.equals("nm")) n_/=Math.pow(10,-9);
+            if(units13.equals("μm")) n_/=Math.pow(10,-6);
+            if(units13.equals("mm")) n_/=Math.pow(10,-3);
+            if(units13.equals("cm")) n_/=Math.pow(10,-2);
+            if(units13.equals("dm")) n_/=Math.pow(10,-1);
+            if(units13.equals("m"))  ;
+            if(units13.equals("km")) n_/=Math.pow(10,3);
+            if(units13.equals("Mm")) n_/=Math.pow(10,6);
+            if(units13.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n_/=Math.pow(10,-9);
-            if(units13.equals("ms")) n_/=Math.pow(10,-3);
-            if(units13.equals("s"))  ;
-            if(units13.equals("min")) n_/=(60);
-            if(units13.equals("hr")) n_/=(60*60);
-            if(units13.equals("day")) n_/=(60*60*24);
-            if(units13.equals("yr")) n_/=(60*60*24*365);
+            if(units15.equals("ns^2")) n_*=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units15.equals("ms^2")) n_*=Math.pow(10,-3)*Math.pow(10,-3);
+            if(units15.equals("s^2"))  ;
+            if(units15.equals("min^2")) n_*=(60*60);
+            if(units15.equals("hr^2")) n_*=(60*60*60*60);
+            if(units15.equals("day^2")) n_*=(60*60*24*60*60*24);
+            if(units15.equals("yr^2")) n_*=(60*60*24*365*60*60*24*365);
 
             t12.setText(String.format("%.2e",n_));
         }
-        if(solveFor.equals("a (Acceleration)") && t2.length()>0 && t4.length()>0 && t8.length()>0 && t12.length()>0) {
+        if(solveFor.equals("t (Elapsed time)") && t2.length()>0 && t4.length()>0 && t8.length()>0 && t12.length()>0) {
 
             float n0;
             try {
@@ -620,36 +620,36 @@ public class AcceleratedStraightLineActivity extends Activity {
             catch (NumberFormatException e) {
                 return;
             }
+
+            if(units13.equals("nm")) n3*=Math.pow(10,-9);
+            if(units13.equals("μm")) n3*=Math.pow(10,-6);
+            if(units13.equals("mm")) n3*=Math.pow(10,-3);
+            if(units13.equals("cm")) n3*=Math.pow(10,-2);
+            if(units13.equals("dm")) n3*=Math.pow(10,-1);
+            if(units13.equals("m"))  ;
+            if(units13.equals("km")) n3*=Math.pow(10,3);
+            if(units13.equals("Mm")) n3*=Math.pow(10,6);
+            if(units13.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3*=Math.pow(10,-9);
-            if(units13.equals("ms")) n3*=Math.pow(10,-3);
-            if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3*=(60);
-            if(units13.equals("hr")) n3*=(60*60);
-            if(units13.equals("day")) n3*=(60*60*24);
-            if(units13.equals("yr")) n3*=(60*60*24*365);
+            if(units15.equals("ns^2")) n3/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units15.equals("ms^2")) n3/=Math.pow(10,-3)*Math.pow(10,-3);
+            if(units15.equals("s^2"))  ;
+            if(units15.equals("min^2")) n3/=(60*60);
+            if(units15.equals("hr^2")) n3/=(60*60*60*60);
+            if(units15.equals("day^2")) n3/=(60*60*24*60*60*24);
+            if(units15.equals("yr^2")) n3/=(60*60*24*365*60*60*24*365);
 
-            double n_=(n2-n1)/n3;
-
-            if(units15.equals("nm")) n_/=Math.pow(10,-9);
-            if(units15.equals("μm")) n_/=Math.pow(10,-6);
-            if(units15.equals("mm")) n_/=Math.pow(10,-3);
-            if(units15.equals("cm")) n_/=Math.pow(10,-2);
-            if(units15.equals("dm")) n_/=Math.pow(10,-1);
-            if(units15.equals("m"))  ;
-            if(units15.equals("km")) n_/=Math.pow(10,3);
-            if(units15.equals("Mm")) n_/=Math.pow(10,6);
-            if(units15.equals("Gm")) n_/=Math.pow(10,9);
+            double n_=(Math.sqrt(2*n3*n0-2*n3*n1+n2*n2)-n2)/n3;
                 
-            if(units17.equals("ns^2")) n_*=Math.pow(10,-9)*Math.pow(10,-9);
-            if(units17.equals("ms^2")) n_*=Math.pow(10,-3)*Math.pow(10,-3);
-            if(units17.equals("s^2"))  ;
-            if(units17.equals("min^2")) n_*=(60*60);
-            if(units17.equals("hr^2")) n_*=(60*60*60*60);
-            if(units17.equals("day^2")) n_*=(60*60*24*60*60*24);
-            if(units17.equals("yr^2")) n_*=(60*60*24*365*60*60*24*365);
+            if(units17.equals("ns")) n_/=Math.pow(10,-9);
+            if(units17.equals("ms")) n_/=Math.pow(10,-3);
+            if(units17.equals("s"))  ;
+            if(units17.equals("min")) n_/=(60);
+            if(units17.equals("hr")) n_/=(60*60);
+            if(units17.equals("day")) n_/=(60*60*24);
+            if(units17.equals("yr")) n_/=(60*60*24*365);
 
-            t14.setText(String.format("%.2e",n_));
+            t16.setText(String.format("%.2e",n_));
         }
     }
     Resources res;

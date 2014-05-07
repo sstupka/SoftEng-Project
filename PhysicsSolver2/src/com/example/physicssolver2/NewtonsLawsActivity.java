@@ -28,8 +28,6 @@ public class NewtonsLawsActivity extends Activity {
         t4.addTextChangedListener(updateAnswer);
         EditText t6=(EditText)findViewById(R.id.editText6);
         t6.addTextChangedListener(updateAnswer);
-        EditText t10=(EditText)findViewById(R.id.editText10);
-        t10.addTextChangedListener(updateAnswer);
         Spinner units3=(Spinner)findViewById(R.id.spinner3);
         units3.setOnItemSelectedListener(updateUnits);
         Spinner units5=(Spinner)findViewById(R.id.spinner5);
@@ -38,8 +36,6 @@ public class NewtonsLawsActivity extends Activity {
         units7.setOnItemSelectedListener(updateUnits);
         Spinner units9=(Spinner)findViewById(R.id.spinner9);
         units9.setOnItemSelectedListener(updateUnits);
-        Spinner units11=(Spinner)findViewById(R.id.spinner11);
-        units11.setOnItemSelectedListener(updateUnits);
     }
 
     @Override
@@ -82,14 +78,12 @@ public class NewtonsLawsActivity extends Activity {
         EditText t2=(EditText)findViewById(R.id.editText2);
         EditText t4=(EditText)findViewById(R.id.editText4);
         EditText t6=(EditText)findViewById(R.id.editText6);
-        EditText t10=(EditText)findViewById(R.id.editText10);
         String solveFor=((Spinner)findViewById(R.id.spinner1)).getSelectedItem().toString();
         String units3=((Spinner)findViewById(R.id.spinner3)).getSelectedItem().toString();
         String units5=((Spinner)findViewById(R.id.spinner5)).getSelectedItem().toString();
         String units7=((Spinner)findViewById(R.id.spinner7)).getSelectedItem().toString();
         String units9=((Spinner)findViewById(R.id.spinner9)).getSelectedItem().toString();
-        String units11=((Spinner)findViewById(R.id.spinner11)).getSelectedItem().toString();
-        if(solveFor.equals("F1 (Applied force)") && t4.length()>0 && t6.length()>0 && t10.length()>0) {
+        if(solveFor.equals("F1 (Applied force)") && t4.length()>0 && t6.length()>0) {
 
             float n1;
             try {
@@ -134,24 +128,6 @@ public class NewtonsLawsActivity extends Activity {
             if(units9.equals("hr^2")) n2/=(60*60*60*60);
             if(units9.equals("day^2")) n2/=(60*60*24*60*60*24);
             if(units9.equals("yr^2")) n2/=(60*60*24*365*60*60*24*365);
-
-            float n3;
-            try {
-                n3=Float.parseFloat(t10.getText().toString());
-            }
-            catch (NumberFormatException e) {
-                return;
-            }
-
-            if(units11.equals("nN")) n3*=Math.pow(10,-9);
-            if(units11.equals("μN")) n3*=Math.pow(10,-6);
-            if(units11.equals("mN")) n3*=Math.pow(10,-3);
-            if(units11.equals("cN")) n3*=Math.pow(10,-2);
-            if(units11.equals("dN")) n3*=Math.pow(10,-1);
-            if(units11.equals("N"))  ;
-            if(units11.equals("kN")) n3*=Math.pow(10,3);
-            if(units11.equals("MN")) n3*=Math.pow(10,6);
-            if(units11.equals("GN")) n3*=Math.pow(10,9);
 
             double n_=n1*n2;
 
@@ -167,7 +143,7 @@ public class NewtonsLawsActivity extends Activity {
 
             t2.setText(String.format("%.2e",n_));
         }
-        if(solveFor.equals("m (Mass)") && t2.length()>0 && t6.length()>0 && t10.length()>0) {
+        if(solveFor.equals("m (Mass)") && t2.length()>0 && t6.length()>0) {
 
             float n0;
             try {
@@ -213,24 +189,6 @@ public class NewtonsLawsActivity extends Activity {
             if(units9.equals("day^2")) n2/=(60*60*24*60*60*24);
             if(units9.equals("yr^2")) n2/=(60*60*24*365*60*60*24*365);
 
-            float n3;
-            try {
-                n3=Float.parseFloat(t10.getText().toString());
-            }
-            catch (NumberFormatException e) {
-                return;
-            }
-
-            if(units11.equals("nN")) n3*=Math.pow(10,-9);
-            if(units11.equals("μN")) n3*=Math.pow(10,-6);
-            if(units11.equals("mN")) n3*=Math.pow(10,-3);
-            if(units11.equals("cN")) n3*=Math.pow(10,-2);
-            if(units11.equals("dN")) n3*=Math.pow(10,-1);
-            if(units11.equals("N"))  ;
-            if(units11.equals("kN")) n3*=Math.pow(10,3);
-            if(units11.equals("MN")) n3*=Math.pow(10,6);
-            if(units11.equals("GN")) n3*=Math.pow(10,9);
-
             double n_=n0/n2;
 
             if(units5.equals("ng")) n_/=Math.pow(10,-9);
@@ -245,7 +203,7 @@ public class NewtonsLawsActivity extends Activity {
 
             t4.setText(String.format("%.2e",n_));
         }
-        if(solveFor.equals("a (Acceleration)") && t2.length()>0 && t4.length()>0 && t10.length()>0) {
+        if(solveFor.equals("a (Acceleration)") && t2.length()>0 && t4.length()>0) {
 
             float n0;
             try {
@@ -282,24 +240,6 @@ public class NewtonsLawsActivity extends Activity {
             if(units5.equals("kg")) n1*=Math.pow(10,3);
             if(units5.equals("Mg")) n1*=Math.pow(10,6);
             if(units5.equals("Gg")) n1*=Math.pow(10,9);
-
-            float n3;
-            try {
-                n3=Float.parseFloat(t10.getText().toString());
-            }
-            catch (NumberFormatException e) {
-                return;
-            }
-
-            if(units11.equals("nN")) n3*=Math.pow(10,-9);
-            if(units11.equals("μN")) n3*=Math.pow(10,-6);
-            if(units11.equals("mN")) n3*=Math.pow(10,-3);
-            if(units11.equals("cN")) n3*=Math.pow(10,-2);
-            if(units11.equals("dN")) n3*=Math.pow(10,-1);
-            if(units11.equals("N"))  ;
-            if(units11.equals("kN")) n3*=Math.pow(10,3);
-            if(units11.equals("MN")) n3*=Math.pow(10,6);
-            if(units11.equals("GN")) n3*=Math.pow(10,9);
 
             double n_=n0/n1;
 
@@ -322,84 +262,6 @@ public class NewtonsLawsActivity extends Activity {
             if(units9.equals("yr^2")) n_*=(60*60*24*365*60*60*24*365);
 
             t6.setText(String.format("%.2e",n_));
-        }
-        if(solveFor.equals("F2 (F1 reverse)") && t2.length()>0 && t4.length()>0 && t6.length()>0) {
-
-            float n0;
-            try {
-                n0=Float.parseFloat(t2.getText().toString());
-            }
-            catch (NumberFormatException e) {
-                return;
-            }
-
-            if(units3.equals("nN")) n0*=Math.pow(10,-9);
-            if(units3.equals("μN")) n0*=Math.pow(10,-6);
-            if(units3.equals("mN")) n0*=Math.pow(10,-3);
-            if(units3.equals("cN")) n0*=Math.pow(10,-2);
-            if(units3.equals("dN")) n0*=Math.pow(10,-1);
-            if(units3.equals("N"))  ;
-            if(units3.equals("kN")) n0*=Math.pow(10,3);
-            if(units3.equals("MN")) n0*=Math.pow(10,6);
-            if(units3.equals("GN")) n0*=Math.pow(10,9);
-
-            float n1;
-            try {
-                n1=Float.parseFloat(t4.getText().toString());
-            }
-            catch (NumberFormatException e) {
-                return;
-            }
-
-            if(units5.equals("ng")) n1*=Math.pow(10,-9);
-            if(units5.equals("μg")) n1*=Math.pow(10,-6);
-            if(units5.equals("mg")) n1*=Math.pow(10,-3);
-            if(units5.equals("cg")) n1*=Math.pow(10,-2);
-            if(units5.equals("dg")) n1*=Math.pow(10,-1);
-            if(units5.equals("g"))  ;
-            if(units5.equals("kg")) n1*=Math.pow(10,3);
-            if(units5.equals("Mg")) n1*=Math.pow(10,6);
-            if(units5.equals("Gg")) n1*=Math.pow(10,9);
-
-            float n2;
-            try {
-                n2=Float.parseFloat(t6.getText().toString());
-            }
-            catch (NumberFormatException e) {
-                return;
-            }
-
-            if(units7.equals("nm")) n2*=Math.pow(10,-9);
-            if(units7.equals("μm")) n2*=Math.pow(10,-6);
-            if(units7.equals("mm")) n2*=Math.pow(10,-3);
-            if(units7.equals("cm")) n2*=Math.pow(10,-2);
-            if(units7.equals("dm")) n2*=Math.pow(10,-1);
-            if(units7.equals("m"))  ;
-            if(units7.equals("km")) n2*=Math.pow(10,3);
-            if(units7.equals("Mm")) n2*=Math.pow(10,6);
-            if(units7.equals("Gm")) n2*=Math.pow(10,9);
-                
-            if(units9.equals("ns^2")) n2/=Math.pow(10,-9)*Math.pow(10,-9);
-            if(units9.equals("ms^2")) n2/=Math.pow(10,-3)*Math.pow(10,-3);
-            if(units9.equals("s^2"))  ;
-            if(units9.equals("min^2")) n2/=(60*60);
-            if(units9.equals("hr^2")) n2/=(60*60*60*60);
-            if(units9.equals("day^2")) n2/=(60*60*24*60*60*24);
-            if(units9.equals("yr^2")) n2/=(60*60*24*365*60*60*24*365);
-
-            double n_=-1*n0;
-
-            if(units11.equals("nN")) n_/=Math.pow(10,-9);
-            if(units11.equals("μN")) n_/=Math.pow(10,-6);
-            if(units11.equals("mN")) n_/=Math.pow(10,-3);
-            if(units11.equals("cN")) n_/=Math.pow(10,-2);
-            if(units11.equals("dN")) n_/=Math.pow(10,-1);
-            if(units11.equals("N"))  ;
-            if(units11.equals("kN")) n_/=Math.pow(10,3);
-            if(units11.equals("MN")) n_/=Math.pow(10,6);
-            if(units11.equals("GN")) n_/=Math.pow(10,9);
-
-            t10.setText(String.format("%.2e",n_));
         }
     }
     Resources res;

@@ -208,11 +208,6 @@ public class MainActivity extends Activity {
                     Intent anIntent=new Intent(v.getContext(),ArcLengthActivity.class);
                     startActivity(anIntent);
                 }
-                else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Uniform Circular Motion"))
-                {
-                    Intent anIntent=new Intent(v.getContext(),UniformCircularMotionActivity.class);
-                    startActivity(anIntent);
-                }
                 else if (listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition).equals("Centripetal Force"))
                 {
                     Intent anIntent=new Intent(v.getContext(),CentripetalForceActivity.class);

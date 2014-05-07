@@ -366,7 +366,7 @@ public class WeightNormalForceActivity extends Activity {
             if(units9.equals("day^2")) n2/=(60*60*24*60*60*24);
             if(units9.equals("yr^2")) n2/=(60*60*24*365*60*60*24*365);
 
-            double n_=n0/(n1*n2);
+            double n_=Math.acos(n0/(n1*n2));
 
             if(units11.equals("rad")) ;
             if(units11.equals("deg")) n_/=Math.PI/180.0;

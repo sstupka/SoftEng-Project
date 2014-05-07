@@ -129,11 +129,6 @@
         </activity>
         
         <activity
-            android:name="com.example.physicssolver2.UniformCircularMotionActivity"
-            android:label="@string/app_name" >
-        </activity>
-        
-        <activity
             android:name="com.example.physicssolver2.CentripetalForceActivity"
             android:label="@string/app_name" >
         </activity>
