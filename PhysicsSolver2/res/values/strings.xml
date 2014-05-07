@@ -34,7 +34,7 @@
     <string name="hello">Hello</string>
 	<string-array name="meterUnits">
         <item>nm</item>
-        <item>Î¼m</item>
+        <item>µm</item>
         <item>mm</item>
         <item>cm</item>
         <item>dm</item>
@@ -54,7 +54,7 @@
     </string-array>
 	<string-array name="meterUnitsSquared">
         <item>nm^2</item>
-        <item>Î¼m^2</item>
+        <item>µm^2</item>
         <item>mm^2</item>
         <item>cm^2</item>
         <item>dm^2</item>
@@ -74,7 +74,7 @@
     </string-array>
 	<string-array name="meterUnitsCubed">
         <item>nm^3</item>
-        <item>Î¼m^3</item>
+        <item>µm^3</item>
         <item>mm^3</item>
         <item>cm^3</item>
         <item>dm^3</item>
@@ -98,7 +98,7 @@
     </string-array>
 	<string-array name="forceUnits">
         <item>nN</item>
-        <item>Î¼N</item>
+        <item>µN</item>
         <item>mN</item>
         <item>cN</item>
         <item>dN</item>
@@ -109,7 +109,7 @@
     </string-array>
 	<string-array name="massUnits">
         <item>ng</item>
-        <item>Î¼g</item>
+        <item>µg</item>
         <item>mg</item>
         <item>cg</item>
         <item>dg</item>
@@ -120,7 +120,7 @@
     </string-array>
 	<string-array name="energyUnits">
         <item>nJ</item>
-        <item>Î¼J</item>
+        <item>µJ</item>
         <item>mJ</item>
         <item>cJ</item>
         <item>dJ</item>
@@ -191,10 +191,10 @@
         <item>N (Normal force)</item>
         <item>m (Mass)</item>
         <item>g (Acceleration due to gravity)</item>
-        <item>Î¸ (Angle)</item>
+        <item>θ (Angle)</item>
     </string-array>
 <string name="N_">N=</string>
-<string name="theta_">Î¸=</string>
+<string name="theta_">θ=</string>
    <string-array name="FlatPlaneFrictionActivitySolveFor">
         <item>F (Friction force)</item>
         <item>mu (Friction coefficient)</item>
@@ -212,7 +212,7 @@
     </string-array>
 <string name="x_">x=</string>
    <string-array name="FrictionInclineActivitySolveFor">
-        <item>Î¸ (Incline angle)</item>
+        <item>θ (Incline angle)</item>
         <item>m (Mass)</item>
         <item>mu (Friction coefficient)</item>
         <item>g (Acceleration due to gravity</item>
@@ -279,7 +279,7 @@
         <item>W (Work)</item>
         <item>F (Force)</item>
         <item>d (Displacement)</item>
-        <item>Î¸ (Angle)</item>
+        <item>θ (Angle)</item>
     </string-array>
 <string name="W_">W=</string>
    <string-array name="PowerActivitySolveFor">
@@ -289,7 +289,7 @@
     </string-array>
 <string name="P_">P=</string>
    <string-array name="ArcLengthActivitySolveFor">
-        <item>Î¸ (Angle)</item>
+        <item>θ (Angle)</item>
         <item>s (Arc length)</item>
         <item>r (Radius)</item>
     </string-array>
@@ -312,7 +312,7 @@
         <item>T (Torque)</item>
         <item>F (Force)</item>
         <item>r (Lever arm length)</item>
-        <item>Î¸ (Angle)</item>
+        <item>θ (Angle)</item>
     </string-array>
 <string name="star">*</string>
 <string name="m_">m=</string>
