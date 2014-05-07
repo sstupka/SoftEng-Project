@@ -133,13 +133,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units8.equals("Mm")) n2*=Math.pow(10,6);
             if(units8.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units10.equals("ns")) n2/=Math.pow(10,9);
-            if(units10.equals("ms")) n2/=Math.pow(10,3);
+            if(units10.equals("ns")) n2/=Math.pow(10,-9);
+            if(units10.equals("ms")) n2/=Math.pow(10,-3);
             if(units10.equals("s"))  ;
-            if(units10.equals("min")) n2/=1.0/(60);
-            if(units10.equals("hr")) n2/=1.0/(60*60);
-            if(units10.equals("day")) n2/=1.0/(60*60*24);
-            if(units10.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units10.equals("min")) n2/=(60);
+            if(units10.equals("hr")) n2/=(60*60);
+            if(units10.equals("day")) n2/=(60*60*24);
+            if(units10.equals("yr")) n2/=(60*60*24*365);
 
             float n3;
             try {
@@ -159,13 +159,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units12.equals("Mm")) n3*=Math.pow(10,6);
             if(units12.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units14.equals("ns")) n3/=Math.pow(10,9);
-            if(units14.equals("ms")) n3/=Math.pow(10,3);
+            if(units14.equals("ns")) n3/=Math.pow(10,-9);
+            if(units14.equals("ms")) n3/=Math.pow(10,-3);
             if(units14.equals("s"))  ;
-            if(units14.equals("min")) n3/=1.0/(60);
-            if(units14.equals("hr")) n3/=1.0/(60*60);
-            if(units14.equals("day")) n3/=1.0/(60*60*24);
-            if(units14.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units14.equals("min")) n3/=(60);
+            if(units14.equals("hr")) n3/=(60*60);
+            if(units14.equals("day")) n3/=(60*60*24);
+            if(units14.equals("yr")) n3/=(60*60*24*365);
 
             double n_=n1*(n3-n2);
 
@@ -179,13 +179,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units3.equals("MN")) n_/=Math.pow(10,6);
             if(units3.equals("GN")) n_/=Math.pow(10,9);
                 
-            if(units4.equals("ns")) n_/=Math.pow(10,9);
-            if(units4.equals("ms")) n_/=Math.pow(10,3);
+            if(units4.equals("ns")) n_/=Math.pow(10,-9);
+            if(units4.equals("ms")) n_/=Math.pow(10,-3);
             if(units4.equals("s"))  ;
-            if(units4.equals("min")) n_/=1.0/(60);
-            if(units4.equals("hr")) n_/=1.0/(60*60);
-            if(units4.equals("day")) n_/=1.0/(60*60*24);
-            if(units4.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units4.equals("min")) n_/=(60);
+            if(units4.equals("hr")) n_/=(60*60);
+            if(units4.equals("day")) n_/=(60*60*24);
+            if(units4.equals("yr")) n_/=(60*60*24*365);
 
             t2.setText(String.format("%.2e",n_));
         }
@@ -209,13 +209,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units3.equals("MN")) n0*=Math.pow(10,6);
             if(units3.equals("GN")) n0*=Math.pow(10,9);
                 
-            if(units4.equals("ns")) n0*=Math.pow(10,9);
-            if(units4.equals("ms")) n0*=Math.pow(10,3);
+            if(units4.equals("ns")) n0*=Math.pow(10,-9);
+            if(units4.equals("ms")) n0*=Math.pow(10,-3);
             if(units4.equals("s"))  ;
-            if(units4.equals("min")) n0*=1.0/(60);
-            if(units4.equals("hr")) n0*=1.0/(60*60);
-            if(units4.equals("day")) n0*=1.0/(60*60*24);
-            if(units4.equals("yr")) n0*=1.0/(60*60*24*365);
+            if(units4.equals("min")) n0*=(60);
+            if(units4.equals("hr")) n0*=(60*60);
+            if(units4.equals("day")) n0*=(60*60*24);
+            if(units4.equals("yr")) n0*=(60*60*24*365);
 
             float n2;
             try {
@@ -235,13 +235,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units8.equals("Mm")) n2*=Math.pow(10,6);
             if(units8.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units10.equals("ns")) n2/=Math.pow(10,9);
-            if(units10.equals("ms")) n2/=Math.pow(10,3);
+            if(units10.equals("ns")) n2/=Math.pow(10,-9);
+            if(units10.equals("ms")) n2/=Math.pow(10,-3);
             if(units10.equals("s"))  ;
-            if(units10.equals("min")) n2/=1.0/(60);
-            if(units10.equals("hr")) n2/=1.0/(60*60);
-            if(units10.equals("day")) n2/=1.0/(60*60*24);
-            if(units10.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units10.equals("min")) n2/=(60);
+            if(units10.equals("hr")) n2/=(60*60);
+            if(units10.equals("day")) n2/=(60*60*24);
+            if(units10.equals("yr")) n2/=(60*60*24*365);
 
             float n3;
             try {
@@ -261,13 +261,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units12.equals("Mm")) n3*=Math.pow(10,6);
             if(units12.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units14.equals("ns")) n3/=Math.pow(10,9);
-            if(units14.equals("ms")) n3/=Math.pow(10,3);
+            if(units14.equals("ns")) n3/=Math.pow(10,-9);
+            if(units14.equals("ms")) n3/=Math.pow(10,-3);
             if(units14.equals("s"))  ;
-            if(units14.equals("min")) n3/=1.0/(60);
-            if(units14.equals("hr")) n3/=1.0/(60*60);
-            if(units14.equals("day")) n3/=1.0/(60*60*24);
-            if(units14.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units14.equals("min")) n3/=(60);
+            if(units14.equals("hr")) n3/=(60*60);
+            if(units14.equals("day")) n3/=(60*60*24);
+            if(units14.equals("yr")) n3/=(60*60*24*365);
 
             double n_=n0/(n3-n2);
 
@@ -303,13 +303,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units3.equals("MN")) n0*=Math.pow(10,6);
             if(units3.equals("GN")) n0*=Math.pow(10,9);
                 
-            if(units4.equals("ns")) n0*=Math.pow(10,9);
-            if(units4.equals("ms")) n0*=Math.pow(10,3);
+            if(units4.equals("ns")) n0*=Math.pow(10,-9);
+            if(units4.equals("ms")) n0*=Math.pow(10,-3);
             if(units4.equals("s"))  ;
-            if(units4.equals("min")) n0*=1.0/(60);
-            if(units4.equals("hr")) n0*=1.0/(60*60);
-            if(units4.equals("day")) n0*=1.0/(60*60*24);
-            if(units4.equals("yr")) n0*=1.0/(60*60*24*365);
+            if(units4.equals("min")) n0*=(60);
+            if(units4.equals("hr")) n0*=(60*60);
+            if(units4.equals("day")) n0*=(60*60*24);
+            if(units4.equals("yr")) n0*=(60*60*24*365);
 
             float n1;
             try {
@@ -347,13 +347,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units12.equals("Mm")) n3*=Math.pow(10,6);
             if(units12.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units14.equals("ns")) n3/=Math.pow(10,9);
-            if(units14.equals("ms")) n3/=Math.pow(10,3);
+            if(units14.equals("ns")) n3/=Math.pow(10,-9);
+            if(units14.equals("ms")) n3/=Math.pow(10,-3);
             if(units14.equals("s"))  ;
-            if(units14.equals("min")) n3/=1.0/(60);
-            if(units14.equals("hr")) n3/=1.0/(60*60);
-            if(units14.equals("day")) n3/=1.0/(60*60*24);
-            if(units14.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units14.equals("min")) n3/=(60);
+            if(units14.equals("hr")) n3/=(60*60);
+            if(units14.equals("day")) n3/=(60*60*24);
+            if(units14.equals("yr")) n3/=(60*60*24*365);
 
             double n_=n3+n0/n1;
 
@@ -367,13 +367,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units8.equals("Mm")) n_/=Math.pow(10,6);
             if(units8.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units10.equals("ns")) n_*=Math.pow(10,9);
-            if(units10.equals("ms")) n_*=Math.pow(10,3);
+            if(units10.equals("ns")) n_*=Math.pow(10,-9);
+            if(units10.equals("ms")) n_*=Math.pow(10,-3);
             if(units10.equals("s"))  ;
-            if(units10.equals("min")) n_*=1.0/(60);
-            if(units10.equals("hr")) n_*=1.0/(60*60);
-            if(units10.equals("day")) n_*=1.0/(60*60*24);
-            if(units10.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units10.equals("min")) n_*=(60);
+            if(units10.equals("hr")) n_*=(60*60);
+            if(units10.equals("day")) n_*=(60*60*24);
+            if(units10.equals("yr")) n_*=(60*60*24*365);
 
             t7.setText(String.format("%.2e",n_));
         }
@@ -397,13 +397,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units3.equals("MN")) n0*=Math.pow(10,6);
             if(units3.equals("GN")) n0*=Math.pow(10,9);
                 
-            if(units4.equals("ns")) n0*=Math.pow(10,9);
-            if(units4.equals("ms")) n0*=Math.pow(10,3);
+            if(units4.equals("ns")) n0*=Math.pow(10,-9);
+            if(units4.equals("ms")) n0*=Math.pow(10,-3);
             if(units4.equals("s"))  ;
-            if(units4.equals("min")) n0*=1.0/(60);
-            if(units4.equals("hr")) n0*=1.0/(60*60);
-            if(units4.equals("day")) n0*=1.0/(60*60*24);
-            if(units4.equals("yr")) n0*=1.0/(60*60*24*365);
+            if(units4.equals("min")) n0*=(60);
+            if(units4.equals("hr")) n0*=(60*60);
+            if(units4.equals("day")) n0*=(60*60*24);
+            if(units4.equals("yr")) n0*=(60*60*24*365);
 
             float n1;
             try {
@@ -441,13 +441,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units8.equals("Mm")) n2*=Math.pow(10,6);
             if(units8.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units10.equals("ns")) n2/=Math.pow(10,9);
-            if(units10.equals("ms")) n2/=Math.pow(10,3);
+            if(units10.equals("ns")) n2/=Math.pow(10,-9);
+            if(units10.equals("ms")) n2/=Math.pow(10,-3);
             if(units10.equals("s"))  ;
-            if(units10.equals("min")) n2/=1.0/(60);
-            if(units10.equals("hr")) n2/=1.0/(60*60);
-            if(units10.equals("day")) n2/=1.0/(60*60*24);
-            if(units10.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units10.equals("min")) n2/=(60);
+            if(units10.equals("hr")) n2/=(60*60);
+            if(units10.equals("day")) n2/=(60*60*24);
+            if(units10.equals("yr")) n2/=(60*60*24*365);
 
             double n_=n2+n0/n1;
 
@@ -461,13 +461,13 @@ public class ImpulseMomentumTheoremActivity extends Activity {
             if(units12.equals("Mm")) n_/=Math.pow(10,6);
             if(units12.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units14.equals("ns")) n_*=Math.pow(10,9);
-            if(units14.equals("ms")) n_*=Math.pow(10,3);
+            if(units14.equals("ns")) n_*=Math.pow(10,-9);
+            if(units14.equals("ms")) n_*=Math.pow(10,-3);
             if(units14.equals("s"))  ;
-            if(units14.equals("min")) n_*=1.0/(60);
-            if(units14.equals("hr")) n_*=1.0/(60*60);
-            if(units14.equals("day")) n_*=1.0/(60*60*24);
-            if(units14.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units14.equals("min")) n_*=(60);
+            if(units14.equals("hr")) n_*=(60*60);
+            if(units14.equals("day")) n_*=(60*60*24);
+            if(units14.equals("yr")) n_*=(60*60*24*365);
 
             t11.setText(String.format("%.2e",n_));
         }

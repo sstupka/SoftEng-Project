@@ -58,33 +58,33 @@ def unitsMath(varNum,starOrDiv,units,unitsNum): #RBF Needs more units
     if(units=="s"):
         return '''
                 
-            if(units'''+str(unitsNum)+'''.equals("ns")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9);
-            if(units'''+str(unitsNum)+'''.equals("ms")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("ns")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9);
+            if(units'''+str(unitsNum)+'''.equals("ms")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3);
             if(units'''+str(unitsNum)+'''.equals("s"))  ;
-            if(units'''+str(unitsNum)+'''.equals("min")) n'''+str(varNum)+starOrDiv+'''=1.0/(60);
-            if(units'''+str(unitsNum)+'''.equals("hr")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60);
-            if(units'''+str(unitsNum)+'''.equals("day")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24);
-            if(units'''+str(unitsNum)+'''.equals("yr")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*365);'''
+            if(units'''+str(unitsNum)+'''.equals("min")) n'''+str(varNum)+starOrDiv+'''=(60);
+            if(units'''+str(unitsNum)+'''.equals("hr")) n'''+str(varNum)+starOrDiv+'''=(60*60);
+            if(units'''+str(unitsNum)+'''.equals("day")) n'''+str(varNum)+starOrDiv+'''=(60*60*24);
+            if(units'''+str(unitsNum)+'''.equals("yr")) n'''+str(varNum)+starOrDiv+'''=(60*60*24*365);'''
     if(units=="s^2"):
         return '''
                 
-            if(units'''+str(unitsNum)+'''.equals("ns^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9)*Math.pow(10,9);
-            if(units'''+str(unitsNum)+'''.equals("ms^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3)*Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("ns^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units'''+str(unitsNum)+'''.equals("ms^2")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3)*Math.pow(10,-3);
             if(units'''+str(unitsNum)+'''.equals("s^2"))  ;
-            if(units'''+str(unitsNum)+'''.equals("min^2")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60);
-            if(units'''+str(unitsNum)+'''.equals("hr^2")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*60*60);
-            if(units'''+str(unitsNum)+'''.equals("day^2")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*60*60*24);
-            if(units'''+str(unitsNum)+'''.equals("yr^2")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*365*60*60*24*365);'''
+            if(units'''+str(unitsNum)+'''.equals("min^2")) n'''+str(varNum)+starOrDiv+'''=(60*60);
+            if(units'''+str(unitsNum)+'''.equals("hr^2")) n'''+str(varNum)+starOrDiv+'''=(60*60*60*60);
+            if(units'''+str(unitsNum)+'''.equals("day^2")) n'''+str(varNum)+starOrDiv+'''=(60*60*24*60*60*24);
+            if(units'''+str(unitsNum)+'''.equals("yr^2")) n'''+str(varNum)+starOrDiv+'''=(60*60*24*365*60*60*24*365);'''
     if(units=="s^3"):
         return '''
                 
-            if(units'''+str(unitsNum)+'''.equals("ns^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,9)*Math.pow(10,9)*Math.pow(10,9);
-            if(units'''+str(unitsNum)+'''.equals("ms^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,3)*Math.pow(10,3)*Math.pow(10,3);
+            if(units'''+str(unitsNum)+'''.equals("ns^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-9)*Math.pow(10,-9)*Math.pow(10,-9);
+            if(units'''+str(unitsNum)+'''.equals("ms^3")) n'''+str(varNum)+starOrDiv+'''=Math.pow(10,-3)*Math.pow(10,-3)*Math.pow(10,-3);
             if(units'''+str(unitsNum)+'''.equals("s^3"))  ;
-            if(units'''+str(unitsNum)+'''.equals("min^3")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*60);
-            if(units'''+str(unitsNum)+'''.equals("hr^3")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*60*60*60*60);
-            if(units'''+str(unitsNum)+'''.equals("day^3")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*60*60*24*60*60*24);
-            if(units'''+str(unitsNum)+'''.equals("yr^3")) n'''+str(varNum)+starOrDiv+'''=1.0/(60*60*24*365*60*60*24*365*60*60*24*365);'''
+            if(units'''+str(unitsNum)+'''.equals("min^3")) n'''+str(varNum)+starOrDiv+'''=(60*60*60);
+            if(units'''+str(unitsNum)+'''.equals("hr^3")) n'''+str(varNum)+starOrDiv+'''=(60*60*60*60*60*60);
+            if(units'''+str(unitsNum)+'''.equals("day^3")) n'''+str(varNum)+starOrDiv+'''=(60*60*24*60*60*24*60*60*24);
+            if(units'''+str(unitsNum)+'''.equals("yr^3")) n'''+str(varNum)+starOrDiv+'''=(60*60*24*365*60*60*24*365*60*60*24*365);'''
     if(units=="rad"):
         return '''
 

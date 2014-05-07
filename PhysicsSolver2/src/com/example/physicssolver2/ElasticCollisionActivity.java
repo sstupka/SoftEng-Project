@@ -148,13 +148,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2/=Math.pow(10,9);
-            if(units9.equals("ms")) n2/=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,-9);
+            if(units9.equals("ms")) n2/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2/=1.0/(60);
-            if(units9.equals("hr")) n2/=1.0/(60*60);
-            if(units9.equals("day")) n2/=1.0/(60*60*24);
-            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=(60);
+            if(units9.equals("hr")) n2/=(60*60);
+            if(units9.equals("day")) n2/=(60*60*24);
+            if(units9.equals("yr")) n2/=(60*60*24*365);
 
             float n3;
             try {
@@ -174,13 +174,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             float n4;
             try {
@@ -200,13 +200,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n4/=Math.pow(10,9);
-            if(units17.equals("ms")) n4/=Math.pow(10,3);
+            if(units17.equals("ns")) n4/=Math.pow(10,-9);
+            if(units17.equals("ms")) n4/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4/=1.0/(60);
-            if(units17.equals("hr")) n4/=1.0/(60*60);
-            if(units17.equals("day")) n4/=1.0/(60*60*24);
-            if(units17.equals("yr")) n4/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4/=(60);
+            if(units17.equals("hr")) n4/=(60*60);
+            if(units17.equals("day")) n4/=(60*60*24);
+            if(units17.equals("yr")) n4/=(60*60*24*365);
 
             float n5;
             try {
@@ -226,13 +226,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units19.equals("Mm")) n5*=Math.pow(10,6);
             if(units19.equals("Gm")) n5*=Math.pow(10,9);
                 
-            if(units21.equals("ns")) n5/=Math.pow(10,9);
-            if(units21.equals("ms")) n5/=Math.pow(10,3);
+            if(units21.equals("ns")) n5/=Math.pow(10,-9);
+            if(units21.equals("ms")) n5/=Math.pow(10,-3);
             if(units21.equals("s"))  ;
-            if(units21.equals("min")) n5/=1.0/(60);
-            if(units21.equals("hr")) n5/=1.0/(60*60);
-            if(units21.equals("day")) n5/=1.0/(60*60*24);
-            if(units21.equals("yr")) n5/=1.0/(60*60*24*365);
+            if(units21.equals("min")) n5/=(60);
+            if(units21.equals("hr")) n5/=(60*60);
+            if(units21.equals("day")) n5/=(60*60*24);
+            if(units21.equals("yr")) n5/=(60*60*24*365);
 
             double n_=n1*(n5-n3)/(n2-n4);
 
@@ -286,13 +286,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2/=Math.pow(10,9);
-            if(units9.equals("ms")) n2/=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,-9);
+            if(units9.equals("ms")) n2/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2/=1.0/(60);
-            if(units9.equals("hr")) n2/=1.0/(60*60);
-            if(units9.equals("day")) n2/=1.0/(60*60*24);
-            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=(60);
+            if(units9.equals("hr")) n2/=(60*60);
+            if(units9.equals("day")) n2/=(60*60*24);
+            if(units9.equals("yr")) n2/=(60*60*24*365);
 
             float n3;
             try {
@@ -312,13 +312,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             float n4;
             try {
@@ -338,13 +338,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n4/=Math.pow(10,9);
-            if(units17.equals("ms")) n4/=Math.pow(10,3);
+            if(units17.equals("ns")) n4/=Math.pow(10,-9);
+            if(units17.equals("ms")) n4/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4/=1.0/(60);
-            if(units17.equals("hr")) n4/=1.0/(60*60);
-            if(units17.equals("day")) n4/=1.0/(60*60*24);
-            if(units17.equals("yr")) n4/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4/=(60);
+            if(units17.equals("hr")) n4/=(60*60);
+            if(units17.equals("day")) n4/=(60*60*24);
+            if(units17.equals("yr")) n4/=(60*60*24*365);
 
             float n5;
             try {
@@ -364,13 +364,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units19.equals("Mm")) n5*=Math.pow(10,6);
             if(units19.equals("Gm")) n5*=Math.pow(10,9);
                 
-            if(units21.equals("ns")) n5/=Math.pow(10,9);
-            if(units21.equals("ms")) n5/=Math.pow(10,3);
+            if(units21.equals("ns")) n5/=Math.pow(10,-9);
+            if(units21.equals("ms")) n5/=Math.pow(10,-3);
             if(units21.equals("s"))  ;
-            if(units21.equals("min")) n5/=1.0/(60);
-            if(units21.equals("hr")) n5/=1.0/(60*60);
-            if(units21.equals("day")) n5/=1.0/(60*60*24);
-            if(units21.equals("yr")) n5/=1.0/(60*60*24*365);
+            if(units21.equals("min")) n5/=(60);
+            if(units21.equals("hr")) n5/=(60*60);
+            if(units21.equals("day")) n5/=(60*60*24);
+            if(units21.equals("yr")) n5/=(60*60*24*365);
 
             double n_=n0*(n4-n2)/(n3-n5);
 
@@ -442,13 +442,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             float n4;
             try {
@@ -468,13 +468,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n4/=Math.pow(10,9);
-            if(units17.equals("ms")) n4/=Math.pow(10,3);
+            if(units17.equals("ns")) n4/=Math.pow(10,-9);
+            if(units17.equals("ms")) n4/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4/=1.0/(60);
-            if(units17.equals("hr")) n4/=1.0/(60*60);
-            if(units17.equals("day")) n4/=1.0/(60*60*24);
-            if(units17.equals("yr")) n4/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4/=(60);
+            if(units17.equals("hr")) n4/=(60*60);
+            if(units17.equals("day")) n4/=(60*60*24);
+            if(units17.equals("yr")) n4/=(60*60*24*365);
 
             float n5;
             try {
@@ -494,13 +494,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units19.equals("Mm")) n5*=Math.pow(10,6);
             if(units19.equals("Gm")) n5*=Math.pow(10,9);
                 
-            if(units21.equals("ns")) n5/=Math.pow(10,9);
-            if(units21.equals("ms")) n5/=Math.pow(10,3);
+            if(units21.equals("ns")) n5/=Math.pow(10,-9);
+            if(units21.equals("ms")) n5/=Math.pow(10,-3);
             if(units21.equals("s"))  ;
-            if(units21.equals("min")) n5/=1.0/(60);
-            if(units21.equals("hr")) n5/=1.0/(60*60);
-            if(units21.equals("day")) n5/=1.0/(60*60*24);
-            if(units21.equals("yr")) n5/=1.0/(60*60*24*365);
+            if(units21.equals("min")) n5/=(60);
+            if(units21.equals("hr")) n5/=(60*60);
+            if(units21.equals("day")) n5/=(60*60*24);
+            if(units21.equals("yr")) n5/=(60*60*24*365);
 
             double n_=(n0*n4+n1*n5-n1*n3)/n0;
 
@@ -514,13 +514,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units7.equals("Mm")) n_/=Math.pow(10,6);
             if(units7.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n_*=Math.pow(10,9);
-            if(units9.equals("ms")) n_*=Math.pow(10,3);
+            if(units9.equals("ns")) n_*=Math.pow(10,-9);
+            if(units9.equals("ms")) n_*=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n_*=1.0/(60);
-            if(units9.equals("hr")) n_*=1.0/(60*60);
-            if(units9.equals("day")) n_*=1.0/(60*60*24);
-            if(units9.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n_*=(60);
+            if(units9.equals("hr")) n_*=(60*60);
+            if(units9.equals("day")) n_*=(60*60*24);
+            if(units9.equals("yr")) n_*=(60*60*24*365);
 
             t6.setText(String.format("%.2e",n_));
         }
@@ -580,13 +580,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2/=Math.pow(10,9);
-            if(units9.equals("ms")) n2/=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,-9);
+            if(units9.equals("ms")) n2/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2/=1.0/(60);
-            if(units9.equals("hr")) n2/=1.0/(60*60);
-            if(units9.equals("day")) n2/=1.0/(60*60*24);
-            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=(60);
+            if(units9.equals("hr")) n2/=(60*60);
+            if(units9.equals("day")) n2/=(60*60*24);
+            if(units9.equals("yr")) n2/=(60*60*24*365);
 
             float n4;
             try {
@@ -606,13 +606,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n4/=Math.pow(10,9);
-            if(units17.equals("ms")) n4/=Math.pow(10,3);
+            if(units17.equals("ns")) n4/=Math.pow(10,-9);
+            if(units17.equals("ms")) n4/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4/=1.0/(60);
-            if(units17.equals("hr")) n4/=1.0/(60*60);
-            if(units17.equals("day")) n4/=1.0/(60*60*24);
-            if(units17.equals("yr")) n4/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4/=(60);
+            if(units17.equals("hr")) n4/=(60*60);
+            if(units17.equals("day")) n4/=(60*60*24);
+            if(units17.equals("yr")) n4/=(60*60*24*365);
 
             float n5;
             try {
@@ -632,13 +632,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units19.equals("Mm")) n5*=Math.pow(10,6);
             if(units19.equals("Gm")) n5*=Math.pow(10,9);
                 
-            if(units21.equals("ns")) n5/=Math.pow(10,9);
-            if(units21.equals("ms")) n5/=Math.pow(10,3);
+            if(units21.equals("ns")) n5/=Math.pow(10,-9);
+            if(units21.equals("ms")) n5/=Math.pow(10,-3);
             if(units21.equals("s"))  ;
-            if(units21.equals("min")) n5/=1.0/(60);
-            if(units21.equals("hr")) n5/=1.0/(60*60);
-            if(units21.equals("day")) n5/=1.0/(60*60*24);
-            if(units21.equals("yr")) n5/=1.0/(60*60*24*365);
+            if(units21.equals("min")) n5/=(60);
+            if(units21.equals("hr")) n5/=(60*60);
+            if(units21.equals("day")) n5/=(60*60*24);
+            if(units21.equals("yr")) n5/=(60*60*24*365);
 
             double n_=(n0*n4+n1*n5-n0*n2)/n1;
 
@@ -652,13 +652,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units11.equals("Mm")) n_/=Math.pow(10,6);
             if(units11.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n_*=Math.pow(10,9);
-            if(units13.equals("ms")) n_*=Math.pow(10,3);
+            if(units13.equals("ns")) n_*=Math.pow(10,-9);
+            if(units13.equals("ms")) n_*=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n_*=1.0/(60);
-            if(units13.equals("hr")) n_*=1.0/(60*60);
-            if(units13.equals("day")) n_*=1.0/(60*60*24);
-            if(units13.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units13.equals("min")) n_*=(60);
+            if(units13.equals("hr")) n_*=(60*60);
+            if(units13.equals("day")) n_*=(60*60*24);
+            if(units13.equals("yr")) n_*=(60*60*24*365);
 
             t10.setText(String.format("%.2e",n_));
         }
@@ -718,13 +718,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2/=Math.pow(10,9);
-            if(units9.equals("ms")) n2/=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,-9);
+            if(units9.equals("ms")) n2/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2/=1.0/(60);
-            if(units9.equals("hr")) n2/=1.0/(60*60);
-            if(units9.equals("day")) n2/=1.0/(60*60*24);
-            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=(60);
+            if(units9.equals("hr")) n2/=(60*60);
+            if(units9.equals("day")) n2/=(60*60*24);
+            if(units9.equals("yr")) n2/=(60*60*24*365);
 
             float n3;
             try {
@@ -744,13 +744,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             float n5;
             try {
@@ -770,13 +770,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units19.equals("Mm")) n5*=Math.pow(10,6);
             if(units19.equals("Gm")) n5*=Math.pow(10,9);
                 
-            if(units21.equals("ns")) n5/=Math.pow(10,9);
-            if(units21.equals("ms")) n5/=Math.pow(10,3);
+            if(units21.equals("ns")) n5/=Math.pow(10,-9);
+            if(units21.equals("ms")) n5/=Math.pow(10,-3);
             if(units21.equals("s"))  ;
-            if(units21.equals("min")) n5/=1.0/(60);
-            if(units21.equals("hr")) n5/=1.0/(60*60);
-            if(units21.equals("day")) n5/=1.0/(60*60*24);
-            if(units21.equals("yr")) n5/=1.0/(60*60*24*365);
+            if(units21.equals("min")) n5/=(60);
+            if(units21.equals("hr")) n5/=(60*60);
+            if(units21.equals("day")) n5/=(60*60*24);
+            if(units21.equals("yr")) n5/=(60*60*24*365);
 
             double n_=(n0*n2+n1*n3-n1*n5)/n0;
 
@@ -790,13 +790,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units15.equals("Mm")) n_/=Math.pow(10,6);
             if(units15.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n_*=Math.pow(10,9);
-            if(units17.equals("ms")) n_*=Math.pow(10,3);
+            if(units17.equals("ns")) n_*=Math.pow(10,-9);
+            if(units17.equals("ms")) n_*=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n_*=1.0/(60);
-            if(units17.equals("hr")) n_*=1.0/(60*60);
-            if(units17.equals("day")) n_*=1.0/(60*60*24);
-            if(units17.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units17.equals("min")) n_*=(60);
+            if(units17.equals("hr")) n_*=(60*60);
+            if(units17.equals("day")) n_*=(60*60*24);
+            if(units17.equals("yr")) n_*=(60*60*24*365);
 
             t14.setText(String.format("%.2e",n_));
         }
@@ -856,13 +856,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2/=Math.pow(10,9);
-            if(units9.equals("ms")) n2/=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,-9);
+            if(units9.equals("ms")) n2/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2/=1.0/(60);
-            if(units9.equals("hr")) n2/=1.0/(60*60);
-            if(units9.equals("day")) n2/=1.0/(60*60*24);
-            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=(60);
+            if(units9.equals("hr")) n2/=(60*60);
+            if(units9.equals("day")) n2/=(60*60*24);
+            if(units9.equals("yr")) n2/=(60*60*24*365);
 
             float n3;
             try {
@@ -882,13 +882,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             float n4;
             try {
@@ -908,13 +908,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n4/=Math.pow(10,9);
-            if(units17.equals("ms")) n4/=Math.pow(10,3);
+            if(units17.equals("ns")) n4/=Math.pow(10,-9);
+            if(units17.equals("ms")) n4/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4/=1.0/(60);
-            if(units17.equals("hr")) n4/=1.0/(60*60);
-            if(units17.equals("day")) n4/=1.0/(60*60*24);
-            if(units17.equals("yr")) n4/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4/=(60);
+            if(units17.equals("hr")) n4/=(60*60);
+            if(units17.equals("day")) n4/=(60*60*24);
+            if(units17.equals("yr")) n4/=(60*60*24*365);
 
             double n_=(n0*n2+n1*n3-n0*n4)/n1;
 
@@ -928,13 +928,13 @@ public class ElasticCollisionActivity extends Activity {
             if(units19.equals("Mm")) n_/=Math.pow(10,6);
             if(units19.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units21.equals("ns")) n_*=Math.pow(10,9);
-            if(units21.equals("ms")) n_*=Math.pow(10,3);
+            if(units21.equals("ns")) n_*=Math.pow(10,-9);
+            if(units21.equals("ms")) n_*=Math.pow(10,-3);
             if(units21.equals("s"))  ;
-            if(units21.equals("min")) n_*=1.0/(60);
-            if(units21.equals("hr")) n_*=1.0/(60*60);
-            if(units21.equals("day")) n_*=1.0/(60*60*24);
-            if(units21.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units21.equals("min")) n_*=(60);
+            if(units21.equals("hr")) n_*=(60*60);
+            if(units21.equals("day")) n_*=(60*60*24);
+            if(units21.equals("yr")) n_*=(60*60*24*365);
 
             t18.setText(String.format("%.2e",n_));
         }

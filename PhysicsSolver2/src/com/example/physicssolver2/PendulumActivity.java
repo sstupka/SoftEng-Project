@@ -111,13 +111,13 @@ public class PendulumActivity extends Activity {
                 return;
             }
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2*=Math.pow(10,-9);
+            if(units9.equals("ms")) n2*=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2*=(60);
+            if(units9.equals("hr")) n2*=(60*60);
+            if(units9.equals("day")) n2*=(60*60*24);
+            if(units9.equals("yr")) n2*=(60*60*24*365);
 
             double n_=Math.pow(2*Math.PI/n2, 2)*n1;
 
@@ -131,13 +131,13 @@ public class PendulumActivity extends Activity {
             if(units3.equals("Mm")) n_/=Math.pow(10,6);
             if(units3.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units5.equals("ns")) n_*=Math.pow(10,9);
-            if(units5.equals("ms")) n_*=Math.pow(10,3);
+            if(units5.equals("ns")) n_*=Math.pow(10,-9);
+            if(units5.equals("ms")) n_*=Math.pow(10,-3);
             if(units5.equals("s"))  ;
-            if(units5.equals("min")) n_*=1.0/(60);
-            if(units5.equals("hr")) n_*=1.0/(60*60);
-            if(units5.equals("day")) n_*=1.0/(60*60*24);
-            if(units5.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units5.equals("min")) n_*=(60);
+            if(units5.equals("hr")) n_*=(60*60);
+            if(units5.equals("day")) n_*=(60*60*24);
+            if(units5.equals("yr")) n_*=(60*60*24*365);
 
             t2.setText(String.format("%.2e",n_));
         }
@@ -161,13 +161,13 @@ public class PendulumActivity extends Activity {
             if(units3.equals("Mm")) n0*=Math.pow(10,6);
             if(units3.equals("Gm")) n0*=Math.pow(10,9);
                 
-            if(units5.equals("ns")) n0/=Math.pow(10,9);
-            if(units5.equals("ms")) n0/=Math.pow(10,3);
+            if(units5.equals("ns")) n0/=Math.pow(10,-9);
+            if(units5.equals("ms")) n0/=Math.pow(10,-3);
             if(units5.equals("s"))  ;
-            if(units5.equals("min")) n0/=1.0/(60);
-            if(units5.equals("hr")) n0/=1.0/(60*60);
-            if(units5.equals("day")) n0/=1.0/(60*60*24);
-            if(units5.equals("yr")) n0/=1.0/(60*60*24*365);
+            if(units5.equals("min")) n0/=(60);
+            if(units5.equals("hr")) n0/=(60*60);
+            if(units5.equals("day")) n0/=(60*60*24);
+            if(units5.equals("yr")) n0/=(60*60*24*365);
 
             float n2;
             try {
@@ -177,13 +177,13 @@ public class PendulumActivity extends Activity {
                 return;
             }
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2*=Math.pow(10,-9);
+            if(units9.equals("ms")) n2*=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2*=(60);
+            if(units9.equals("hr")) n2*=(60*60);
+            if(units9.equals("day")) n2*=(60*60*24);
+            if(units9.equals("yr")) n2*=(60*60*24*365);
 
             double n_=n0*Math.pow(n2/2/Math.PI, 2);
 
@@ -219,13 +219,13 @@ public class PendulumActivity extends Activity {
             if(units3.equals("Mm")) n0*=Math.pow(10,6);
             if(units3.equals("Gm")) n0*=Math.pow(10,9);
                 
-            if(units5.equals("ns")) n0/=Math.pow(10,9);
-            if(units5.equals("ms")) n0/=Math.pow(10,3);
+            if(units5.equals("ns")) n0/=Math.pow(10,-9);
+            if(units5.equals("ms")) n0/=Math.pow(10,-3);
             if(units5.equals("s"))  ;
-            if(units5.equals("min")) n0/=1.0/(60);
-            if(units5.equals("hr")) n0/=1.0/(60*60);
-            if(units5.equals("day")) n0/=1.0/(60*60*24);
-            if(units5.equals("yr")) n0/=1.0/(60*60*24*365);
+            if(units5.equals("min")) n0/=(60);
+            if(units5.equals("hr")) n0/=(60*60);
+            if(units5.equals("day")) n0/=(60*60*24);
+            if(units5.equals("yr")) n0/=(60*60*24*365);
 
             float n1;
             try {
@@ -247,13 +247,13 @@ public class PendulumActivity extends Activity {
 
             double n_=2*Math.PI*Math.sqrt(n0/n1);
                 
-            if(units9.equals("ns")) n_/=Math.pow(10,9);
-            if(units9.equals("ms")) n_/=Math.pow(10,3);
+            if(units9.equals("ns")) n_/=Math.pow(10,-9);
+            if(units9.equals("ms")) n_/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n_/=1.0/(60);
-            if(units9.equals("hr")) n_/=1.0/(60*60);
-            if(units9.equals("day")) n_/=1.0/(60*60*24);
-            if(units9.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n_/=(60);
+            if(units9.equals("hr")) n_/=(60*60);
+            if(units9.equals("day")) n_/=(60*60*24);
+            if(units9.equals("yr")) n_/=(60*60*24*365);
 
             t8.setText(String.format("%.2e",n_));
         }

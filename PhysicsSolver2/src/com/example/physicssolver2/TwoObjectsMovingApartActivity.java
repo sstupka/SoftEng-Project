@@ -112,13 +112,13 @@ public class TwoObjectsMovingApartActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns")) n1/=Math.pow(10,9);
-            if(units7.equals("ms")) n1/=Math.pow(10,3);
+            if(units7.equals("ns")) n1/=Math.pow(10,-9);
+            if(units7.equals("ms")) n1/=Math.pow(10,-3);
             if(units7.equals("s"))  ;
-            if(units7.equals("min")) n1/=1.0/(60);
-            if(units7.equals("hr")) n1/=1.0/(60*60);
-            if(units7.equals("day")) n1/=1.0/(60*60*24);
-            if(units7.equals("yr")) n1/=1.0/(60*60*24*365);
+            if(units7.equals("min")) n1/=(60);
+            if(units7.equals("hr")) n1/=(60*60);
+            if(units7.equals("day")) n1/=(60*60*24);
+            if(units7.equals("yr")) n1/=(60*60*24*365);
 
             float n2;
             try {
@@ -128,13 +128,13 @@ public class TwoObjectsMovingApartActivity extends Activity {
                 return;
             }
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2*=Math.pow(10,-9);
+            if(units9.equals("ms")) n2*=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2*=(60);
+            if(units9.equals("hr")) n2*=(60*60);
+            if(units9.equals("day")) n2*=(60*60*24);
+            if(units9.equals("yr")) n2*=(60*60*24*365);
 
             float n3;
             try {
@@ -154,13 +154,13 @@ public class TwoObjectsMovingApartActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             double n_=n1*n2+n3*n2;
 
@@ -204,13 +204,13 @@ public class TwoObjectsMovingApartActivity extends Activity {
                 return;
             }
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2*=Math.pow(10,-9);
+            if(units9.equals("ms")) n2*=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2*=(60);
+            if(units9.equals("hr")) n2*=(60*60);
+            if(units9.equals("day")) n2*=(60*60*24);
+            if(units9.equals("yr")) n2*=(60*60*24*365);
 
             float n3;
             try {
@@ -230,13 +230,13 @@ public class TwoObjectsMovingApartActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             double n_=(n0-n2*n3)/n2;
 
@@ -250,13 +250,13 @@ public class TwoObjectsMovingApartActivity extends Activity {
             if(units5.equals("Mm")) n_/=Math.pow(10,6);
             if(units5.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units7.equals("ns")) n_*=Math.pow(10,9);
-            if(units7.equals("ms")) n_*=Math.pow(10,3);
+            if(units7.equals("ns")) n_*=Math.pow(10,-9);
+            if(units7.equals("ms")) n_*=Math.pow(10,-3);
             if(units7.equals("s"))  ;
-            if(units7.equals("min")) n_*=1.0/(60);
-            if(units7.equals("hr")) n_*=1.0/(60*60);
-            if(units7.equals("day")) n_*=1.0/(60*60*24);
-            if(units7.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units7.equals("min")) n_*=(60);
+            if(units7.equals("hr")) n_*=(60*60);
+            if(units7.equals("day")) n_*=(60*60*24);
+            if(units7.equals("yr")) n_*=(60*60*24*365);
 
             t4.setText(String.format("%.2e",n_));
         }
@@ -298,13 +298,13 @@ public class TwoObjectsMovingApartActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns")) n1/=Math.pow(10,9);
-            if(units7.equals("ms")) n1/=Math.pow(10,3);
+            if(units7.equals("ns")) n1/=Math.pow(10,-9);
+            if(units7.equals("ms")) n1/=Math.pow(10,-3);
             if(units7.equals("s"))  ;
-            if(units7.equals("min")) n1/=1.0/(60);
-            if(units7.equals("hr")) n1/=1.0/(60*60);
-            if(units7.equals("day")) n1/=1.0/(60*60*24);
-            if(units7.equals("yr")) n1/=1.0/(60*60*24*365);
+            if(units7.equals("min")) n1/=(60);
+            if(units7.equals("hr")) n1/=(60*60);
+            if(units7.equals("day")) n1/=(60*60*24);
+            if(units7.equals("yr")) n1/=(60*60*24*365);
 
             float n3;
             try {
@@ -324,23 +324,23 @@ public class TwoObjectsMovingApartActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             double n_=n0/(n1+n3);
                 
-            if(units9.equals("ns")) n_/=Math.pow(10,9);
-            if(units9.equals("ms")) n_/=Math.pow(10,3);
+            if(units9.equals("ns")) n_/=Math.pow(10,-9);
+            if(units9.equals("ms")) n_/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n_/=1.0/(60);
-            if(units9.equals("hr")) n_/=1.0/(60*60);
-            if(units9.equals("day")) n_/=1.0/(60*60*24);
-            if(units9.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n_/=(60);
+            if(units9.equals("hr")) n_/=(60*60);
+            if(units9.equals("day")) n_/=(60*60*24);
+            if(units9.equals("yr")) n_/=(60*60*24*365);
 
             t8.setText(String.format("%.2e",n_));
         }
@@ -382,13 +382,13 @@ public class TwoObjectsMovingApartActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns")) n1/=Math.pow(10,9);
-            if(units7.equals("ms")) n1/=Math.pow(10,3);
+            if(units7.equals("ns")) n1/=Math.pow(10,-9);
+            if(units7.equals("ms")) n1/=Math.pow(10,-3);
             if(units7.equals("s"))  ;
-            if(units7.equals("min")) n1/=1.0/(60);
-            if(units7.equals("hr")) n1/=1.0/(60*60);
-            if(units7.equals("day")) n1/=1.0/(60*60*24);
-            if(units7.equals("yr")) n1/=1.0/(60*60*24*365);
+            if(units7.equals("min")) n1/=(60);
+            if(units7.equals("hr")) n1/=(60*60);
+            if(units7.equals("day")) n1/=(60*60*24);
+            if(units7.equals("yr")) n1/=(60*60*24*365);
 
             float n2;
             try {
@@ -398,13 +398,13 @@ public class TwoObjectsMovingApartActivity extends Activity {
                 return;
             }
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2*=Math.pow(10,-9);
+            if(units9.equals("ms")) n2*=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2*=(60);
+            if(units9.equals("hr")) n2*=(60*60);
+            if(units9.equals("day")) n2*=(60*60*24);
+            if(units9.equals("yr")) n2*=(60*60*24*365);
 
             double n_=(n0-n1*n2)/n2;
 
@@ -418,13 +418,13 @@ public class TwoObjectsMovingApartActivity extends Activity {
             if(units11.equals("Mm")) n_/=Math.pow(10,6);
             if(units11.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n_*=Math.pow(10,9);
-            if(units13.equals("ms")) n_*=Math.pow(10,3);
+            if(units13.equals("ns")) n_*=Math.pow(10,-9);
+            if(units13.equals("ms")) n_*=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n_*=1.0/(60);
-            if(units13.equals("hr")) n_*=1.0/(60*60);
-            if(units13.equals("day")) n_*=1.0/(60*60*24);
-            if(units13.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units13.equals("min")) n_*=(60);
+            if(units13.equals("hr")) n_*=(60*60);
+            if(units13.equals("day")) n_*=(60*60*24);
+            if(units13.equals("yr")) n_*=(60*60*24*365);
 
             t10.setText(String.format("%.2e",n_));
         }

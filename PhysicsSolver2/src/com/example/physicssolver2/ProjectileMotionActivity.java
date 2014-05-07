@@ -127,13 +127,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns^2")) n1/=Math.pow(10,9)*Math.pow(10,9);
-            if(units7.equals("ms^2")) n1/=Math.pow(10,3)*Math.pow(10,3);
+            if(units7.equals("ns^2")) n1/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units7.equals("ms^2")) n1/=Math.pow(10,-3)*Math.pow(10,-3);
             if(units7.equals("s^2"))  ;
-            if(units7.equals("min^2")) n1/=1.0/(60*60);
-            if(units7.equals("hr^2")) n1/=1.0/(60*60*60*60);
-            if(units7.equals("day^2")) n1/=1.0/(60*60*24*60*60*24);
-            if(units7.equals("yr^2")) n1/=1.0/(60*60*24*365*60*60*24*365);
+            if(units7.equals("min^2")) n1/=(60*60);
+            if(units7.equals("hr^2")) n1/=(60*60*60*60);
+            if(units7.equals("day^2")) n1/=(60*60*24*60*60*24);
+            if(units7.equals("yr^2")) n1/=(60*60*24*365*60*60*24*365);
 
             float n2;
             try {
@@ -171,13 +171,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             float n4;
             try {
@@ -197,13 +197,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n4/=Math.pow(10,9);
-            if(units17.equals("ms")) n4/=Math.pow(10,3);
+            if(units17.equals("ns")) n4/=Math.pow(10,-9);
+            if(units17.equals("ms")) n4/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4/=1.0/(60);
-            if(units17.equals("hr")) n4/=1.0/(60*60);
-            if(units17.equals("day")) n4/=1.0/(60*60*24);
-            if(units17.equals("yr")) n4/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4/=(60);
+            if(units17.equals("hr")) n4/=(60*60);
+            if(units17.equals("day")) n4/=(60*60*24);
+            if(units17.equals("yr")) n4/=(60*60*24*365);
 
             float n5;
             try {
@@ -286,13 +286,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             float n4;
             try {
@@ -312,13 +312,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n4/=Math.pow(10,9);
-            if(units17.equals("ms")) n4/=Math.pow(10,3);
+            if(units17.equals("ns")) n4/=Math.pow(10,-9);
+            if(units17.equals("ms")) n4/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4/=1.0/(60);
-            if(units17.equals("hr")) n4/=1.0/(60*60);
-            if(units17.equals("day")) n4/=1.0/(60*60*24);
-            if(units17.equals("yr")) n4/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4/=(60);
+            if(units17.equals("hr")) n4/=(60*60);
+            if(units17.equals("day")) n4/=(60*60*24);
+            if(units17.equals("yr")) n4/=(60*60*24*365);
 
             float n5;
             try {
@@ -343,13 +343,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units5.equals("Mm")) n_/=Math.pow(10,6);
             if(units5.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units7.equals("ns^2")) n_*=Math.pow(10,9)*Math.pow(10,9);
-            if(units7.equals("ms^2")) n_*=Math.pow(10,3)*Math.pow(10,3);
+            if(units7.equals("ns^2")) n_*=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units7.equals("ms^2")) n_*=Math.pow(10,-3)*Math.pow(10,-3);
             if(units7.equals("s^2"))  ;
-            if(units7.equals("min^2")) n_*=1.0/(60*60);
-            if(units7.equals("hr^2")) n_*=1.0/(60*60*60*60);
-            if(units7.equals("day^2")) n_*=1.0/(60*60*24*60*60*24);
-            if(units7.equals("yr^2")) n_*=1.0/(60*60*24*365*60*60*24*365);
+            if(units7.equals("min^2")) n_*=(60*60);
+            if(units7.equals("hr^2")) n_*=(60*60*60*60);
+            if(units7.equals("day^2")) n_*=(60*60*24*60*60*24);
+            if(units7.equals("yr^2")) n_*=(60*60*24*365*60*60*24*365);
 
             t4.setText(String.format("%.2e",n_));
         }
@@ -391,13 +391,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns^2")) n1/=Math.pow(10,9)*Math.pow(10,9);
-            if(units7.equals("ms^2")) n1/=Math.pow(10,3)*Math.pow(10,3);
+            if(units7.equals("ns^2")) n1/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units7.equals("ms^2")) n1/=Math.pow(10,-3)*Math.pow(10,-3);
             if(units7.equals("s^2"))  ;
-            if(units7.equals("min^2")) n1/=1.0/(60*60);
-            if(units7.equals("hr^2")) n1/=1.0/(60*60*60*60);
-            if(units7.equals("day^2")) n1/=1.0/(60*60*24*60*60*24);
-            if(units7.equals("yr^2")) n1/=1.0/(60*60*24*365*60*60*24*365);
+            if(units7.equals("min^2")) n1/=(60*60);
+            if(units7.equals("hr^2")) n1/=(60*60*60*60);
+            if(units7.equals("day^2")) n1/=(60*60*24*60*60*24);
+            if(units7.equals("yr^2")) n1/=(60*60*24*365*60*60*24*365);
 
             float n3;
             try {
@@ -417,13 +417,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             float n4;
             try {
@@ -443,13 +443,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n4/=Math.pow(10,9);
-            if(units17.equals("ms")) n4/=Math.pow(10,3);
+            if(units17.equals("ns")) n4/=Math.pow(10,-9);
+            if(units17.equals("ms")) n4/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4/=1.0/(60);
-            if(units17.equals("hr")) n4/=1.0/(60*60);
-            if(units17.equals("day")) n4/=1.0/(60*60*24);
-            if(units17.equals("yr")) n4/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4/=(60);
+            if(units17.equals("hr")) n4/=(60*60);
+            if(units17.equals("day")) n4/=(60*60*24);
+            if(units17.equals("yr")) n4/=(60*60*24*365);
 
             float n5;
             try {
@@ -514,13 +514,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns^2")) n1/=Math.pow(10,9)*Math.pow(10,9);
-            if(units7.equals("ms^2")) n1/=Math.pow(10,3)*Math.pow(10,3);
+            if(units7.equals("ns^2")) n1/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units7.equals("ms^2")) n1/=Math.pow(10,-3)*Math.pow(10,-3);
             if(units7.equals("s^2"))  ;
-            if(units7.equals("min^2")) n1/=1.0/(60*60);
-            if(units7.equals("hr^2")) n1/=1.0/(60*60*60*60);
-            if(units7.equals("day^2")) n1/=1.0/(60*60*24*60*60*24);
-            if(units7.equals("yr^2")) n1/=1.0/(60*60*24*365*60*60*24*365);
+            if(units7.equals("min^2")) n1/=(60*60);
+            if(units7.equals("hr^2")) n1/=(60*60*60*60);
+            if(units7.equals("day^2")) n1/=(60*60*24*60*60*24);
+            if(units7.equals("yr^2")) n1/=(60*60*24*365*60*60*24*365);
 
             float n2;
             try {
@@ -558,13 +558,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n4/=Math.pow(10,9);
-            if(units17.equals("ms")) n4/=Math.pow(10,3);
+            if(units17.equals("ns")) n4/=Math.pow(10,-9);
+            if(units17.equals("ms")) n4/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4/=1.0/(60);
-            if(units17.equals("hr")) n4/=1.0/(60*60);
-            if(units17.equals("day")) n4/=1.0/(60*60*24);
-            if(units17.equals("yr")) n4/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4/=(60);
+            if(units17.equals("hr")) n4/=(60*60);
+            if(units17.equals("day")) n4/=(60*60*24);
+            if(units17.equals("yr")) n4/=(60*60*24*365);
 
             float n5;
             try {
@@ -589,13 +589,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units11.equals("Mm")) n_/=Math.pow(10,6);
             if(units11.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n_*=Math.pow(10,9);
-            if(units13.equals("ms")) n_*=Math.pow(10,3);
+            if(units13.equals("ns")) n_*=Math.pow(10,-9);
+            if(units13.equals("ms")) n_*=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n_*=1.0/(60);
-            if(units13.equals("hr")) n_*=1.0/(60*60);
-            if(units13.equals("day")) n_*=1.0/(60*60*24);
-            if(units13.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units13.equals("min")) n_*=(60);
+            if(units13.equals("hr")) n_*=(60*60);
+            if(units13.equals("day")) n_*=(60*60*24);
+            if(units13.equals("yr")) n_*=(60*60*24*365);
 
             t10.setText(String.format("%.2e",n_));
         }
@@ -637,13 +637,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns^2")) n1/=Math.pow(10,9)*Math.pow(10,9);
-            if(units7.equals("ms^2")) n1/=Math.pow(10,3)*Math.pow(10,3);
+            if(units7.equals("ns^2")) n1/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units7.equals("ms^2")) n1/=Math.pow(10,-3)*Math.pow(10,-3);
             if(units7.equals("s^2"))  ;
-            if(units7.equals("min^2")) n1/=1.0/(60*60);
-            if(units7.equals("hr^2")) n1/=1.0/(60*60*60*60);
-            if(units7.equals("day^2")) n1/=1.0/(60*60*24*60*60*24);
-            if(units7.equals("yr^2")) n1/=1.0/(60*60*24*365*60*60*24*365);
+            if(units7.equals("min^2")) n1/=(60*60);
+            if(units7.equals("hr^2")) n1/=(60*60*60*60);
+            if(units7.equals("day^2")) n1/=(60*60*24*60*60*24);
+            if(units7.equals("yr^2")) n1/=(60*60*24*365*60*60*24*365);
 
             float n2;
             try {
@@ -681,13 +681,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             float n5;
             try {
@@ -712,13 +712,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units15.equals("Mm")) n_/=Math.pow(10,6);
             if(units15.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n_*=Math.pow(10,9);
-            if(units17.equals("ms")) n_*=Math.pow(10,3);
+            if(units17.equals("ns")) n_*=Math.pow(10,-9);
+            if(units17.equals("ms")) n_*=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n_*=1.0/(60);
-            if(units17.equals("hr")) n_*=1.0/(60*60);
-            if(units17.equals("day")) n_*=1.0/(60*60*24);
-            if(units17.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units17.equals("min")) n_*=(60);
+            if(units17.equals("hr")) n_*=(60*60);
+            if(units17.equals("day")) n_*=(60*60*24);
+            if(units17.equals("yr")) n_*=(60*60*24*365);
 
             t14.setText(String.format("%.2e",n_));
         }
@@ -760,13 +760,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns^2")) n1/=Math.pow(10,9)*Math.pow(10,9);
-            if(units7.equals("ms^2")) n1/=Math.pow(10,3)*Math.pow(10,3);
+            if(units7.equals("ns^2")) n1/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units7.equals("ms^2")) n1/=Math.pow(10,-3)*Math.pow(10,-3);
             if(units7.equals("s^2"))  ;
-            if(units7.equals("min^2")) n1/=1.0/(60*60);
-            if(units7.equals("hr^2")) n1/=1.0/(60*60*60*60);
-            if(units7.equals("day^2")) n1/=1.0/(60*60*24*60*60*24);
-            if(units7.equals("yr^2")) n1/=1.0/(60*60*24*365*60*60*24*365);
+            if(units7.equals("min^2")) n1/=(60*60);
+            if(units7.equals("hr^2")) n1/=(60*60*60*60);
+            if(units7.equals("day^2")) n1/=(60*60*24*60*60*24);
+            if(units7.equals("yr^2")) n1/=(60*60*24*365*60*60*24*365);
 
             float n2;
             try {
@@ -804,13 +804,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units11.equals("Mm")) n3*=Math.pow(10,6);
             if(units11.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n3/=Math.pow(10,9);
-            if(units13.equals("ms")) n3/=Math.pow(10,3);
+            if(units13.equals("ns")) n3/=Math.pow(10,-9);
+            if(units13.equals("ms")) n3/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n3/=1.0/(60);
-            if(units13.equals("hr")) n3/=1.0/(60*60);
-            if(units13.equals("day")) n3/=1.0/(60*60*24);
-            if(units13.equals("yr")) n3/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n3/=(60);
+            if(units13.equals("hr")) n3/=(60*60);
+            if(units13.equals("day")) n3/=(60*60*24);
+            if(units13.equals("yr")) n3/=(60*60*24*365);
 
             float n4;
             try {
@@ -830,13 +830,13 @@ public class ProjectileMotionActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns")) n4/=Math.pow(10,9);
-            if(units17.equals("ms")) n4/=Math.pow(10,3);
+            if(units17.equals("ns")) n4/=Math.pow(10,-9);
+            if(units17.equals("ms")) n4/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4/=1.0/(60);
-            if(units17.equals("hr")) n4/=1.0/(60*60);
-            if(units17.equals("day")) n4/=1.0/(60*60*24);
-            if(units17.equals("yr")) n4/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4/=(60);
+            if(units17.equals("hr")) n4/=(60*60);
+            if(units17.equals("day")) n4/=(60*60*24);
+            if(units17.equals("yr")) n4/=(60*60*24*365);
 
             double n_=Math.asin(n0*n1*n4*n4)/2;
 

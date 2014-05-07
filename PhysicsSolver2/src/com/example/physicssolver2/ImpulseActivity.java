@@ -111,13 +111,13 @@ public class ImpulseActivity extends Activity {
                 return;
             }
                 
-            if(units8.equals("ns")) n2*=Math.pow(10,9);
-            if(units8.equals("ms")) n2*=Math.pow(10,3);
+            if(units8.equals("ns")) n2*=Math.pow(10,-9);
+            if(units8.equals("ms")) n2*=Math.pow(10,-3);
             if(units8.equals("s"))  ;
-            if(units8.equals("min")) n2*=1.0/(60);
-            if(units8.equals("hr")) n2*=1.0/(60*60);
-            if(units8.equals("day")) n2*=1.0/(60*60*24);
-            if(units8.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units8.equals("min")) n2*=(60);
+            if(units8.equals("hr")) n2*=(60*60);
+            if(units8.equals("day")) n2*=(60*60*24);
+            if(units8.equals("yr")) n2*=(60*60*24*365);
 
             double n_=n1*n2;
 
@@ -131,13 +131,13 @@ public class ImpulseActivity extends Activity {
             if(units3.equals("MN")) n_/=Math.pow(10,6);
             if(units3.equals("GN")) n_/=Math.pow(10,9);
                 
-            if(units4.equals("ns")) n_/=Math.pow(10,9);
-            if(units4.equals("ms")) n_/=Math.pow(10,3);
+            if(units4.equals("ns")) n_/=Math.pow(10,-9);
+            if(units4.equals("ms")) n_/=Math.pow(10,-3);
             if(units4.equals("s"))  ;
-            if(units4.equals("min")) n_/=1.0/(60);
-            if(units4.equals("hr")) n_/=1.0/(60*60);
-            if(units4.equals("day")) n_/=1.0/(60*60*24);
-            if(units4.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units4.equals("min")) n_/=(60);
+            if(units4.equals("hr")) n_/=(60*60);
+            if(units4.equals("day")) n_/=(60*60*24);
+            if(units4.equals("yr")) n_/=(60*60*24*365);
 
             t2.setText(String.format("%.2e",n_));
         }
@@ -161,13 +161,13 @@ public class ImpulseActivity extends Activity {
             if(units3.equals("MN")) n0*=Math.pow(10,6);
             if(units3.equals("GN")) n0*=Math.pow(10,9);
                 
-            if(units4.equals("ns")) n0*=Math.pow(10,9);
-            if(units4.equals("ms")) n0*=Math.pow(10,3);
+            if(units4.equals("ns")) n0*=Math.pow(10,-9);
+            if(units4.equals("ms")) n0*=Math.pow(10,-3);
             if(units4.equals("s"))  ;
-            if(units4.equals("min")) n0*=1.0/(60);
-            if(units4.equals("hr")) n0*=1.0/(60*60);
-            if(units4.equals("day")) n0*=1.0/(60*60*24);
-            if(units4.equals("yr")) n0*=1.0/(60*60*24*365);
+            if(units4.equals("min")) n0*=(60);
+            if(units4.equals("hr")) n0*=(60*60);
+            if(units4.equals("day")) n0*=(60*60*24);
+            if(units4.equals("yr")) n0*=(60*60*24*365);
 
             float n2;
             try {
@@ -177,13 +177,13 @@ public class ImpulseActivity extends Activity {
                 return;
             }
                 
-            if(units8.equals("ns")) n2*=Math.pow(10,9);
-            if(units8.equals("ms")) n2*=Math.pow(10,3);
+            if(units8.equals("ns")) n2*=Math.pow(10,-9);
+            if(units8.equals("ms")) n2*=Math.pow(10,-3);
             if(units8.equals("s"))  ;
-            if(units8.equals("min")) n2*=1.0/(60);
-            if(units8.equals("hr")) n2*=1.0/(60*60);
-            if(units8.equals("day")) n2*=1.0/(60*60*24);
-            if(units8.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units8.equals("min")) n2*=(60);
+            if(units8.equals("hr")) n2*=(60*60);
+            if(units8.equals("day")) n2*=(60*60*24);
+            if(units8.equals("yr")) n2*=(60*60*24*365);
 
             double n_=n0/n2;
 
@@ -219,13 +219,13 @@ public class ImpulseActivity extends Activity {
             if(units3.equals("MN")) n0*=Math.pow(10,6);
             if(units3.equals("GN")) n0*=Math.pow(10,9);
                 
-            if(units4.equals("ns")) n0*=Math.pow(10,9);
-            if(units4.equals("ms")) n0*=Math.pow(10,3);
+            if(units4.equals("ns")) n0*=Math.pow(10,-9);
+            if(units4.equals("ms")) n0*=Math.pow(10,-3);
             if(units4.equals("s"))  ;
-            if(units4.equals("min")) n0*=1.0/(60);
-            if(units4.equals("hr")) n0*=1.0/(60*60);
-            if(units4.equals("day")) n0*=1.0/(60*60*24);
-            if(units4.equals("yr")) n0*=1.0/(60*60*24*365);
+            if(units4.equals("min")) n0*=(60);
+            if(units4.equals("hr")) n0*=(60*60);
+            if(units4.equals("day")) n0*=(60*60*24);
+            if(units4.equals("yr")) n0*=(60*60*24*365);
 
             float n1;
             try {
@@ -247,13 +247,13 @@ public class ImpulseActivity extends Activity {
 
             double n_=n0/n1;
                 
-            if(units8.equals("ns")) n_/=Math.pow(10,9);
-            if(units8.equals("ms")) n_/=Math.pow(10,3);
+            if(units8.equals("ns")) n_/=Math.pow(10,-9);
+            if(units8.equals("ms")) n_/=Math.pow(10,-3);
             if(units8.equals("s"))  ;
-            if(units8.equals("min")) n_/=1.0/(60);
-            if(units8.equals("hr")) n_/=1.0/(60*60);
-            if(units8.equals("day")) n_/=1.0/(60*60*24);
-            if(units8.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units8.equals("min")) n_/=(60);
+            if(units8.equals("hr")) n_/=(60*60);
+            if(units8.equals("day")) n_/=(60*60*24);
+            if(units8.equals("yr")) n_/=(60*60*24*365);
 
             t7.setText(String.format("%.2e",n_));
         }

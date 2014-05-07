@@ -127,13 +127,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units7.equals("Mm")) n1*=Math.pow(10,6);
             if(units7.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n1/=Math.pow(10,9);
-            if(units9.equals("ms")) n1/=Math.pow(10,3);
+            if(units9.equals("ns")) n1/=Math.pow(10,-9);
+            if(units9.equals("ms")) n1/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n1/=1.0/(60);
-            if(units9.equals("hr")) n1/=1.0/(60*60);
-            if(units9.equals("day")) n1/=1.0/(60*60*24);
-            if(units9.equals("yr")) n1/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n1/=(60);
+            if(units9.equals("hr")) n1/=(60*60);
+            if(units9.equals("day")) n1/=(60*60*24);
+            if(units9.equals("yr")) n1/=(60*60*24*365);
 
             float n2;
             try {
@@ -153,13 +153,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units11.equals("Mm")) n2*=Math.pow(10,6);
             if(units11.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n2/=Math.pow(10,9);
-            if(units13.equals("ms")) n2/=Math.pow(10,3);
+            if(units13.equals("ns")) n2/=Math.pow(10,-9);
+            if(units13.equals("ms")) n2/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n2/=1.0/(60);
-            if(units13.equals("hr")) n2/=1.0/(60*60);
-            if(units13.equals("day")) n2/=1.0/(60*60*24);
-            if(units13.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n2/=(60);
+            if(units13.equals("hr")) n2/=(60*60);
+            if(units13.equals("day")) n2/=(60*60*24);
+            if(units13.equals("yr")) n2/=(60*60*24*365);
 
             float n3;
             try {
@@ -187,13 +187,13 @@ public class UniformCircularMotionActivity extends Activity {
                 return;
             }
                 
-            if(units17.equals("ns")) n4*=Math.pow(10,9);
-            if(units17.equals("ms")) n4*=Math.pow(10,3);
+            if(units17.equals("ns")) n4*=Math.pow(10,-9);
+            if(units17.equals("ms")) n4*=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4*=1.0/(60);
-            if(units17.equals("hr")) n4*=1.0/(60*60);
-            if(units17.equals("day")) n4*=1.0/(60*60*24);
-            if(units17.equals("yr")) n4*=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4*=(60);
+            if(units17.equals("hr")) n4*=(60*60);
+            if(units17.equals("day")) n4*=(60*60*24);
+            if(units17.equals("yr")) n4*=(60*60*24*365);
 
             float n5;
             try {
@@ -203,13 +203,13 @@ public class UniformCircularMotionActivity extends Activity {
                 return;
             }
                 
-            if(units19.equals("ns")) n5*=Math.pow(10,9);
-            if(units19.equals("ms")) n5*=Math.pow(10,3);
+            if(units19.equals("ns")) n5*=Math.pow(10,-9);
+            if(units19.equals("ms")) n5*=Math.pow(10,-3);
             if(units19.equals("s"))  ;
-            if(units19.equals("min")) n5*=1.0/(60);
-            if(units19.equals("hr")) n5*=1.0/(60*60);
-            if(units19.equals("day")) n5*=1.0/(60*60*24);
-            if(units19.equals("yr")) n5*=1.0/(60*60*24*365);
+            if(units19.equals("min")) n5*=(60);
+            if(units19.equals("hr")) n5*=(60*60);
+            if(units19.equals("day")) n5*=(60*60*24);
+            if(units19.equals("yr")) n5*=(60*60*24*365);
 
             double n_=n2*n2/n3;
 
@@ -223,13 +223,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units3.equals("Mm")) n_/=Math.pow(10,6);
             if(units3.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units5.equals("ns^2")) n_*=Math.pow(10,9)*Math.pow(10,9);
-            if(units5.equals("ms^2")) n_*=Math.pow(10,3)*Math.pow(10,3);
+            if(units5.equals("ns^2")) n_*=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units5.equals("ms^2")) n_*=Math.pow(10,-3)*Math.pow(10,-3);
             if(units5.equals("s^2"))  ;
-            if(units5.equals("min^2")) n_*=1.0/(60*60);
-            if(units5.equals("hr^2")) n_*=1.0/(60*60*60*60);
-            if(units5.equals("day^2")) n_*=1.0/(60*60*24*60*60*24);
-            if(units5.equals("yr^2")) n_*=1.0/(60*60*24*365*60*60*24*365);
+            if(units5.equals("min^2")) n_*=(60*60);
+            if(units5.equals("hr^2")) n_*=(60*60*60*60);
+            if(units5.equals("day^2")) n_*=(60*60*24*60*60*24);
+            if(units5.equals("yr^2")) n_*=(60*60*24*365*60*60*24*365);
 
             t2.setText(String.format("%.2e",n_));
         }
@@ -253,13 +253,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units3.equals("Mm")) n0*=Math.pow(10,6);
             if(units3.equals("Gm")) n0*=Math.pow(10,9);
                 
-            if(units5.equals("ns^2")) n0/=Math.pow(10,9)*Math.pow(10,9);
-            if(units5.equals("ms^2")) n0/=Math.pow(10,3)*Math.pow(10,3);
+            if(units5.equals("ns^2")) n0/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units5.equals("ms^2")) n0/=Math.pow(10,-3)*Math.pow(10,-3);
             if(units5.equals("s^2"))  ;
-            if(units5.equals("min^2")) n0/=1.0/(60*60);
-            if(units5.equals("hr^2")) n0/=1.0/(60*60*60*60);
-            if(units5.equals("day^2")) n0/=1.0/(60*60*24*60*60*24);
-            if(units5.equals("yr^2")) n0/=1.0/(60*60*24*365*60*60*24*365);
+            if(units5.equals("min^2")) n0/=(60*60);
+            if(units5.equals("hr^2")) n0/=(60*60*60*60);
+            if(units5.equals("day^2")) n0/=(60*60*24*60*60*24);
+            if(units5.equals("yr^2")) n0/=(60*60*24*365*60*60*24*365);
 
             float n2;
             try {
@@ -279,13 +279,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units11.equals("Mm")) n2*=Math.pow(10,6);
             if(units11.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n2/=Math.pow(10,9);
-            if(units13.equals("ms")) n2/=Math.pow(10,3);
+            if(units13.equals("ns")) n2/=Math.pow(10,-9);
+            if(units13.equals("ms")) n2/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n2/=1.0/(60);
-            if(units13.equals("hr")) n2/=1.0/(60*60);
-            if(units13.equals("day")) n2/=1.0/(60*60*24);
-            if(units13.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n2/=(60);
+            if(units13.equals("hr")) n2/=(60*60);
+            if(units13.equals("day")) n2/=(60*60*24);
+            if(units13.equals("yr")) n2/=(60*60*24*365);
 
             float n3;
             try {
@@ -313,13 +313,13 @@ public class UniformCircularMotionActivity extends Activity {
                 return;
             }
                 
-            if(units17.equals("ns")) n4*=Math.pow(10,9);
-            if(units17.equals("ms")) n4*=Math.pow(10,3);
+            if(units17.equals("ns")) n4*=Math.pow(10,-9);
+            if(units17.equals("ms")) n4*=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4*=1.0/(60);
-            if(units17.equals("hr")) n4*=1.0/(60*60);
-            if(units17.equals("day")) n4*=1.0/(60*60*24);
-            if(units17.equals("yr")) n4*=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4*=(60);
+            if(units17.equals("hr")) n4*=(60*60);
+            if(units17.equals("day")) n4*=(60*60*24);
+            if(units17.equals("yr")) n4*=(60*60*24*365);
 
             float n5;
             try {
@@ -329,13 +329,13 @@ public class UniformCircularMotionActivity extends Activity {
                 return;
             }
                 
-            if(units19.equals("ns")) n5*=Math.pow(10,9);
-            if(units19.equals("ms")) n5*=Math.pow(10,3);
+            if(units19.equals("ns")) n5*=Math.pow(10,-9);
+            if(units19.equals("ms")) n5*=Math.pow(10,-3);
             if(units19.equals("s"))  ;
-            if(units19.equals("min")) n5*=1.0/(60);
-            if(units19.equals("hr")) n5*=1.0/(60*60);
-            if(units19.equals("day")) n5*=1.0/(60*60*24);
-            if(units19.equals("yr")) n5*=1.0/(60*60*24*365);
+            if(units19.equals("min")) n5*=(60);
+            if(units19.equals("hr")) n5*=(60*60);
+            if(units19.equals("day")) n5*=(60*60*24);
+            if(units19.equals("yr")) n5*=(60*60*24*365);
 
             double n_=n2-n0*n4;
 
@@ -349,13 +349,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units7.equals("Mm")) n_/=Math.pow(10,6);
             if(units7.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n_*=Math.pow(10,9);
-            if(units9.equals("ms")) n_*=Math.pow(10,3);
+            if(units9.equals("ns")) n_*=Math.pow(10,-9);
+            if(units9.equals("ms")) n_*=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n_*=1.0/(60);
-            if(units9.equals("hr")) n_*=1.0/(60*60);
-            if(units9.equals("day")) n_*=1.0/(60*60*24);
-            if(units9.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n_*=(60);
+            if(units9.equals("hr")) n_*=(60*60);
+            if(units9.equals("day")) n_*=(60*60*24);
+            if(units9.equals("yr")) n_*=(60*60*24*365);
 
             t6.setText(String.format("%.2e",n_));
         }
@@ -379,13 +379,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units3.equals("Mm")) n0*=Math.pow(10,6);
             if(units3.equals("Gm")) n0*=Math.pow(10,9);
                 
-            if(units5.equals("ns^2")) n0/=Math.pow(10,9)*Math.pow(10,9);
-            if(units5.equals("ms^2")) n0/=Math.pow(10,3)*Math.pow(10,3);
+            if(units5.equals("ns^2")) n0/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units5.equals("ms^2")) n0/=Math.pow(10,-3)*Math.pow(10,-3);
             if(units5.equals("s^2"))  ;
-            if(units5.equals("min^2")) n0/=1.0/(60*60);
-            if(units5.equals("hr^2")) n0/=1.0/(60*60*60*60);
-            if(units5.equals("day^2")) n0/=1.0/(60*60*24*60*60*24);
-            if(units5.equals("yr^2")) n0/=1.0/(60*60*24*365*60*60*24*365);
+            if(units5.equals("min^2")) n0/=(60*60);
+            if(units5.equals("hr^2")) n0/=(60*60*60*60);
+            if(units5.equals("day^2")) n0/=(60*60*24*60*60*24);
+            if(units5.equals("yr^2")) n0/=(60*60*24*365*60*60*24*365);
 
             float n1;
             try {
@@ -405,13 +405,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units7.equals("Mm")) n1*=Math.pow(10,6);
             if(units7.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n1/=Math.pow(10,9);
-            if(units9.equals("ms")) n1/=Math.pow(10,3);
+            if(units9.equals("ns")) n1/=Math.pow(10,-9);
+            if(units9.equals("ms")) n1/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n1/=1.0/(60);
-            if(units9.equals("hr")) n1/=1.0/(60*60);
-            if(units9.equals("day")) n1/=1.0/(60*60*24);
-            if(units9.equals("yr")) n1/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n1/=(60);
+            if(units9.equals("hr")) n1/=(60*60);
+            if(units9.equals("day")) n1/=(60*60*24);
+            if(units9.equals("yr")) n1/=(60*60*24*365);
 
             float n3;
             try {
@@ -439,13 +439,13 @@ public class UniformCircularMotionActivity extends Activity {
                 return;
             }
                 
-            if(units17.equals("ns")) n4*=Math.pow(10,9);
-            if(units17.equals("ms")) n4*=Math.pow(10,3);
+            if(units17.equals("ns")) n4*=Math.pow(10,-9);
+            if(units17.equals("ms")) n4*=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4*=1.0/(60);
-            if(units17.equals("hr")) n4*=1.0/(60*60);
-            if(units17.equals("day")) n4*=1.0/(60*60*24);
-            if(units17.equals("yr")) n4*=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4*=(60);
+            if(units17.equals("hr")) n4*=(60*60);
+            if(units17.equals("day")) n4*=(60*60*24);
+            if(units17.equals("yr")) n4*=(60*60*24*365);
 
             float n5;
             try {
@@ -455,13 +455,13 @@ public class UniformCircularMotionActivity extends Activity {
                 return;
             }
                 
-            if(units19.equals("ns")) n5*=Math.pow(10,9);
-            if(units19.equals("ms")) n5*=Math.pow(10,3);
+            if(units19.equals("ns")) n5*=Math.pow(10,-9);
+            if(units19.equals("ms")) n5*=Math.pow(10,-3);
             if(units19.equals("s"))  ;
-            if(units19.equals("min")) n5*=1.0/(60);
-            if(units19.equals("hr")) n5*=1.0/(60*60);
-            if(units19.equals("day")) n5*=1.0/(60*60*24);
-            if(units19.equals("yr")) n5*=1.0/(60*60*24*365);
+            if(units19.equals("min")) n5*=(60);
+            if(units19.equals("hr")) n5*=(60*60);
+            if(units19.equals("day")) n5*=(60*60*24);
+            if(units19.equals("yr")) n5*=(60*60*24*365);
 
             double n_=n0*n4+n1;
 
@@ -475,13 +475,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units11.equals("Mm")) n_/=Math.pow(10,6);
             if(units11.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n_*=Math.pow(10,9);
-            if(units13.equals("ms")) n_*=Math.pow(10,3);
+            if(units13.equals("ns")) n_*=Math.pow(10,-9);
+            if(units13.equals("ms")) n_*=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n_*=1.0/(60);
-            if(units13.equals("hr")) n_*=1.0/(60*60);
-            if(units13.equals("day")) n_*=1.0/(60*60*24);
-            if(units13.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units13.equals("min")) n_*=(60);
+            if(units13.equals("hr")) n_*=(60*60);
+            if(units13.equals("day")) n_*=(60*60*24);
+            if(units13.equals("yr")) n_*=(60*60*24*365);
 
             t10.setText(String.format("%.2e",n_));
         }
@@ -505,13 +505,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units3.equals("Mm")) n0*=Math.pow(10,6);
             if(units3.equals("Gm")) n0*=Math.pow(10,9);
                 
-            if(units5.equals("ns^2")) n0/=Math.pow(10,9)*Math.pow(10,9);
-            if(units5.equals("ms^2")) n0/=Math.pow(10,3)*Math.pow(10,3);
+            if(units5.equals("ns^2")) n0/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units5.equals("ms^2")) n0/=Math.pow(10,-3)*Math.pow(10,-3);
             if(units5.equals("s^2"))  ;
-            if(units5.equals("min^2")) n0/=1.0/(60*60);
-            if(units5.equals("hr^2")) n0/=1.0/(60*60*60*60);
-            if(units5.equals("day^2")) n0/=1.0/(60*60*24*60*60*24);
-            if(units5.equals("yr^2")) n0/=1.0/(60*60*24*365*60*60*24*365);
+            if(units5.equals("min^2")) n0/=(60*60);
+            if(units5.equals("hr^2")) n0/=(60*60*60*60);
+            if(units5.equals("day^2")) n0/=(60*60*24*60*60*24);
+            if(units5.equals("yr^2")) n0/=(60*60*24*365*60*60*24*365);
 
             float n1;
             try {
@@ -531,13 +531,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units7.equals("Mm")) n1*=Math.pow(10,6);
             if(units7.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n1/=Math.pow(10,9);
-            if(units9.equals("ms")) n1/=Math.pow(10,3);
+            if(units9.equals("ns")) n1/=Math.pow(10,-9);
+            if(units9.equals("ms")) n1/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n1/=1.0/(60);
-            if(units9.equals("hr")) n1/=1.0/(60*60);
-            if(units9.equals("day")) n1/=1.0/(60*60*24);
-            if(units9.equals("yr")) n1/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n1/=(60);
+            if(units9.equals("hr")) n1/=(60*60);
+            if(units9.equals("day")) n1/=(60*60*24);
+            if(units9.equals("yr")) n1/=(60*60*24*365);
 
             float n2;
             try {
@@ -557,13 +557,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units11.equals("Mm")) n2*=Math.pow(10,6);
             if(units11.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n2/=Math.pow(10,9);
-            if(units13.equals("ms")) n2/=Math.pow(10,3);
+            if(units13.equals("ns")) n2/=Math.pow(10,-9);
+            if(units13.equals("ms")) n2/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n2/=1.0/(60);
-            if(units13.equals("hr")) n2/=1.0/(60*60);
-            if(units13.equals("day")) n2/=1.0/(60*60*24);
-            if(units13.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n2/=(60);
+            if(units13.equals("hr")) n2/=(60*60);
+            if(units13.equals("day")) n2/=(60*60*24);
+            if(units13.equals("yr")) n2/=(60*60*24*365);
 
             float n4;
             try {
@@ -573,13 +573,13 @@ public class UniformCircularMotionActivity extends Activity {
                 return;
             }
                 
-            if(units17.equals("ns")) n4*=Math.pow(10,9);
-            if(units17.equals("ms")) n4*=Math.pow(10,3);
+            if(units17.equals("ns")) n4*=Math.pow(10,-9);
+            if(units17.equals("ms")) n4*=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4*=1.0/(60);
-            if(units17.equals("hr")) n4*=1.0/(60*60);
-            if(units17.equals("day")) n4*=1.0/(60*60*24);
-            if(units17.equals("yr")) n4*=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4*=(60);
+            if(units17.equals("hr")) n4*=(60*60);
+            if(units17.equals("day")) n4*=(60*60*24);
+            if(units17.equals("yr")) n4*=(60*60*24*365);
 
             float n5;
             try {
@@ -589,13 +589,13 @@ public class UniformCircularMotionActivity extends Activity {
                 return;
             }
                 
-            if(units19.equals("ns")) n5*=Math.pow(10,9);
-            if(units19.equals("ms")) n5*=Math.pow(10,3);
+            if(units19.equals("ns")) n5*=Math.pow(10,-9);
+            if(units19.equals("ms")) n5*=Math.pow(10,-3);
             if(units19.equals("s"))  ;
-            if(units19.equals("min")) n5*=1.0/(60);
-            if(units19.equals("hr")) n5*=1.0/(60*60);
-            if(units19.equals("day")) n5*=1.0/(60*60*24);
-            if(units19.equals("yr")) n5*=1.0/(60*60*24*365);
+            if(units19.equals("min")) n5*=(60);
+            if(units19.equals("hr")) n5*=(60*60);
+            if(units19.equals("day")) n5*=(60*60*24);
+            if(units19.equals("yr")) n5*=(60*60*24*365);
 
             double n_=n2*n2/n0;
 
@@ -631,13 +631,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units3.equals("Mm")) n0*=Math.pow(10,6);
             if(units3.equals("Gm")) n0*=Math.pow(10,9);
                 
-            if(units5.equals("ns^2")) n0/=Math.pow(10,9)*Math.pow(10,9);
-            if(units5.equals("ms^2")) n0/=Math.pow(10,3)*Math.pow(10,3);
+            if(units5.equals("ns^2")) n0/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units5.equals("ms^2")) n0/=Math.pow(10,-3)*Math.pow(10,-3);
             if(units5.equals("s^2"))  ;
-            if(units5.equals("min^2")) n0/=1.0/(60*60);
-            if(units5.equals("hr^2")) n0/=1.0/(60*60*60*60);
-            if(units5.equals("day^2")) n0/=1.0/(60*60*24*60*60*24);
-            if(units5.equals("yr^2")) n0/=1.0/(60*60*24*365*60*60*24*365);
+            if(units5.equals("min^2")) n0/=(60*60);
+            if(units5.equals("hr^2")) n0/=(60*60*60*60);
+            if(units5.equals("day^2")) n0/=(60*60*24*60*60*24);
+            if(units5.equals("yr^2")) n0/=(60*60*24*365*60*60*24*365);
 
             float n1;
             try {
@@ -657,13 +657,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units7.equals("Mm")) n1*=Math.pow(10,6);
             if(units7.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n1/=Math.pow(10,9);
-            if(units9.equals("ms")) n1/=Math.pow(10,3);
+            if(units9.equals("ns")) n1/=Math.pow(10,-9);
+            if(units9.equals("ms")) n1/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n1/=1.0/(60);
-            if(units9.equals("hr")) n1/=1.0/(60*60);
-            if(units9.equals("day")) n1/=1.0/(60*60*24);
-            if(units9.equals("yr")) n1/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n1/=(60);
+            if(units9.equals("hr")) n1/=(60*60);
+            if(units9.equals("day")) n1/=(60*60*24);
+            if(units9.equals("yr")) n1/=(60*60*24*365);
 
             float n2;
             try {
@@ -683,13 +683,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units11.equals("Mm")) n2*=Math.pow(10,6);
             if(units11.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n2/=Math.pow(10,9);
-            if(units13.equals("ms")) n2/=Math.pow(10,3);
+            if(units13.equals("ns")) n2/=Math.pow(10,-9);
+            if(units13.equals("ms")) n2/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n2/=1.0/(60);
-            if(units13.equals("hr")) n2/=1.0/(60*60);
-            if(units13.equals("day")) n2/=1.0/(60*60*24);
-            if(units13.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n2/=(60);
+            if(units13.equals("hr")) n2/=(60*60);
+            if(units13.equals("day")) n2/=(60*60*24);
+            if(units13.equals("yr")) n2/=(60*60*24*365);
 
             float n3;
             try {
@@ -717,23 +717,23 @@ public class UniformCircularMotionActivity extends Activity {
                 return;
             }
                 
-            if(units19.equals("ns")) n5*=Math.pow(10,9);
-            if(units19.equals("ms")) n5*=Math.pow(10,3);
+            if(units19.equals("ns")) n5*=Math.pow(10,-9);
+            if(units19.equals("ms")) n5*=Math.pow(10,-3);
             if(units19.equals("s"))  ;
-            if(units19.equals("min")) n5*=1.0/(60);
-            if(units19.equals("hr")) n5*=1.0/(60*60);
-            if(units19.equals("day")) n5*=1.0/(60*60*24);
-            if(units19.equals("yr")) n5*=1.0/(60*60*24*365);
+            if(units19.equals("min")) n5*=(60);
+            if(units19.equals("hr")) n5*=(60*60);
+            if(units19.equals("day")) n5*=(60*60*24);
+            if(units19.equals("yr")) n5*=(60*60*24*365);
 
             double n_=(n2-n1)/n0;
                 
-            if(units17.equals("ns")) n_/=Math.pow(10,9);
-            if(units17.equals("ms")) n_/=Math.pow(10,3);
+            if(units17.equals("ns")) n_/=Math.pow(10,-9);
+            if(units17.equals("ms")) n_/=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n_/=1.0/(60);
-            if(units17.equals("hr")) n_/=1.0/(60*60);
-            if(units17.equals("day")) n_/=1.0/(60*60*24);
-            if(units17.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units17.equals("min")) n_/=(60);
+            if(units17.equals("hr")) n_/=(60*60);
+            if(units17.equals("day")) n_/=(60*60*24);
+            if(units17.equals("yr")) n_/=(60*60*24*365);
 
             t16.setText(String.format("%.2e",n_));
         }
@@ -757,13 +757,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units3.equals("Mm")) n0*=Math.pow(10,6);
             if(units3.equals("Gm")) n0*=Math.pow(10,9);
                 
-            if(units5.equals("ns^2")) n0/=Math.pow(10,9)*Math.pow(10,9);
-            if(units5.equals("ms^2")) n0/=Math.pow(10,3)*Math.pow(10,3);
+            if(units5.equals("ns^2")) n0/=Math.pow(10,-9)*Math.pow(10,-9);
+            if(units5.equals("ms^2")) n0/=Math.pow(10,-3)*Math.pow(10,-3);
             if(units5.equals("s^2"))  ;
-            if(units5.equals("min^2")) n0/=1.0/(60*60);
-            if(units5.equals("hr^2")) n0/=1.0/(60*60*60*60);
-            if(units5.equals("day^2")) n0/=1.0/(60*60*24*60*60*24);
-            if(units5.equals("yr^2")) n0/=1.0/(60*60*24*365*60*60*24*365);
+            if(units5.equals("min^2")) n0/=(60*60);
+            if(units5.equals("hr^2")) n0/=(60*60*60*60);
+            if(units5.equals("day^2")) n0/=(60*60*24*60*60*24);
+            if(units5.equals("yr^2")) n0/=(60*60*24*365*60*60*24*365);
 
             float n1;
             try {
@@ -783,13 +783,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units7.equals("Mm")) n1*=Math.pow(10,6);
             if(units7.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n1/=Math.pow(10,9);
-            if(units9.equals("ms")) n1/=Math.pow(10,3);
+            if(units9.equals("ns")) n1/=Math.pow(10,-9);
+            if(units9.equals("ms")) n1/=Math.pow(10,-3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n1/=1.0/(60);
-            if(units9.equals("hr")) n1/=1.0/(60*60);
-            if(units9.equals("day")) n1/=1.0/(60*60*24);
-            if(units9.equals("yr")) n1/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n1/=(60);
+            if(units9.equals("hr")) n1/=(60*60);
+            if(units9.equals("day")) n1/=(60*60*24);
+            if(units9.equals("yr")) n1/=(60*60*24*365);
 
             float n2;
             try {
@@ -809,13 +809,13 @@ public class UniformCircularMotionActivity extends Activity {
             if(units11.equals("Mm")) n2*=Math.pow(10,6);
             if(units11.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units13.equals("ns")) n2/=Math.pow(10,9);
-            if(units13.equals("ms")) n2/=Math.pow(10,3);
+            if(units13.equals("ns")) n2/=Math.pow(10,-9);
+            if(units13.equals("ms")) n2/=Math.pow(10,-3);
             if(units13.equals("s"))  ;
-            if(units13.equals("min")) n2/=1.0/(60);
-            if(units13.equals("hr")) n2/=1.0/(60*60);
-            if(units13.equals("day")) n2/=1.0/(60*60*24);
-            if(units13.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units13.equals("min")) n2/=(60);
+            if(units13.equals("hr")) n2/=(60*60);
+            if(units13.equals("day")) n2/=(60*60*24);
+            if(units13.equals("yr")) n2/=(60*60*24*365);
 
             float n3;
             try {
@@ -843,23 +843,23 @@ public class UniformCircularMotionActivity extends Activity {
                 return;
             }
                 
-            if(units17.equals("ns")) n4*=Math.pow(10,9);
-            if(units17.equals("ms")) n4*=Math.pow(10,3);
+            if(units17.equals("ns")) n4*=Math.pow(10,-9);
+            if(units17.equals("ms")) n4*=Math.pow(10,-3);
             if(units17.equals("s"))  ;
-            if(units17.equals("min")) n4*=1.0/(60);
-            if(units17.equals("hr")) n4*=1.0/(60*60);
-            if(units17.equals("day")) n4*=1.0/(60*60*24);
-            if(units17.equals("yr")) n4*=1.0/(60*60*24*365);
+            if(units17.equals("min")) n4*=(60);
+            if(units17.equals("hr")) n4*=(60*60);
+            if(units17.equals("day")) n4*=(60*60*24);
+            if(units17.equals("yr")) n4*=(60*60*24*365);
 
             double n_=2*Math.PI*3/n2;
                 
-            if(units19.equals("ns")) n_/=Math.pow(10,9);
-            if(units19.equals("ms")) n_/=Math.pow(10,3);
+            if(units19.equals("ns")) n_/=Math.pow(10,-9);
+            if(units19.equals("ms")) n_/=Math.pow(10,-3);
             if(units19.equals("s"))  ;
-            if(units19.equals("min")) n_/=1.0/(60);
-            if(units19.equals("hr")) n_/=1.0/(60*60);
-            if(units19.equals("day")) n_/=1.0/(60*60*24);
-            if(units19.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units19.equals("min")) n_/=(60);
+            if(units19.equals("hr")) n_/=(60*60);
+            if(units19.equals("day")) n_/=(60*60*24);
+            if(units19.equals("yr")) n_/=(60*60*24*365);
 
             t18.setText(String.format("%.2e",n_));
         }

@@ -127,13 +127,13 @@ public class MomentumActivity extends Activity {
             if(units10.equals("Mm")) n2*=Math.pow(10,6);
             if(units10.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units12.equals("ns")) n2/=Math.pow(10,9);
-            if(units12.equals("ms")) n2/=Math.pow(10,3);
+            if(units12.equals("ns")) n2/=Math.pow(10,-9);
+            if(units12.equals("ms")) n2/=Math.pow(10,-3);
             if(units12.equals("s"))  ;
-            if(units12.equals("min")) n2/=1.0/(60);
-            if(units12.equals("hr")) n2/=1.0/(60*60);
-            if(units12.equals("day")) n2/=1.0/(60*60*24);
-            if(units12.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units12.equals("min")) n2/=(60);
+            if(units12.equals("hr")) n2/=(60*60);
+            if(units12.equals("day")) n2/=(60*60*24);
+            if(units12.equals("yr")) n2/=(60*60*24*365);
 
             double n_=n1*n2;
 
@@ -157,13 +157,13 @@ public class MomentumActivity extends Activity {
             if(units4.equals("Mm")) n_/=Math.pow(10,6);
             if(units4.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units6.equals("ns")) n_*=Math.pow(10,9);
-            if(units6.equals("ms")) n_*=Math.pow(10,3);
+            if(units6.equals("ns")) n_*=Math.pow(10,-9);
+            if(units6.equals("ms")) n_*=Math.pow(10,-3);
             if(units6.equals("s"))  ;
-            if(units6.equals("min")) n_*=1.0/(60);
-            if(units6.equals("hr")) n_*=1.0/(60*60);
-            if(units6.equals("day")) n_*=1.0/(60*60*24);
-            if(units6.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units6.equals("min")) n_*=(60);
+            if(units6.equals("hr")) n_*=(60*60);
+            if(units6.equals("day")) n_*=(60*60*24);
+            if(units6.equals("yr")) n_*=(60*60*24*365);
 
             t2.setText(String.format("%.2e",n_));
         }
@@ -197,13 +197,13 @@ public class MomentumActivity extends Activity {
             if(units4.equals("Mm")) n0*=Math.pow(10,6);
             if(units4.equals("Gm")) n0*=Math.pow(10,9);
                 
-            if(units6.equals("ns")) n0/=Math.pow(10,9);
-            if(units6.equals("ms")) n0/=Math.pow(10,3);
+            if(units6.equals("ns")) n0/=Math.pow(10,-9);
+            if(units6.equals("ms")) n0/=Math.pow(10,-3);
             if(units6.equals("s"))  ;
-            if(units6.equals("min")) n0/=1.0/(60);
-            if(units6.equals("hr")) n0/=1.0/(60*60);
-            if(units6.equals("day")) n0/=1.0/(60*60*24);
-            if(units6.equals("yr")) n0/=1.0/(60*60*24*365);
+            if(units6.equals("min")) n0/=(60);
+            if(units6.equals("hr")) n0/=(60*60);
+            if(units6.equals("day")) n0/=(60*60*24);
+            if(units6.equals("yr")) n0/=(60*60*24*365);
 
             float n2;
             try {
@@ -223,13 +223,13 @@ public class MomentumActivity extends Activity {
             if(units10.equals("Mm")) n2*=Math.pow(10,6);
             if(units10.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units12.equals("ns")) n2/=Math.pow(10,9);
-            if(units12.equals("ms")) n2/=Math.pow(10,3);
+            if(units12.equals("ns")) n2/=Math.pow(10,-9);
+            if(units12.equals("ms")) n2/=Math.pow(10,-3);
             if(units12.equals("s"))  ;
-            if(units12.equals("min")) n2/=1.0/(60);
-            if(units12.equals("hr")) n2/=1.0/(60*60);
-            if(units12.equals("day")) n2/=1.0/(60*60*24);
-            if(units12.equals("yr")) n2/=1.0/(60*60*24*365);
+            if(units12.equals("min")) n2/=(60);
+            if(units12.equals("hr")) n2/=(60*60);
+            if(units12.equals("day")) n2/=(60*60*24);
+            if(units12.equals("yr")) n2/=(60*60*24*365);
 
             double n_=n0/n2;
 
@@ -275,13 +275,13 @@ public class MomentumActivity extends Activity {
             if(units4.equals("Mm")) n0*=Math.pow(10,6);
             if(units4.equals("Gm")) n0*=Math.pow(10,9);
                 
-            if(units6.equals("ns")) n0/=Math.pow(10,9);
-            if(units6.equals("ms")) n0/=Math.pow(10,3);
+            if(units6.equals("ns")) n0/=Math.pow(10,-9);
+            if(units6.equals("ms")) n0/=Math.pow(10,-3);
             if(units6.equals("s"))  ;
-            if(units6.equals("min")) n0/=1.0/(60);
-            if(units6.equals("hr")) n0/=1.0/(60*60);
-            if(units6.equals("day")) n0/=1.0/(60*60*24);
-            if(units6.equals("yr")) n0/=1.0/(60*60*24*365);
+            if(units6.equals("min")) n0/=(60);
+            if(units6.equals("hr")) n0/=(60*60);
+            if(units6.equals("day")) n0/=(60*60*24);
+            if(units6.equals("yr")) n0/=(60*60*24*365);
 
             float n1;
             try {
@@ -313,13 +313,13 @@ public class MomentumActivity extends Activity {
             if(units10.equals("Mm")) n_/=Math.pow(10,6);
             if(units10.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units12.equals("ns")) n_*=Math.pow(10,9);
-            if(units12.equals("ms")) n_*=Math.pow(10,3);
+            if(units12.equals("ns")) n_*=Math.pow(10,-9);
+            if(units12.equals("ms")) n_*=Math.pow(10,-3);
             if(units12.equals("s"))  ;
-            if(units12.equals("min")) n_*=1.0/(60);
-            if(units12.equals("hr")) n_*=1.0/(60*60);
-            if(units12.equals("day")) n_*=1.0/(60*60*24);
-            if(units12.equals("yr")) n_*=1.0/(60*60*24*365);
+            if(units12.equals("min")) n_*=(60);
+            if(units12.equals("hr")) n_*=(60*60);
+            if(units12.equals("day")) n_*=(60*60*24);
+            if(units12.equals("yr")) n_*=(60*60*24*365);
 
             t9.setText(String.format("%.2e",n_));
         }
