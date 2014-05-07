@@ -67,8 +67,8 @@ Motion in Two Dimensions;Free Fall
 
 
 
-idealprojectile;300;250
-projectilemotioneq;300;50
+idealprojectile;250;200
+projectilemotioneq;200;50
 
 R;R (Range);m;n4*n4*Math.sin(2*n5)/n1
 g;g (Acceleration due to gravity);m/s^2;n4*n4*Math.sin(2*n5)/n0
@@ -111,7 +111,7 @@ Forces and Newton's Laws;Weight and Normal Force
 
 
 
-flatfriction;300;250
+flatfriction;250;200
 flatplanefrictioneq;100;50
 
 F;F (Friction force);N;n1*n2*n3
@@ -179,8 +179,8 @@ Momentum and Impulse;Impulse-Momentum Theorem
 
 
 
-conservationofmomentum;400;300
-conservationofmomentumeq;250;100
+conservationofmomentum;200;150
+conservationofmomentumeq;175;80
 
 p1;p1 (Initial momentum);N;n2+n3-n1
 p2;p2 (Initial momentum);N;n2+n3-n0
@@ -209,8 +209,8 @@ Collisions;Elastic Collisions of Two Objects
 
 
 
-conservationofenergy;400;300
-conservationofenergyeq;300;100
+conservationofenergy;200;150
+conservationofenergyeq;250;95
 
 g;g (Acceleration due to gravity);m/s^2;0.5*(n4*n4-n3*n3)/(n1-n2)
 h0;h0 (Initial height);m;(n0*n2+0.5*n4*n4-n0*n2)/n0
@@ -237,7 +237,7 @@ Work and Energy;Kinetic Energy
 
 
 
-gravitationalpe;300;150
+gravitationalpe;275;150
 gravitypotentialenergyeq;85;25
 
 PE;PE (Gravitational Potential Energy);J;n1*n2*n3
