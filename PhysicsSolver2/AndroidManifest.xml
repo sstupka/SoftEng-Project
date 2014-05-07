@@ -28,6 +28,121 @@
             android:name="com.example.physicssolver2.PendulumActivity"
             android:label="@string/title_activity_pendulum" >
         </activity>
+        <activity
+            android:name="com.example.physicssolver2.TwoObjectsMovingApartActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.ConstantVelocityMotionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.AcceleratedStraightLineActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.FreeFallActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.ProjectileMotionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.NewtonsLawsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.WeightNormalForceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.FlatPlaneFrictionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.FrictionInclineActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.MomentumActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.ImpulseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.ImpulseMomentumTheoremActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.ConservationOfMomentumActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.ElasticCollisionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.ConservationOfEnergyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.KineticEnergyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.GravitationalPotentialEnergyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.WorkActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.PowerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.ArcLengthActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.UniformCircularMotionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.CentripetalForceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.physicssolver2.TorqueActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
     </application>
 
 </manifest>

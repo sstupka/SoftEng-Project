@@ -539,5 +539,19 @@ public class '''+fields[2]+''' extends Activity {
 
     outputJavaFile.close()
 
+    strings=open("AndroidManifest.xml",'r') #Add activities to Android Manifest
+    allStrings=strings.read()
+    if fields[2] not in allStrings:
+        allStrings=allStrings.split("\n")
+        allStrings.insert(-4,'''        <activity
+            android:name="com.example.physicssolver2.'''+fields[2]+'''"
+            android:label="@string/app_name" >
+        </activity>
+        ''')
+        strings.close()
+        strings=open("AndroidManifest.xml",'w')
+        strings.write("\n".join(allStrings))
+    strings.close()
+
 inputFile.close()
         
