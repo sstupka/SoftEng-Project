@@ -136,13 +136,13 @@ public class CentripetalForceActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,9);
+            if(units9.equals("ms")) n2/=Math.pow(10,3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=1.0/(60);
+            if(units9.equals("hr")) n2/=1.0/(60*60);
+            if(units9.equals("day")) n2/=1.0/(60*60*24);
+            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
 
             float n3;
             try {
@@ -180,13 +180,13 @@ public class CentripetalForceActivity extends Activity {
             if(units13.equals("Mm")) n4*=Math.pow(10,6);
             if(units13.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units15.equals("ns^2")) n4*=Math.pow(10,9)*Math.pow(10,9);
-            if(units15.equals("ms^2")) n4*=Math.pow(10,3)*Math.pow(10,3);
+            if(units15.equals("ns^2")) n4/=Math.pow(10,9)*Math.pow(10,9);
+            if(units15.equals("ms^2")) n4/=Math.pow(10,3)*Math.pow(10,3);
             if(units15.equals("s^2"))  ;
-            if(units15.equals("min^2")) n4*=1.0/(60*60);
-            if(units15.equals("hr^2")) n4*=1.0/(60*60*60*60);
-            if(units15.equals("day^2")) n4*=1.0/(60*60*24*60*60*24);
-            if(units15.equals("yr^2")) n4*=1.0/(60*60*24*365*60*60*24*365);
+            if(units15.equals("min^2")) n4/=1.0/(60*60);
+            if(units15.equals("hr^2")) n4/=1.0/(60*60*60*60);
+            if(units15.equals("day^2")) n4/=1.0/(60*60*24*60*60*24);
+            if(units15.equals("yr^2")) n4/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=n1*n4;
 
@@ -240,13 +240,13 @@ public class CentripetalForceActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,9);
+            if(units9.equals("ms")) n2/=Math.pow(10,3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=1.0/(60);
+            if(units9.equals("hr")) n2/=1.0/(60*60);
+            if(units9.equals("day")) n2/=1.0/(60*60*24);
+            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
 
             float n3;
             try {
@@ -284,13 +284,13 @@ public class CentripetalForceActivity extends Activity {
             if(units13.equals("Mm")) n4*=Math.pow(10,6);
             if(units13.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units15.equals("ns^2")) n4*=Math.pow(10,9)*Math.pow(10,9);
-            if(units15.equals("ms^2")) n4*=Math.pow(10,3)*Math.pow(10,3);
+            if(units15.equals("ns^2")) n4/=Math.pow(10,9)*Math.pow(10,9);
+            if(units15.equals("ms^2")) n4/=Math.pow(10,3)*Math.pow(10,3);
             if(units15.equals("s^2"))  ;
-            if(units15.equals("min^2")) n4*=1.0/(60*60);
-            if(units15.equals("hr^2")) n4*=1.0/(60*60*60*60);
-            if(units15.equals("day^2")) n4*=1.0/(60*60*24*60*60*24);
-            if(units15.equals("yr^2")) n4*=1.0/(60*60*24*365*60*60*24*365);
+            if(units15.equals("min^2")) n4/=1.0/(60*60);
+            if(units15.equals("hr^2")) n4/=1.0/(60*60*60*60);
+            if(units15.equals("day^2")) n4/=1.0/(60*60*24*60*60*24);
+            if(units15.equals("yr^2")) n4/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=n0*n3/(n2*n2);
 
@@ -380,13 +380,13 @@ public class CentripetalForceActivity extends Activity {
             if(units13.equals("Mm")) n4*=Math.pow(10,6);
             if(units13.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units15.equals("ns^2")) n4*=Math.pow(10,9)*Math.pow(10,9);
-            if(units15.equals("ms^2")) n4*=Math.pow(10,3)*Math.pow(10,3);
+            if(units15.equals("ns^2")) n4/=Math.pow(10,9)*Math.pow(10,9);
+            if(units15.equals("ms^2")) n4/=Math.pow(10,3)*Math.pow(10,3);
             if(units15.equals("s^2"))  ;
-            if(units15.equals("min^2")) n4*=1.0/(60*60);
-            if(units15.equals("hr^2")) n4*=1.0/(60*60*60*60);
-            if(units15.equals("day^2")) n4*=1.0/(60*60*24*60*60*24);
-            if(units15.equals("yr^2")) n4*=1.0/(60*60*24*365*60*60*24*365);
+            if(units15.equals("min^2")) n4/=1.0/(60*60);
+            if(units15.equals("hr^2")) n4/=1.0/(60*60*60*60);
+            if(units15.equals("day^2")) n4/=1.0/(60*60*24*60*60*24);
+            if(units15.equals("yr^2")) n4/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=Math.sqrt(n0*n3/n1);
 
@@ -400,13 +400,13 @@ public class CentripetalForceActivity extends Activity {
             if(units7.equals("Mm")) n_/=Math.pow(10,6);
             if(units7.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n_/=Math.pow(10,9);
-            if(units9.equals("ms")) n_/=Math.pow(10,3);
+            if(units9.equals("ns")) n_*=Math.pow(10,9);
+            if(units9.equals("ms")) n_*=Math.pow(10,3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n_/=1.0/(60);
-            if(units9.equals("hr")) n_/=1.0/(60*60);
-            if(units9.equals("day")) n_/=1.0/(60*60*24);
-            if(units9.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n_*=1.0/(60);
+            if(units9.equals("hr")) n_*=1.0/(60*60);
+            if(units9.equals("day")) n_*=1.0/(60*60*24);
+            if(units9.equals("yr")) n_*=1.0/(60*60*24*365);
 
             t6.setText(String.format("%.2e",n_));
         }
@@ -466,13 +466,13 @@ public class CentripetalForceActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,9);
+            if(units9.equals("ms")) n2/=Math.pow(10,3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=1.0/(60);
+            if(units9.equals("hr")) n2/=1.0/(60*60);
+            if(units9.equals("day")) n2/=1.0/(60*60*24);
+            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
 
             float n4;
             try {
@@ -492,13 +492,13 @@ public class CentripetalForceActivity extends Activity {
             if(units13.equals("Mm")) n4*=Math.pow(10,6);
             if(units13.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units15.equals("ns^2")) n4*=Math.pow(10,9)*Math.pow(10,9);
-            if(units15.equals("ms^2")) n4*=Math.pow(10,3)*Math.pow(10,3);
+            if(units15.equals("ns^2")) n4/=Math.pow(10,9)*Math.pow(10,9);
+            if(units15.equals("ms^2")) n4/=Math.pow(10,3)*Math.pow(10,3);
             if(units15.equals("s^2"))  ;
-            if(units15.equals("min^2")) n4*=1.0/(60*60);
-            if(units15.equals("hr^2")) n4*=1.0/(60*60*60*60);
-            if(units15.equals("day^2")) n4*=1.0/(60*60*24*60*60*24);
-            if(units15.equals("yr^2")) n4*=1.0/(60*60*24*365*60*60*24*365);
+            if(units15.equals("min^2")) n4/=1.0/(60*60);
+            if(units15.equals("hr^2")) n4/=1.0/(60*60*60*60);
+            if(units15.equals("day^2")) n4/=1.0/(60*60*24*60*60*24);
+            if(units15.equals("yr^2")) n4/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=n1*n2*n2/n0;
 
@@ -570,13 +570,13 @@ public class CentripetalForceActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,9);
+            if(units9.equals("ms")) n2/=Math.pow(10,3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=1.0/(60);
+            if(units9.equals("hr")) n2/=1.0/(60*60);
+            if(units9.equals("day")) n2/=1.0/(60*60*24);
+            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
 
             float n3;
             try {
@@ -608,13 +608,13 @@ public class CentripetalForceActivity extends Activity {
             if(units13.equals("Mm")) n_/=Math.pow(10,6);
             if(units13.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units15.equals("ns^2")) n_/=Math.pow(10,9)*Math.pow(10,9);
-            if(units15.equals("ms^2")) n_/=Math.pow(10,3)*Math.pow(10,3);
+            if(units15.equals("ns^2")) n_*=Math.pow(10,9)*Math.pow(10,9);
+            if(units15.equals("ms^2")) n_*=Math.pow(10,3)*Math.pow(10,3);
             if(units15.equals("s^2"))  ;
-            if(units15.equals("min^2")) n_/=1.0/(60*60);
-            if(units15.equals("hr^2")) n_/=1.0/(60*60*60*60);
-            if(units15.equals("day^2")) n_/=1.0/(60*60*24*60*60*24);
-            if(units15.equals("yr^2")) n_/=1.0/(60*60*24*365*60*60*24*365);
+            if(units15.equals("min^2")) n_*=1.0/(60*60);
+            if(units15.equals("hr^2")) n_*=1.0/(60*60*60*60);
+            if(units15.equals("day^2")) n_*=1.0/(60*60*24*60*60*24);
+            if(units15.equals("yr^2")) n_*=1.0/(60*60*24*365*60*60*24*365);
 
             t12.setText(String.format("%.2e",n_));
         }

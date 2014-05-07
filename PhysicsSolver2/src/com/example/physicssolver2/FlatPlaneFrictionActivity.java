@@ -135,13 +135,13 @@ public class FlatPlaneFrictionActivity extends Activity {
             if(units9.equals("Mm")) n3*=Math.pow(10,6);
             if(units9.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units11.equals("ns^2")) n3*=Math.pow(10,9)*Math.pow(10,9);
-            if(units11.equals("ms^2")) n3*=Math.pow(10,3)*Math.pow(10,3);
+            if(units11.equals("ns^2")) n3/=Math.pow(10,9)*Math.pow(10,9);
+            if(units11.equals("ms^2")) n3/=Math.pow(10,3)*Math.pow(10,3);
             if(units11.equals("s^2"))  ;
-            if(units11.equals("min^2")) n3*=1.0/(60*60);
-            if(units11.equals("hr^2")) n3*=1.0/(60*60*60*60);
-            if(units11.equals("day^2")) n3*=1.0/(60*60*24*60*60*24);
-            if(units11.equals("yr^2")) n3*=1.0/(60*60*24*365*60*60*24*365);
+            if(units11.equals("min^2")) n3/=1.0/(60*60);
+            if(units11.equals("hr^2")) n3/=1.0/(60*60*60*60);
+            if(units11.equals("day^2")) n3/=1.0/(60*60*24*60*60*24);
+            if(units11.equals("yr^2")) n3/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=n1*n2*n3;
 
@@ -213,13 +213,13 @@ public class FlatPlaneFrictionActivity extends Activity {
             if(units9.equals("Mm")) n3*=Math.pow(10,6);
             if(units9.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units11.equals("ns^2")) n3*=Math.pow(10,9)*Math.pow(10,9);
-            if(units11.equals("ms^2")) n3*=Math.pow(10,3)*Math.pow(10,3);
+            if(units11.equals("ns^2")) n3/=Math.pow(10,9)*Math.pow(10,9);
+            if(units11.equals("ms^2")) n3/=Math.pow(10,3)*Math.pow(10,3);
             if(units11.equals("s^2"))  ;
-            if(units11.equals("min^2")) n3*=1.0/(60*60);
-            if(units11.equals("hr^2")) n3*=1.0/(60*60*60*60);
-            if(units11.equals("day^2")) n3*=1.0/(60*60*24*60*60*24);
-            if(units11.equals("yr^2")) n3*=1.0/(60*60*24*365*60*60*24*365);
+            if(units11.equals("min^2")) n3/=1.0/(60*60);
+            if(units11.equals("hr^2")) n3/=1.0/(60*60*60*60);
+            if(units11.equals("day^2")) n3/=1.0/(60*60*24*60*60*24);
+            if(units11.equals("yr^2")) n3/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=n0/(n2*n3);
 
@@ -271,13 +271,13 @@ public class FlatPlaneFrictionActivity extends Activity {
             if(units9.equals("Mm")) n3*=Math.pow(10,6);
             if(units9.equals("Gm")) n3*=Math.pow(10,9);
                 
-            if(units11.equals("ns^2")) n3*=Math.pow(10,9)*Math.pow(10,9);
-            if(units11.equals("ms^2")) n3*=Math.pow(10,3)*Math.pow(10,3);
+            if(units11.equals("ns^2")) n3/=Math.pow(10,9)*Math.pow(10,9);
+            if(units11.equals("ms^2")) n3/=Math.pow(10,3)*Math.pow(10,3);
             if(units11.equals("s^2"))  ;
-            if(units11.equals("min^2")) n3*=1.0/(60*60);
-            if(units11.equals("hr^2")) n3*=1.0/(60*60*60*60);
-            if(units11.equals("day^2")) n3*=1.0/(60*60*24*60*60*24);
-            if(units11.equals("yr^2")) n3*=1.0/(60*60*24*365*60*60*24*365);
+            if(units11.equals("min^2")) n3/=1.0/(60*60);
+            if(units11.equals("hr^2")) n3/=1.0/(60*60*60*60);
+            if(units11.equals("day^2")) n3/=1.0/(60*60*24*60*60*24);
+            if(units11.equals("yr^2")) n3/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=n0/(n1*n3);
 
@@ -351,13 +351,13 @@ public class FlatPlaneFrictionActivity extends Activity {
             if(units9.equals("Mm")) n_/=Math.pow(10,6);
             if(units9.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units11.equals("ns^2")) n_/=Math.pow(10,9)*Math.pow(10,9);
-            if(units11.equals("ms^2")) n_/=Math.pow(10,3)*Math.pow(10,3);
+            if(units11.equals("ns^2")) n_*=Math.pow(10,9)*Math.pow(10,9);
+            if(units11.equals("ms^2")) n_*=Math.pow(10,3)*Math.pow(10,3);
             if(units11.equals("s^2"))  ;
-            if(units11.equals("min^2")) n_/=1.0/(60*60);
-            if(units11.equals("hr^2")) n_/=1.0/(60*60*60*60);
-            if(units11.equals("day^2")) n_/=1.0/(60*60*24*60*60*24);
-            if(units11.equals("yr^2")) n_/=1.0/(60*60*24*365*60*60*24*365);
+            if(units11.equals("min^2")) n_*=1.0/(60*60);
+            if(units11.equals("hr^2")) n_*=1.0/(60*60*60*60);
+            if(units11.equals("day^2")) n_*=1.0/(60*60*24*60*60*24);
+            if(units11.equals("yr^2")) n_*=1.0/(60*60*24*365*60*60*24*365);
 
             t8.setText(String.format("%.2e",n_));
         }

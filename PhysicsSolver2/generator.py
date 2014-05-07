@@ -131,7 +131,7 @@ def unitsMath(varNum,starOrDiv,units,unitsNum): #RBF Needs more units
 for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
     fields=activity.split("\n\n")
     
-    javaSave=['''''']*3+[[[],[],[]]]+['''''']*0 #Save code to be written in various places throughout the java file here.
+    javaSave=['''''']*3+[[[],[],[],[]]]+['''''']*0 #Save code to be written in various places throughout the java file here.
     #element 3 is lists of EditText t#, associated spinner units#, and associated units. In database order.
 
     #Begin writing XML Code
@@ -250,6 +250,7 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
         javaSave[3][0].append(i) #edit text and textview numbers are the same
         javaSave[3][1].append([])
         javaSave[3][2].append([])
+        javaSave[3][3].append([])
 
         fraction=varFields[2].split("/")
         if len(fraction)==2: #Has a denominator
@@ -278,6 +279,7 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
         units'''+str(i)+'''.setOnItemSelectedListener(updateUnits);'''
                 javaSave[3][1][-1].append(i)
                 javaSave[3][2][-1].append(unit)
+                javaSave[3][3][-1].append(0)
                 
             unit=units[-1]
             i+=1
@@ -294,6 +296,7 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
         units'''+str(i)+'''.setOnItemSelectedListener(updateUnits);'''
             javaSave[3][1][-1].append(i)
             javaSave[3][2][-1].append(unit)
+            javaSave[3][3][-1].append(0)
 
             i+=1 #write the "/" symbol
             outputXmlFile.write('''
@@ -332,6 +335,7 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
         units'''+str(i)+'''.setOnItemSelectedListener(updateUnits);'''
                 javaSave[3][1][-1].append(i)
                 javaSave[3][2][-1].append(unit)
+                javaSave[3][3][-1].append(1)
                 
             unit=units[-1]
             i+=1
@@ -348,6 +352,7 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
         units'''+str(i)+'''.setOnItemSelectedListener(updateUnits);'''
             javaSave[3][1][-1].append(i)
             javaSave[3][2][-1].append(unit)
+            javaSave[3][3][-1].append(1)
 
         else: #No denominator
             units=fraction[0].split("*")
@@ -375,6 +380,7 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
         units'''+str(i)+'''.setOnItemSelectedListener(updateUnits);'''
                 javaSave[3][1][-1].append(i)
                 javaSave[3][2][-1].append(unit)
+                javaSave[3][3][-1].append(0)
                 
             unit=units[-1]
             i+=1
@@ -391,6 +397,7 @@ for activity in inputFile.read().split("\n\n\n\n"): #3 blank lines is 4 /n's
         units'''+str(i)+'''.setOnItemSelectedListener(updateUnits);'''
             javaSave[3][1][-1].append(i)
             javaSave[3][2][-1].append(unit)
+            javaSave[3][3][-1].append(0)
         outputXmlFile.write('''
 
     </LinearLayout>''')
@@ -513,7 +520,7 @@ public class '''+fields[2]+''' extends Activity {
                 outputJavaFile=open("src/com/example/physicssolver2/"+fields[2]+".java",'ab') #Now writing a byte stream since this portion of the code writes unicode characters
                 for units in javaSave[3][1][k]:
                     L+=1
-                    outputJavaFile.write(unitsMath(k,'*',javaSave[3][2][k][L],units).encode('utf8'))
+                    outputJavaFile.write(unitsMath(k,('*' if javaSave[3][3][k][L]==0 else '/'),javaSave[3][2][k][L],units).encode('utf8'))
                 outputJavaFile.close()
                 outputJavaFile=open("src/com/example/physicssolver2/"+fields[2]+".java",'a')
 
@@ -526,7 +533,7 @@ public class '''+fields[2]+''' extends Activity {
             L+=1
             outputJavaFile.close()
             outputJavaFile=open("src/com/example/physicssolver2/"+fields[2]+".java",'ab') #Now writing a byte stream since this portion of the code writes unicode characters
-            outputJavaFile.write(unitsMath('_','/',javaSave[3][2][i][L],units).encode('utf8'))
+            outputJavaFile.write(unitsMath('_',('/' if javaSave[3][3][i][L]==0 else '*'),javaSave[3][2][i][L],units).encode('utf8'))
             outputJavaFile.close()
             outputJavaFile=open("src/com/example/physicssolver2/"+fields[2]+".java",'a')
 

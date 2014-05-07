@@ -127,13 +127,13 @@ public class WeightNormalForceActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns^2")) n2*=Math.pow(10,9)*Math.pow(10,9);
-            if(units9.equals("ms^2")) n2*=Math.pow(10,3)*Math.pow(10,3);
+            if(units9.equals("ns^2")) n2/=Math.pow(10,9)*Math.pow(10,9);
+            if(units9.equals("ms^2")) n2/=Math.pow(10,3)*Math.pow(10,3);
             if(units9.equals("s^2"))  ;
-            if(units9.equals("min^2")) n2*=1.0/(60*60);
-            if(units9.equals("hr^2")) n2*=1.0/(60*60*60*60);
-            if(units9.equals("day^2")) n2*=1.0/(60*60*24*60*60*24);
-            if(units9.equals("yr^2")) n2*=1.0/(60*60*24*365*60*60*24*365);
+            if(units9.equals("min^2")) n2/=1.0/(60*60);
+            if(units9.equals("hr^2")) n2/=1.0/(60*60*60*60);
+            if(units9.equals("day^2")) n2/=1.0/(60*60*24*60*60*24);
+            if(units9.equals("yr^2")) n2/=1.0/(60*60*24*365*60*60*24*365);
 
             float n3;
             try {
@@ -198,13 +198,13 @@ public class WeightNormalForceActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns^2")) n2*=Math.pow(10,9)*Math.pow(10,9);
-            if(units9.equals("ms^2")) n2*=Math.pow(10,3)*Math.pow(10,3);
+            if(units9.equals("ns^2")) n2/=Math.pow(10,9)*Math.pow(10,9);
+            if(units9.equals("ms^2")) n2/=Math.pow(10,3)*Math.pow(10,3);
             if(units9.equals("s^2"))  ;
-            if(units9.equals("min^2")) n2*=1.0/(60*60);
-            if(units9.equals("hr^2")) n2*=1.0/(60*60*60*60);
-            if(units9.equals("day^2")) n2*=1.0/(60*60*24*60*60*24);
-            if(units9.equals("yr^2")) n2*=1.0/(60*60*24*365*60*60*24*365);
+            if(units9.equals("min^2")) n2/=1.0/(60*60);
+            if(units9.equals("hr^2")) n2/=1.0/(60*60*60*60);
+            if(units9.equals("day^2")) n2/=1.0/(60*60*24*60*60*24);
+            if(units9.equals("yr^2")) n2/=1.0/(60*60*24*365*60*60*24*365);
 
             float n3;
             try {
@@ -292,13 +292,13 @@ public class WeightNormalForceActivity extends Activity {
             if(units7.equals("Mm")) n_/=Math.pow(10,6);
             if(units7.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units9.equals("ns^2")) n_/=Math.pow(10,9)*Math.pow(10,9);
-            if(units9.equals("ms^2")) n_/=Math.pow(10,3)*Math.pow(10,3);
+            if(units9.equals("ns^2")) n_*=Math.pow(10,9)*Math.pow(10,9);
+            if(units9.equals("ms^2")) n_*=Math.pow(10,3)*Math.pow(10,3);
             if(units9.equals("s^2"))  ;
-            if(units9.equals("min^2")) n_/=1.0/(60*60);
-            if(units9.equals("hr^2")) n_/=1.0/(60*60*60*60);
-            if(units9.equals("day^2")) n_/=1.0/(60*60*24*60*60*24);
-            if(units9.equals("yr^2")) n_/=1.0/(60*60*24*365*60*60*24*365);
+            if(units9.equals("min^2")) n_*=1.0/(60*60);
+            if(units9.equals("hr^2")) n_*=1.0/(60*60*60*60);
+            if(units9.equals("day^2")) n_*=1.0/(60*60*24*60*60*24);
+            if(units9.equals("yr^2")) n_*=1.0/(60*60*24*365*60*60*24*365);
 
             t6.setText(String.format("%.2e",n_));
         }
@@ -358,13 +358,13 @@ public class WeightNormalForceActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns^2")) n2*=Math.pow(10,9)*Math.pow(10,9);
-            if(units9.equals("ms^2")) n2*=Math.pow(10,3)*Math.pow(10,3);
+            if(units9.equals("ns^2")) n2/=Math.pow(10,9)*Math.pow(10,9);
+            if(units9.equals("ms^2")) n2/=Math.pow(10,3)*Math.pow(10,3);
             if(units9.equals("s^2"))  ;
-            if(units9.equals("min^2")) n2*=1.0/(60*60);
-            if(units9.equals("hr^2")) n2*=1.0/(60*60*60*60);
-            if(units9.equals("day^2")) n2*=1.0/(60*60*24*60*60*24);
-            if(units9.equals("yr^2")) n2*=1.0/(60*60*24*365*60*60*24*365);
+            if(units9.equals("min^2")) n2/=1.0/(60*60);
+            if(units9.equals("hr^2")) n2/=1.0/(60*60*60*60);
+            if(units9.equals("day^2")) n2/=1.0/(60*60*24*60*60*24);
+            if(units9.equals("yr^2")) n2/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=n0/(n1*n2);
 

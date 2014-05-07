@@ -121,13 +121,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns")) n1*=Math.pow(10,9);
-            if(units7.equals("ms")) n1*=Math.pow(10,3);
+            if(units7.equals("ns")) n1/=Math.pow(10,9);
+            if(units7.equals("ms")) n1/=Math.pow(10,3);
             if(units7.equals("s"))  ;
-            if(units7.equals("min")) n1*=1.0/(60);
-            if(units7.equals("hr")) n1*=1.0/(60*60);
-            if(units7.equals("day")) n1*=1.0/(60*60*24);
-            if(units7.equals("yr")) n1*=1.0/(60*60*24*365);
+            if(units7.equals("min")) n1/=1.0/(60);
+            if(units7.equals("hr")) n1/=1.0/(60*60);
+            if(units7.equals("day")) n1/=1.0/(60*60*24);
+            if(units7.equals("yr")) n1/=1.0/(60*60*24*365);
 
             float n2;
             try {
@@ -147,13 +147,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units9.equals("Mm")) n2*=Math.pow(10,6);
             if(units9.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units11.equals("ns")) n2*=Math.pow(10,9);
-            if(units11.equals("ms")) n2*=Math.pow(10,3);
+            if(units11.equals("ns")) n2/=Math.pow(10,9);
+            if(units11.equals("ms")) n2/=Math.pow(10,3);
             if(units11.equals("s"))  ;
-            if(units11.equals("min")) n2*=1.0/(60);
-            if(units11.equals("hr")) n2*=1.0/(60*60);
-            if(units11.equals("day")) n2*=1.0/(60*60*24);
-            if(units11.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units11.equals("min")) n2/=1.0/(60);
+            if(units11.equals("hr")) n2/=1.0/(60*60);
+            if(units11.equals("day")) n2/=1.0/(60*60*24);
+            if(units11.equals("yr")) n2/=1.0/(60*60*24*365);
 
             float n3;
             try {
@@ -189,13 +189,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns^2")) n4*=Math.pow(10,9)*Math.pow(10,9);
-            if(units17.equals("ms^2")) n4*=Math.pow(10,3)*Math.pow(10,3);
+            if(units17.equals("ns^2")) n4/=Math.pow(10,9)*Math.pow(10,9);
+            if(units17.equals("ms^2")) n4/=Math.pow(10,3)*Math.pow(10,3);
             if(units17.equals("s^2"))  ;
-            if(units17.equals("min^2")) n4*=1.0/(60*60);
-            if(units17.equals("hr^2")) n4*=1.0/(60*60*60*60);
-            if(units17.equals("day^2")) n4*=1.0/(60*60*24*60*60*24);
-            if(units17.equals("yr^2")) n4*=1.0/(60*60*24*365*60*60*24*365);
+            if(units17.equals("min^2")) n4/=1.0/(60*60);
+            if(units17.equals("hr^2")) n4/=1.0/(60*60*60*60);
+            if(units17.equals("day^2")) n4/=1.0/(60*60*24*60*60*24);
+            if(units17.equals("yr^2")) n4/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=0.5*(n1+n2)*n3;
 
@@ -249,13 +249,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units9.equals("Mm")) n2*=Math.pow(10,6);
             if(units9.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units11.equals("ns")) n2*=Math.pow(10,9);
-            if(units11.equals("ms")) n2*=Math.pow(10,3);
+            if(units11.equals("ns")) n2/=Math.pow(10,9);
+            if(units11.equals("ms")) n2/=Math.pow(10,3);
             if(units11.equals("s"))  ;
-            if(units11.equals("min")) n2*=1.0/(60);
-            if(units11.equals("hr")) n2*=1.0/(60*60);
-            if(units11.equals("day")) n2*=1.0/(60*60*24);
-            if(units11.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units11.equals("min")) n2/=1.0/(60);
+            if(units11.equals("hr")) n2/=1.0/(60*60);
+            if(units11.equals("day")) n2/=1.0/(60*60*24);
+            if(units11.equals("yr")) n2/=1.0/(60*60*24*365);
 
             float n3;
             try {
@@ -291,13 +291,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns^2")) n4*=Math.pow(10,9)*Math.pow(10,9);
-            if(units17.equals("ms^2")) n4*=Math.pow(10,3)*Math.pow(10,3);
+            if(units17.equals("ns^2")) n4/=Math.pow(10,9)*Math.pow(10,9);
+            if(units17.equals("ms^2")) n4/=Math.pow(10,3)*Math.pow(10,3);
             if(units17.equals("s^2"))  ;
-            if(units17.equals("min^2")) n4*=1.0/(60*60);
-            if(units17.equals("hr^2")) n4*=1.0/(60*60*60*60);
-            if(units17.equals("day^2")) n4*=1.0/(60*60*24*60*60*24);
-            if(units17.equals("yr^2")) n4*=1.0/(60*60*24*365*60*60*24*365);
+            if(units17.equals("min^2")) n4/=1.0/(60*60);
+            if(units17.equals("hr^2")) n4/=1.0/(60*60*60*60);
+            if(units17.equals("day^2")) n4/=1.0/(60*60*24*60*60*24);
+            if(units17.equals("yr^2")) n4/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=n2-n4*n3;
 
@@ -311,13 +311,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units5.equals("Mm")) n_/=Math.pow(10,6);
             if(units5.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units7.equals("ns")) n_/=Math.pow(10,9);
-            if(units7.equals("ms")) n_/=Math.pow(10,3);
+            if(units7.equals("ns")) n_*=Math.pow(10,9);
+            if(units7.equals("ms")) n_*=Math.pow(10,3);
             if(units7.equals("s"))  ;
-            if(units7.equals("min")) n_/=1.0/(60);
-            if(units7.equals("hr")) n_/=1.0/(60*60);
-            if(units7.equals("day")) n_/=1.0/(60*60*24);
-            if(units7.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units7.equals("min")) n_*=1.0/(60);
+            if(units7.equals("hr")) n_*=1.0/(60*60);
+            if(units7.equals("day")) n_*=1.0/(60*60*24);
+            if(units7.equals("yr")) n_*=1.0/(60*60*24*365);
 
             t4.setText(String.format("%.2e",n_));
         }
@@ -359,13 +359,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns")) n1*=Math.pow(10,9);
-            if(units7.equals("ms")) n1*=Math.pow(10,3);
+            if(units7.equals("ns")) n1/=Math.pow(10,9);
+            if(units7.equals("ms")) n1/=Math.pow(10,3);
             if(units7.equals("s"))  ;
-            if(units7.equals("min")) n1*=1.0/(60);
-            if(units7.equals("hr")) n1*=1.0/(60*60);
-            if(units7.equals("day")) n1*=1.0/(60*60*24);
-            if(units7.equals("yr")) n1*=1.0/(60*60*24*365);
+            if(units7.equals("min")) n1/=1.0/(60);
+            if(units7.equals("hr")) n1/=1.0/(60*60);
+            if(units7.equals("day")) n1/=1.0/(60*60*24);
+            if(units7.equals("yr")) n1/=1.0/(60*60*24*365);
 
             float n3;
             try {
@@ -401,13 +401,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns^2")) n4*=Math.pow(10,9)*Math.pow(10,9);
-            if(units17.equals("ms^2")) n4*=Math.pow(10,3)*Math.pow(10,3);
+            if(units17.equals("ns^2")) n4/=Math.pow(10,9)*Math.pow(10,9);
+            if(units17.equals("ms^2")) n4/=Math.pow(10,3)*Math.pow(10,3);
             if(units17.equals("s^2"))  ;
-            if(units17.equals("min^2")) n4*=1.0/(60*60);
-            if(units17.equals("hr^2")) n4*=1.0/(60*60*60*60);
-            if(units17.equals("day^2")) n4*=1.0/(60*60*24*60*60*24);
-            if(units17.equals("yr^2")) n4*=1.0/(60*60*24*365*60*60*24*365);
+            if(units17.equals("min^2")) n4/=1.0/(60*60);
+            if(units17.equals("hr^2")) n4/=1.0/(60*60*60*60);
+            if(units17.equals("day^2")) n4/=1.0/(60*60*24*60*60*24);
+            if(units17.equals("yr^2")) n4/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=n1+n4*n3;
 
@@ -421,13 +421,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units9.equals("Mm")) n_/=Math.pow(10,6);
             if(units9.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units11.equals("ns")) n_/=Math.pow(10,9);
-            if(units11.equals("ms")) n_/=Math.pow(10,3);
+            if(units11.equals("ns")) n_*=Math.pow(10,9);
+            if(units11.equals("ms")) n_*=Math.pow(10,3);
             if(units11.equals("s"))  ;
-            if(units11.equals("min")) n_/=1.0/(60);
-            if(units11.equals("hr")) n_/=1.0/(60*60);
-            if(units11.equals("day")) n_/=1.0/(60*60*24);
-            if(units11.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units11.equals("min")) n_*=1.0/(60);
+            if(units11.equals("hr")) n_*=1.0/(60*60);
+            if(units11.equals("day")) n_*=1.0/(60*60*24);
+            if(units11.equals("yr")) n_*=1.0/(60*60*24*365);
 
             t8.setText(String.format("%.2e",n_));
         }
@@ -469,13 +469,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns")) n1*=Math.pow(10,9);
-            if(units7.equals("ms")) n1*=Math.pow(10,3);
+            if(units7.equals("ns")) n1/=Math.pow(10,9);
+            if(units7.equals("ms")) n1/=Math.pow(10,3);
             if(units7.equals("s"))  ;
-            if(units7.equals("min")) n1*=1.0/(60);
-            if(units7.equals("hr")) n1*=1.0/(60*60);
-            if(units7.equals("day")) n1*=1.0/(60*60*24);
-            if(units7.equals("yr")) n1*=1.0/(60*60*24*365);
+            if(units7.equals("min")) n1/=1.0/(60);
+            if(units7.equals("hr")) n1/=1.0/(60*60);
+            if(units7.equals("day")) n1/=1.0/(60*60*24);
+            if(units7.equals("yr")) n1/=1.0/(60*60*24*365);
 
             float n2;
             try {
@@ -495,13 +495,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units9.equals("Mm")) n2*=Math.pow(10,6);
             if(units9.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units11.equals("ns")) n2*=Math.pow(10,9);
-            if(units11.equals("ms")) n2*=Math.pow(10,3);
+            if(units11.equals("ns")) n2/=Math.pow(10,9);
+            if(units11.equals("ms")) n2/=Math.pow(10,3);
             if(units11.equals("s"))  ;
-            if(units11.equals("min")) n2*=1.0/(60);
-            if(units11.equals("hr")) n2*=1.0/(60*60);
-            if(units11.equals("day")) n2*=1.0/(60*60*24);
-            if(units11.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units11.equals("min")) n2/=1.0/(60);
+            if(units11.equals("hr")) n2/=1.0/(60*60);
+            if(units11.equals("day")) n2/=1.0/(60*60*24);
+            if(units11.equals("yr")) n2/=1.0/(60*60*24*365);
 
             float n4;
             try {
@@ -521,13 +521,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units15.equals("Mm")) n4*=Math.pow(10,6);
             if(units15.equals("Gm")) n4*=Math.pow(10,9);
                 
-            if(units17.equals("ns^2")) n4*=Math.pow(10,9)*Math.pow(10,9);
-            if(units17.equals("ms^2")) n4*=Math.pow(10,3)*Math.pow(10,3);
+            if(units17.equals("ns^2")) n4/=Math.pow(10,9)*Math.pow(10,9);
+            if(units17.equals("ms^2")) n4/=Math.pow(10,3)*Math.pow(10,3);
             if(units17.equals("s^2"))  ;
-            if(units17.equals("min^2")) n4*=1.0/(60*60);
-            if(units17.equals("hr^2")) n4*=1.0/(60*60*60*60);
-            if(units17.equals("day^2")) n4*=1.0/(60*60*24*60*60*24);
-            if(units17.equals("yr^2")) n4*=1.0/(60*60*24*365*60*60*24*365);
+            if(units17.equals("min^2")) n4/=1.0/(60*60);
+            if(units17.equals("hr^2")) n4/=1.0/(60*60*60*60);
+            if(units17.equals("day^2")) n4/=1.0/(60*60*24*60*60*24);
+            if(units17.equals("yr^2")) n4/=1.0/(60*60*24*365*60*60*24*365);
 
             double n_=(n2-n1)/n4;
                 
@@ -579,13 +579,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units5.equals("Mm")) n1*=Math.pow(10,6);
             if(units5.equals("Gm")) n1*=Math.pow(10,9);
                 
-            if(units7.equals("ns")) n1*=Math.pow(10,9);
-            if(units7.equals("ms")) n1*=Math.pow(10,3);
+            if(units7.equals("ns")) n1/=Math.pow(10,9);
+            if(units7.equals("ms")) n1/=Math.pow(10,3);
             if(units7.equals("s"))  ;
-            if(units7.equals("min")) n1*=1.0/(60);
-            if(units7.equals("hr")) n1*=1.0/(60*60);
-            if(units7.equals("day")) n1*=1.0/(60*60*24);
-            if(units7.equals("yr")) n1*=1.0/(60*60*24*365);
+            if(units7.equals("min")) n1/=1.0/(60);
+            if(units7.equals("hr")) n1/=1.0/(60*60);
+            if(units7.equals("day")) n1/=1.0/(60*60*24);
+            if(units7.equals("yr")) n1/=1.0/(60*60*24*365);
 
             float n2;
             try {
@@ -605,13 +605,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units9.equals("Mm")) n2*=Math.pow(10,6);
             if(units9.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units11.equals("ns")) n2*=Math.pow(10,9);
-            if(units11.equals("ms")) n2*=Math.pow(10,3);
+            if(units11.equals("ns")) n2/=Math.pow(10,9);
+            if(units11.equals("ms")) n2/=Math.pow(10,3);
             if(units11.equals("s"))  ;
-            if(units11.equals("min")) n2*=1.0/(60);
-            if(units11.equals("hr")) n2*=1.0/(60*60);
-            if(units11.equals("day")) n2*=1.0/(60*60*24);
-            if(units11.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units11.equals("min")) n2/=1.0/(60);
+            if(units11.equals("hr")) n2/=1.0/(60*60);
+            if(units11.equals("day")) n2/=1.0/(60*60*24);
+            if(units11.equals("yr")) n2/=1.0/(60*60*24*365);
 
             float n3;
             try {
@@ -641,13 +641,13 @@ public class AcceleratedStraightLineActivity extends Activity {
             if(units15.equals("Mm")) n_/=Math.pow(10,6);
             if(units15.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units17.equals("ns^2")) n_/=Math.pow(10,9)*Math.pow(10,9);
-            if(units17.equals("ms^2")) n_/=Math.pow(10,3)*Math.pow(10,3);
+            if(units17.equals("ns^2")) n_*=Math.pow(10,9)*Math.pow(10,9);
+            if(units17.equals("ms^2")) n_*=Math.pow(10,3)*Math.pow(10,3);
             if(units17.equals("s^2"))  ;
-            if(units17.equals("min^2")) n_/=1.0/(60*60);
-            if(units17.equals("hr^2")) n_/=1.0/(60*60*60*60);
-            if(units17.equals("day^2")) n_/=1.0/(60*60*24*60*60*24);
-            if(units17.equals("yr^2")) n_/=1.0/(60*60*24*365*60*60*24*365);
+            if(units17.equals("min^2")) n_*=1.0/(60*60);
+            if(units17.equals("hr^2")) n_*=1.0/(60*60*60*60);
+            if(units17.equals("day^2")) n_*=1.0/(60*60*24*60*60*24);
+            if(units17.equals("yr^2")) n_*=1.0/(60*60*24*365*60*60*24*365);
 
             t14.setText(String.format("%.2e",n_));
         }

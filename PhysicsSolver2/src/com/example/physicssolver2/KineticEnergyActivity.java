@@ -121,13 +121,13 @@ public class KineticEnergyActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,9);
+            if(units9.equals("ms")) n2/=Math.pow(10,3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=1.0/(60);
+            if(units9.equals("hr")) n2/=1.0/(60*60);
+            if(units9.equals("day")) n2/=1.0/(60*60*24);
+            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
 
             double n_=0.5*n1*n2*n2;
 
@@ -181,13 +181,13 @@ public class KineticEnergyActivity extends Activity {
             if(units7.equals("Mm")) n2*=Math.pow(10,6);
             if(units7.equals("Gm")) n2*=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n2*=Math.pow(10,9);
-            if(units9.equals("ms")) n2*=Math.pow(10,3);
+            if(units9.equals("ns")) n2/=Math.pow(10,9);
+            if(units9.equals("ms")) n2/=Math.pow(10,3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n2*=1.0/(60);
-            if(units9.equals("hr")) n2*=1.0/(60*60);
-            if(units9.equals("day")) n2*=1.0/(60*60*24);
-            if(units9.equals("yr")) n2*=1.0/(60*60*24*365);
+            if(units9.equals("min")) n2/=1.0/(60);
+            if(units9.equals("hr")) n2/=1.0/(60*60);
+            if(units9.equals("day")) n2/=1.0/(60*60*24);
+            if(units9.equals("yr")) n2/=1.0/(60*60*24*365);
 
             double n_=n0*2/(n2*n2);
 
@@ -253,13 +253,13 @@ public class KineticEnergyActivity extends Activity {
             if(units7.equals("Mm")) n_/=Math.pow(10,6);
             if(units7.equals("Gm")) n_/=Math.pow(10,9);
                 
-            if(units9.equals("ns")) n_/=Math.pow(10,9);
-            if(units9.equals("ms")) n_/=Math.pow(10,3);
+            if(units9.equals("ns")) n_*=Math.pow(10,9);
+            if(units9.equals("ms")) n_*=Math.pow(10,3);
             if(units9.equals("s"))  ;
-            if(units9.equals("min")) n_/=1.0/(60);
-            if(units9.equals("hr")) n_/=1.0/(60*60);
-            if(units9.equals("day")) n_/=1.0/(60*60*24);
-            if(units9.equals("yr")) n_/=1.0/(60*60*24*365);
+            if(units9.equals("min")) n_*=1.0/(60);
+            if(units9.equals("hr")) n_*=1.0/(60*60);
+            if(units9.equals("day")) n_*=1.0/(60*60*24);
+            if(units9.equals("yr")) n_*=1.0/(60*60*24*365);
 
             t6.setText(String.format("%.2e",n_));
         }
